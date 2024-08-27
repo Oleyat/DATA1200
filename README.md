@@ -1,9 +1,7 @@
-# DATA1200
+# DATA1200 - Exam
+This is the github page for the home exam project for DATA1200.
+## Group members ( and their github users)
 
-Dette er github siden for nettsiden med formål hjemme eksamen i DATA1200.
-
-Gruppemedlemmer:
-
-Haydar Oleyat
-Lykke Holst
-Elias Henriksson
+#### Haydar Oleyat (Oleyat)
+#### Lykke Holst (n/a)
+#### Elias Henriksson (n/a)
