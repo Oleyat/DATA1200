@@ -6,4 +6,3 @@ This is the github page for the home exam project for DATA1200.
 #### Lykke Holst (n/a)
 #### Elias Henriksson (FAD0KI)
 
-test
