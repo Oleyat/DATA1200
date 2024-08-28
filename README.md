@@ -4,4 +4,4 @@ This is the github page for the home exam project for DATA1200.
 
 #### Haydar Oleyat (Oleyat)
 #### Lykke Holst (n/a)
-#### Elias Henriksson (n/a)
+#### Elias Henriksson (FAD0KI)
