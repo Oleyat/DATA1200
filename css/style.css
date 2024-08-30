@@ -1,11 +1,17 @@
 html {
     scroll-behavior: smooth;
+    
 }
-body{
-    margin: 2vw;
+:root{ /* Legger inn variabler for farge stilen (!)*/
+    --oslometPrimary: #ffcd1a;
 }
 
-@media (min-width: 10px){
+body{
+    padding: 0; /* Uten disse to så vil det være lite mellomrom på siden og skjermen*/
+    margin: 0;
+}
+
+@media (min-width: 768px){
     /* Index.html grid PC */
     .grid-container{
         display: grid;
@@ -14,23 +20,26 @@ body{
     }
     .main-box{
         grid-column: 1/3;
+        border: 1px solid red;
         grid-row: 1;
         color: red;
     }
     .secondary-box{
         grid-column: 1/3;
         grid-row: 2;
+        border: 1px solid red;
     }
     .aside-box{
         grid-column: 3/4;
         grid-row: 1;
+        border: 1px solid red;
     }
 
     /* Navigasjons bar PC */
     .nav-bar{
         width: 100vw;
         box-shadow: 0px 0px 5px 3px #f4f4f4 ;
-        background-color: #fff;
+        background-color: var(--oslometPrimary);
         height: 80px;
         display: flex;
         flex-direction: row;
@@ -41,6 +50,8 @@ body{
     }
     .nav-bar  li{
         margin: auto;
+        margin-left: 5vw;
+        margin-right: 5vw;
     }
     .nav-bar  ul li{
         list-style: none;
@@ -60,3 +71,68 @@ body{
 
 }
 
+
+
+
+/* NEDENFOR GJELDER FOR SKJERMER UNDER 768PX*/
+
+
+@media (max-width: 768px){
+    /* Index.html grid MOBIL */
+    .grid-container{
+        display: grid;
+        grid-template-columns: 30vw auto minmax(300px, 30vw) 40px;
+        grid-auto-rows: minmax(100px, auto);
+    }
+    .main-box{
+        grid-column: 1/3;
+        border: 1px solid red;
+        grid-row: 1;
+        color: red;
+    }
+    .secondary-box{
+        grid-column: 1/3;
+        grid-row: 2;
+        border: 1px solid red;
+    }
+    .aside-box{
+        grid-column: 3/4;
+        grid-row: 1;
+        border: 1px solid red;
+    }
+
+    /* Navigasjons bar MOBIL */
+    .nav-bar{
+        width: 100vw;
+        box-shadow: 0px 0px 5px 3px #f4f4f4 ;
+        background-color: var(--oslometPrimary);
+        height: 80px;
+        display: flex;
+        flex-direction: row;
+    }
+    .nav-bar ul{
+        display: flex;
+        flex-direction: row;
+    }
+    .nav-bar  li{
+        margin: auto;
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+    .nav-bar  ul li{
+        list-style: none;
+    }
+    .nav-bar  a{ /* Selve navbar teksten. */
+        font-size: 20px;
+        font-weight: bold;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-decoration: none;
+        color: #000;
+        transition: 0.2s;
+    }
+    .nav-bar  a:hover{ /* Efekten som kommer når du legger musa over teksten.*/
+        color: #ff5e5e;
+        transition: 0.2s;
+    }
+
+}
