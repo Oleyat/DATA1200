@@ -7,4 +7,3 @@ This is the github page for the home exam project for DATA1200.
 #### Elias Henriksson (FAD0KI)
 #### Bjørnar Reime (Eonblued)
 
-gyuhi
