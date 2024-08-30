@@ -1,3 +1,7 @@
 html {
     scroll-behavior: smooth;
 }
+
+.nav-bar ul li{ /* Midlertidig navbar design*/
+    display: inline-block;
+}
