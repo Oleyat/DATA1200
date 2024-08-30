@@ -5,5 +5,5 @@ This is the github page for the home exam project for DATA1200.
 #### Haydar Oleyat (Oleyat)
 #### Lykke Holst (Akitarz)
 #### Elias Henriksson (FAD0KI)
-#### Bjørnar Reime (EonBlued)
+#### Bjørnar Reime (Eonblued)
 
