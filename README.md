@@ -3,8 +3,8 @@ This is the github page for the home exam project for DATA1200.
 ## Group members ( and their github users)
 
 #### Haydar Oleyat (Oleyat)
-#### Lykke Holst (n/a)
+#### Lykke Holst (Akitarz)
 #### Elias Henriksson (FAD0KI)
-#### Bjørnar Reime (Eonblued)
+#### Bjørnar Reime (EonBlued)
 
 gyuhi
