@@ -18,6 +18,8 @@ body{
         display: grid;
         grid-template-columns: 30vw auto minmax(300px, 30vw) 40px;
         grid-auto-rows: minmax(100px, auto);
+        padding-left: 2.5vw;
+        padding-right: 2.5vw;
         background-color: var(--oslometPrimary);
     }
     .main-box{
@@ -95,6 +97,8 @@ body{
         grid-template-columns: 30vw auto minmax(300px, 30vw) 40px;
         grid-auto-rows: minmax(100px, auto);
         background-color: var(--oslometPrimary);
+        padding-left: 2.5vw;
+        padding-right: 2.5vw;
     }
     .main-box{
         grid-column: 1/3;
