@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    width: 100vw;
     
 }
 :root{ /* Legger inn variabler for farge stilen (!)*/
@@ -11,11 +12,12 @@ html {
 body{
     padding: 0; /* Uten disse to så vil det være lite mellomrom på siden og skjermen*/
     margin: 0;
+    width: 100vw;
 }
 main{
 
 }
-@media (min-width: 1px){
+@media (min-width: 765px){
     /* Index.html grid PC */
     .main-header{
         display: flex;
@@ -48,8 +50,8 @@ main{
         border: 1px solid red;
     }
     .header-left{ /* Logoen er her */
-        width: 40%;
-        margin-left: 20vw;
+        width: 25%;
+        margin-left: 15vw;
     }
     .header-left img{
         width: 6em;
@@ -98,16 +100,26 @@ main{
 /* NEDENFOR GJELDER FOR SKJERMER UNDER 768PX*/
 
 
-@media (min-width: 76500px){
+@media (max-width: 765px){
     /* Index.html grid MOBIL */
-    main{
-        padding-left: 2.5vw;
-        padding-right: 2.5vw;
+    /* Denne funker for mobiler og tableter som er minst 425px. Ellers
+    så mistes det funksjonalitet fra siden.
+    Kunne implementert en burgermeny for telefoner, men
+    det krever javascript og det vil vi helst unngå å bruke
+    da det ikke er et krav i oppgaven.
+    */
+    .main-header{
+        display: flex;
+        flex-direction: row;
+        background-color: var(--oslometPrimary);
+        height: 4em;
     }
     .grid-container{
+        padding-left: 3vw;
         display: grid;
         grid-template-columns: 30vw auto minmax(300px, 30vw) 40px;
         grid-auto-rows: minmax(100px, auto);
+        border: 1px solid red;
         background-color: var(--oslometPrimary);
     }
     .main-box{
@@ -126,11 +138,22 @@ main{
         grid-row: 1;
         border: 1px solid red;
     }
+    .header-left{ /* Logoen er her */
+        width: 3%;
+        margin-left: 1vw;
+    }
+    .header-left img{
+        width: 5em;
+    }
+    .grid-container h1{
+        font-family: var(--oslometPrimaryFont);
+        margin-left: 5vw;
+    }
 
-    /* Navigasjons bar MOBIL */
+    /* Navigasjons bar PC */
     .nav-bar{
-        width: 100vw;
-       /* height: 80px; */
+        grid-column: 2/3;
+        width: 100%;
         display: flex;
         flex-direction: row;
     }
@@ -141,15 +164,14 @@ main{
     .nav-bar  li{
         margin: auto;
         margin-left: 5vw;
-        margin-right: 5vw;
     }
     .nav-bar  ul li{
         list-style: none;
     }
     .nav-bar  a{ /* Selve navbar teksten. */
-        font-size: 20px;
+        font-size: 1em;
         font-weight: bold;
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-family:var(--oslometPrimaryFont);
         text-decoration: none;
         color: #000;
         transition: 0.2s;
@@ -160,4 +182,3 @@ main{
     }
 
 }
-
