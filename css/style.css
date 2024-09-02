@@ -12,20 +12,23 @@ body{
     padding: 0; /* Uten disse to så vil det være lite mellomrom på siden og skjermen*/
     margin: 0;
 }
+main{
 
-.header-left img {
-    width: 10vw;
 }
-
-@media (min-width: 765px){
+@media (min-width: 1px){
     /* Index.html grid PC */
+    .main-header{
+        display: flex;
+        flex-direction: row;
+        background-color: var(--oslometPrimary);
+        height: 4em;
+    }
     .grid-container{
+        padding-left: 3vw;
         display: grid;
         grid-template-columns: 30vw auto minmax(300px, 30vw) 40px;
         grid-auto-rows: minmax(100px, auto);
-        padding-left: 2.5vw;
         border: 1px solid red;
-        padding-right: 2.5vw;
         background-color: var(--oslometPrimary);
     }
     .main-box{
@@ -44,11 +47,12 @@ body{
         grid-row: 1;
         border: 1px solid red;
     }
-    .header-left{
-        grid-column: 1/1;
-        grid-row: 1;
-        width: 100%;
-        background-color: var(--oslometPrimary);
+    .header-left{ /* Logoen er her */
+        width: 40%;
+        margin-left: 20vw;
+    }
+    .header-left img{
+        width: 6em;
     }
     .grid-container h1{
         font-family: var(--oslometPrimaryFont);
@@ -59,7 +63,6 @@ body{
     .nav-bar{
         grid-column: 2/3;
         width: 100%;
-        height: 80px;
         display: flex;
         flex-direction: row;
     }
@@ -75,7 +78,7 @@ body{
         list-style: none;
     }
     .nav-bar  a{ /* Selve navbar teksten. */
-        font-size: 20px;
+        font-size: 1.25em;
         font-weight: bold;
         font-family:var(--oslometPrimaryFont);
         text-decoration: none;
@@ -95,15 +98,17 @@ body{
 /* NEDENFOR GJELDER FOR SKJERMER UNDER 768PX*/
 
 
-@media (max-width: 765px){
+@media (min-width: 76500px){
     /* Index.html grid MOBIL */
+    main{
+        padding-left: 2.5vw;
+        padding-right: 2.5vw;
+    }
     .grid-container{
         display: grid;
         grid-template-columns: 30vw auto minmax(300px, 30vw) 40px;
         grid-auto-rows: minmax(100px, auto);
         background-color: var(--oslometPrimary);
-        padding-left: 2.5vw;
-        padding-right: 2.5vw;
     }
     .main-box{
         grid-column: 1/3;
@@ -125,7 +130,7 @@ body{
     /* Navigasjons bar MOBIL */
     .nav-bar{
         width: 100vw;
-        height: 80px;
+       /* height: 80px; */
         display: flex;
         flex-direction: row;
     }
