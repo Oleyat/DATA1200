@@ -20,6 +20,7 @@ body{
         grid-template-columns: 30vw auto minmax(300px, 30vw) 40px;
         grid-auto-rows: minmax(100px, auto);
         padding-left: 2.5vw;
+        border: 1px solid red;
         padding-right: 2.5vw;
         background-color: var(--oslometPrimary);
     }
