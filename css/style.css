@@ -13,6 +13,10 @@ body{
     margin: 0;
 }
 
+.main-header img {
+    width: 25vw;
+}
+
 @media (min-width: 1px){
     /* Index.html grid PC */
     .grid-container{
