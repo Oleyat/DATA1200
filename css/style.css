@@ -23,7 +23,7 @@ main{
         display: flex;
         flex-direction: row;
         background-color: var(--oslometPrimary);
-        height: 4em;
+        height: 6em;
     }
     .grid-container{
         padding-left: 3vw;
@@ -50,8 +50,9 @@ main{
         border: 1px solid red;
     }
     .header-left{ /* Logoen er her */
-        width: 25%;
-        margin-left: 15vw;
+        width: 10%;
+        margin-top: 1.25vw;
+        margin-left: 5vw;
     }
     .header-left img{
         width: 6em;
@@ -62,10 +63,12 @@ main{
     }
 
     /* Navigasjons bar PC */
+    /* Må omprogrammeres for å få bedre flyt med forskjellige størrelser */
     .nav-bar{
         grid-column: 2/3;
         width: 100%;
         display: flex;
+        margin-left: 35vw;
         flex-direction: row;
     }
     .nav-bar ul{
@@ -112,7 +115,7 @@ main{
         display: flex;
         flex-direction: row;
         background-color: var(--oslometPrimary);
-        height: 4em;
+        height: 6em;
     }
     .grid-container{
         padding-left: 3vw;
@@ -139,11 +142,12 @@ main{
         border: 1px solid red;
     }
     .header-left{ /* Logoen er her */
-        width: 3%;
-        margin-left: 1vw;
+        width: 10%;
+        margin-top: 1.25vw;
+        margin-left: 5vw;
     }
     .header-left img{
-        width: 5em;
+        width: 6em;
     }
     .grid-container h1{
         font-family: var(--oslometPrimaryFont);
