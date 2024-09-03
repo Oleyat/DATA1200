@@ -6,7 +6,7 @@ html {
 :root{ /* Legger inn variabler for farge stilen (!)*/
     --oslometPrimary: #fda8a8; /* Primary colour*/
     --oslometSecondary: #ff4545;
-    --oslometPrimaryFont: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --oslometPrimaryFont: 'Tahoma', sans-serif;
 }
 
 body{
@@ -19,6 +19,10 @@ main{
 }
 @media (min-width: 765px){
     /* Index.html grid PC */
+    h1{
+        color: #000;
+        font-family: var(--oslometPrimaryFont);
+    }
     .main-header{
         display: flex;
         flex-direction: row;
@@ -30,7 +34,6 @@ main{
         display: grid;
         grid-template-columns: 30vw auto minmax(300px, 30vw) 40px;
         grid-auto-rows: minmax(100px, auto);
-        border: 1px solid red;
         background-color: var(--oslometPrimary);
     }
     .main-box{
@@ -57,10 +60,7 @@ main{
     .header-left img{
         width: 6em;
     }
-    .grid-container h1{
-        font-family: var(--oslometPrimaryFont);
-        margin-left: 5vw;
-    }
+
 
     /* Navigasjons bar PC */
     /* Må omprogrammeres for å få bedre flyt med forskjellige størrelser */
@@ -68,7 +68,6 @@ main{
         grid-column: 2/3;
         width: 100%;
         display: flex;
-        margin-left: 35vw;
         flex-direction: row;
     }
     .nav-bar ul{
@@ -76,23 +75,23 @@ main{
         flex-direction: row;
     }
     .nav-bar  li{
-        margin: auto;
-        margin-left: 5vw;
+        margin-top: 3vw;
+        margin-left: 3vw;
     }
     .nav-bar  ul li{
         list-style: none;
     }
     .nav-bar  a{ /* Selve navbar teksten. */
-        font-size: 1.25em;
-        font-weight: bold;
+        font-size: 1.1em;
         font-family:var(--oslometPrimaryFont);
         text-decoration: none;
         color: #000;
         transition: 0.2s;
     }
     .nav-bar  a:hover{ /* Efekten som kommer når du legger musa over teksten.*/
-        color: var(--oslometSecondary);
+      /*   background-color: var(--oslometSecondary); */
         transition: 0.2s;
+        color: var(--oslometSecondary);
     }
 
 }
@@ -149,10 +148,6 @@ main{
     .header-left img{
         width: 6em;
     }
-    .grid-container h1{
-        font-family: var(--oslometPrimaryFont);
-        margin-left: 5vw;
-    }
 
     /* Navigasjons bar PC */
     .nav-bar{
@@ -174,14 +169,13 @@ main{
     }
     .nav-bar  a{ /* Selve navbar teksten. */
         font-size: 1em;
-        font-weight: bold;
         font-family:var(--oslometPrimaryFont);
         text-decoration: none;
         color: #000;
         transition: 0.2s;
     }
     .nav-bar  a:hover{ /* Efekten som kommer når du legger musa over teksten.*/
-        color: var(--oslometSecondary);
+        background-color: var(--oslometSecondary);
         transition: 0.2s;
     }
 
