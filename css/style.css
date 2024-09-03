@@ -17,9 +17,13 @@ body{
 main{
 
 }
-@media (min-width: 765px){
+
+/* *{ Brukt for å se grensesr
+    border: 1px solid red;
+} */
+@media (min-width: 1px){
     /* Index.html grid PC */
-    h1{
+    h1{ /* H1 Stil for siden */
         color: #000;
         font-family: var(--oslometPrimaryFont);
     }
@@ -29,7 +33,7 @@ main{
         background-color: var(--oslometPrimary);
         height: 6em;
     }
-    .grid-container{
+    .grid-container{ /* Container for grid- som vises på index */
         padding-left: 3vw;
         display: grid;
         grid-template-columns: 30vw auto minmax(300px, 30vw) 40px;
@@ -38,19 +42,16 @@ main{
     }
     .main-box{
         grid-column: 1/3;
-        border: 1px solid red;
         grid-row: 1;
         color: red;
     }
     .secondary-box{
         grid-column: 1/3;
         grid-row: 2;
-        border: 1px solid red;
     }
     .aside-box{
         grid-column: 3/4;
         grid-row: 1;
-        border: 1px solid red;
     }
     .header-left{ /* Logoen er her */
         width: 10%;
@@ -58,7 +59,7 @@ main{
         margin-left: 5vw;
     }
     .header-left img{
-        width: 6em;
+        width: 6em; /* Bruker em fordi vi vil at logoen skal være så stor i relativitet til teksten ved siden av. */
     }
 
 
@@ -102,81 +103,7 @@ main{
 /* NEDENFOR GJELDER FOR SKJERMER UNDER 768PX*/
 
 
-@media (max-width: 765px){
-    /* Index.html grid MOBIL */
-    /* Denne funker for mobiler og tableter som er minst 425px. Ellers
-    så mistes det funksjonalitet fra siden.
-    Kunne implementert en burgermeny for telefoner, men
-    det krever javascript og det vil vi helst unngå å bruke
-    da det ikke er et krav i oppgaven.
-    */
-    .main-header{
-        display: flex;
-        flex-direction: row;
-        background-color: var(--oslometPrimary);
-        height: 6em;
-    }
-    .grid-container{
-        padding-left: 3vw;
-        display: grid;
-        grid-template-columns: 30vw auto minmax(300px, 30vw) 40px;
-        grid-auto-rows: minmax(100px, auto);
-        border: 1px solid red;
-        background-color: var(--oslometPrimary);
-    }
-    .main-box{
-        grid-column: 1/3;
-        border: 1px solid red;
-        grid-row: 1;
-        color: red;
-    }
-    .secondary-box{
-        grid-column: 1/3;
-        grid-row: 2;
-        border: 1px solid red;
-    }
-    .aside-box{
-        grid-column: 3/4;
-        grid-row: 1;
-        border: 1px solid red;
-    }
-    .header-left{ /* Logoen er her */
-        width: 10%;
-        margin-top: 1.25vw;
-        margin-left: 5vw;
-    }
-    .header-left img{
-        width: 6em;
-    }
-
-    /* Navigasjons bar PC */
-    .nav-bar{
-        grid-column: 2/3;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-    }
-    .nav-bar ul{
-        display: flex;
-        flex-direction: row;
-    }
-    .nav-bar  li{
-        margin: auto;
-        margin-left: 5vw;
-    }
-    .nav-bar  ul li{
-        list-style: none;
-    }
-    .nav-bar  a{ /* Selve navbar teksten. */
-        font-size: 1em;
-        font-family:var(--oslometPrimaryFont);
-        text-decoration: none;
-        color: #000;
-        transition: 0.2s;
-    }
-    .nav-bar  a:hover{ /* Efekten som kommer når du legger musa over teksten.*/
-        background-color: var(--oslometSecondary);
-        transition: 0.2s;
-    }
+/* @media (max-width: 765px){
 
 }
+ */
