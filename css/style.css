@@ -18,8 +18,8 @@ main{
 
 }
 
-/* *{ Brukt for å se grensesr
-    border: 1px solid red;
+/* *{
+    border: 1px solid green;
 } */
 @media (min-width: 1px){
     /* Index.html grid PC */
@@ -28,8 +28,14 @@ main{
         font-family: var(--oslometPrimaryFont);
         font-size: 2em; /* Dobbler H1 størrelse. */
     }
-    .index-top-fargedrop{
+    .index-top-fargedrop-innrykk{
         background-color: var(--oslometPrimary);
+        padding-left: 3vw;
+        padding-right: 3vw;
+    }
+    .innrykk{
+        padding-left: 3.5vw;
+        padding-right: 3.5vw;
     }
     .main-header{
         display: flex;
@@ -38,7 +44,6 @@ main{
         height: 6em;
     }
     .grid-container{ /* Container for grid- som vises på index */
-        padding-left: 3vw;
         display: grid;
         grid-template-columns: 30vw auto minmax(300px, 30vw) 40px;
         grid-auto-rows: minmax(100px, auto);
@@ -95,9 +100,31 @@ main{
         transition: 0.2s;
         color: var(--oslometSecondary);
     }
-    .studie-oppbyging{
-    }
 
+
+    /* STUDIE OPPBYGGING TABLE NEDENFOR */
+    
+    .studie-oppbyging{
+        width: 50vw;
+        font-family: var(--oslometPrimaryFont);
+    }
+    .studie-oppbyging caption{
+        font-size: 1.4em;
+    }
+    .studie-oppbyging{
+        border-collapse: collapse;
+    }
+    .studie-oppbyging th, td{
+        padding: 1em;
+    }
+    .studie-oppbyging th{
+        font-size: 1.1em;
+    }
+    .studie-oppbyging tr:nth-child(even){
+        background-color: var(--oslometPrimary)
+    }
+    .studie-oppbyging tr{
+    }
 }
 
 
@@ -105,7 +132,8 @@ main{
 
 /* NEDENFOR GJELDER FOR SKJERMER UNDER 768PX*/
 
-
+/* For å ordne navbar for små telefoner så vil det være best å 
+bruke en dropdown menu */
 /* @media (max-width: 765px){
 
 }
