@@ -130,6 +130,13 @@ main{
     }
     .studie-oppbyging tr{
     }
+    /* FOOTER */
+    footer{
+        height: 6em;
+        width: 100%;
+        background-color: var(--oslometPrimary);
+        margin-top: 10vw;
+    }
 }
 
 
