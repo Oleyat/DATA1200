@@ -54,7 +54,8 @@ main{
         grid-row: 1;
     }
     .main-box img{
-        width: 20em;
+        width: 60vw;
+        height: 30vw;
     }
     .secondary-box{
         grid-column: 1/3;
