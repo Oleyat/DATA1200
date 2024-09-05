@@ -1,6 +1,7 @@
 html {
     scroll-behavior: smooth;
     width: 100vw;
+    overflow-x: hidden; /* DENNE VIL VI IKKE HA MEN ORKER IKKE FIKSE PROBLEMET ENDA */
     
 }
 :root{ /* Legger inn variabler for farge stilen (!)*/
@@ -51,7 +52,9 @@ main{
     .main-box{
         grid-column: 1/3;
         grid-row: 1;
-        color: red;
+    }
+    .main-box img{
+        width: 20em;
     }
     .secondary-box{
         grid-column: 1/3;
@@ -60,6 +63,7 @@ main{
     .aside-box{
         grid-column: 3/4;
         grid-row: 1;
+        font-family: var(--oslometPrimaryFont);
     }
     .header-left{ /* Logoen er her */
         width: 10%;
