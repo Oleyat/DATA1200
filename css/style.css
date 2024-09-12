@@ -130,6 +130,15 @@ main{
     }
     .studie-oppbyging tr{
     }
+    .sideKort{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .activityEsker{
+        width: 25vw;
+        margin: 5vw;
+    }
     /* FOOTER */
     footer{
         height: 6em;
