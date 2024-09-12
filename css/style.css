@@ -108,7 +108,7 @@ main{
     .nav-bar  a:hover{ /* Efekten som kommer når du legger musa over teksten.*/
       /*   background-color: var(--oslometSecondary); */
         transition: 0.2s;
-        color: var(--oslometSecondary);
+        text-decoration: underline;
     }
 
 
@@ -147,7 +147,7 @@ main{
     }
     /* FOOTER */
     footer{
-        height: 15vw;
+        height: 25vw;
         padding-top: 2vw;
         width: 100%;
         background-color: var(--oslometPrimary);
@@ -155,24 +155,32 @@ main{
         display: flex;
         flex-direction: row;
     }
+    footer h4{
+        font-size: 1em;
+    }
     .footer-section{
+        padding-left: 10vw;
         flex-grow: 1;
-        text-align: center;
+        text-align: left;
         
+    }
+    footer li{
+        list-style: none;
+    }
+    footer ul{
+        padding: 0;
     }
     footer a, p{
         text-decoration: none;
         transition: 0.25s;
         color: #000;
-        font-size: 0.5em;
+        font-size: 1em;
+    }
+    footer a:hover{
+        text-decoration: underline;
     }
     footer img{
         width: 15vw;
-    }
-    
-    .footer-section a:hover{
-        transition: 0.25s;
-        text-decoration: underline;
     }
 }
 
