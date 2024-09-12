@@ -141,9 +141,14 @@ main{
         flex-wrap: wrap;
     }
     .activityEsker{
-        width: 25vw;
+        width: 30vw;
+        height: 40vw;
         flex-grow: 1;
         margin: 5vw;
+    }
+    .activityEsker img{
+        width: 30vw;
+        height: 40vw;
     }
     /* FOOTER */
     footer{
