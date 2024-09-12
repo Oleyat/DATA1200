@@ -7,6 +7,8 @@ html {
 :root{ /* Legger inn variabler for farge stilen (!)*/
     --oslometPrimary: #A1BE95; /* Primary colour*/
     --oslometSecondary: #2d850a;
+    --oslometPrimary: #C4DFE6; /* Primary colour*/
+    --oslometSecondary: #CADCFC;
     --oslometPrimaryFont: 'Tahoma', sans-serif;
 }
 
@@ -19,6 +21,7 @@ body{
     padding: 0; /* Uten disse to så vil det være lite mellomrom på siden og skjermen*/
     margin: 0;
     width: 100vw;
+    background-color: #66A5AD;
 }
 main{
 
