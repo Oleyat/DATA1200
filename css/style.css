@@ -10,6 +10,11 @@ html {
     --oslometPrimaryFont: 'Tahoma', sans-serif;
 }
 
+h1, h2, h3, h4, h5, h6, p{
+    font-family: var(--oslometPrimaryFont);
+}
+
+
 body{
     padding: 0; /* Uten disse to så vil det være lite mellomrom på siden og skjermen*/
     margin: 0;
@@ -137,6 +142,7 @@ main{
     }
     .activityEsker{
         width: 25vw;
+        flex-grow: 1;
         margin: 5vw;
     }
     /* FOOTER */
