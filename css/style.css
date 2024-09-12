@@ -5,8 +5,8 @@ html {
     
 }
 :root{ /* Legger inn variabler for farge stilen (!)*/
-    --oslometPrimary: #00246B; /* Primary colour*/
-    --oslometSecondary: #CADCFC;
+    --oslometPrimary: #A1BE95; /* Primary colour*/
+    --oslometSecondary: #2d850a;
     --oslometPrimaryFont: 'Tahoma', sans-serif;
 }
 
@@ -152,10 +152,32 @@ main{
     }
     /* FOOTER */
     footer{
-        height: 6em;
+        height: 15vw;
+        padding-top: 2vw;
         width: 100%;
         background-color: var(--oslometPrimary);
         margin-top: 10vw;
+        display: flex;
+        flex-direction: row;
+    }
+    .footer-section{
+        flex-grow: 1;
+        text-align: center;
+        
+    }
+    footer a, p{
+        text-decoration: none;
+        transition: 0.25s;
+        color: #000;
+        font-size: 0.5em;
+    }
+    footer img{
+        width: 15vw;
+    }
+    
+    .footer-section a:hover{
+        transition: 0.25s;
+        text-decoration: underline;
     }
 }
 
