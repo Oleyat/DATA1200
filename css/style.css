@@ -19,6 +19,7 @@ body{
     padding: 0; /* Uten disse to så vil det være lite mellomrom på siden og skjermen*/
     margin: 0;
     width: 100vw;
+    background-color: #CADCFC;
 }
 main{
 
