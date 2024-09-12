@@ -5,8 +5,8 @@ html {
     
 }
 :root{ /* Legger inn variabler for farge stilen (!)*/
-    --oslometPrimary: #fda8a8; /* Primary colour*/
-    --oslometSecondary: #ff4545;
+    --oslometPrimary: #333333; /* Primary colour*/
+    --oslometSecondary: #FFEA00;
     --oslometPrimaryFont: 'Tahoma', sans-serif;
 }
 
