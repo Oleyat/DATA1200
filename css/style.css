@@ -125,16 +125,41 @@ main{
         border-collapse: collapse;
     }
     .studie-oppbyging th, td{
-        padding: 1em;
+        padding: 0.3em;
     }
     .studie-oppbyging th{
-        font-size: 1.1em;
+        font-size: 1em;
+        width: 10vw;
+        margin-right: 10vw;
     }
-    .studie-oppbyging tr:nth-child(even){
-        background-color: var(--oslometPrimary)
-    }
+/*     .studie-oppbyging tr:nth-child(even){
+        background-color: var(--oslometPrimary);
+    }  MIDLERTIDIG COMMENT*/
     .studie-oppbyging tr{
     }
+
+    .semesterFag{
+        display: flex;
+        flex-direction: row;
+        font-size: 0.8em;
+        width: 12.5vw;
+        height: 6vw;
+        flex-wrap: wrap;
+    }
+    .semesterFag h4{
+        width: 100%;
+        margin: 0;
+        height: 5%;
+        text-decoration: underline 2.5px var(--oslometPrimary);
+    }
+    .semesterFag p{
+        width: 50%;
+        margin-top: 2vw;
+    }
+    .semesterFag p:nth-child(odd){
+        text-align: right;
+    }
+
     .sideKort{
         display: flex;
         flex-direction: row;
