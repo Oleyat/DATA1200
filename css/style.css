@@ -11,7 +11,7 @@ html {
     --oslometPrimaryFont: 'Tahoma', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6, p{
+h1, h2, h3, h4, h5, h6, p, a{
     font-family: var(--oslometPrimaryFont);
 }
 
@@ -186,18 +186,32 @@ main{
         flex-direction: row;
         flex-wrap: wrap;
         height: 100%;
-        width: 100%;
+        width: 70%;
+        margin: auto;
     }
     .activityEsker{
-        width: 30vw;
-        height: 40vw;
+        width: 27vw;
+        height: 36vw;
         flex-grow: 1;
-        margin: 5vw;
+        padding: 1vw;
         border: 10px solid black
     }
     .activityEsker img{
         width: 100%;
         height: 100%;
+    }
+    .activityEsker p{
+        font-size: 0.95em;
+    }
+
+    .activityEsker a{
+        text-decoration: none;
+        color: black;
+    }
+
+    .activityEsker a:hover{
+        color: #A1BE95;
+        transition: 0.3s;
     }
     /* FOOTER */
     footer{
