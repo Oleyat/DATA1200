@@ -258,6 +258,11 @@ main{
         flex-grow: 1;
         flex-wrap: wrap;
     }
+
+    .accesibility-test-flex img{
+        width: 25vw;
+        height: 10vw;
+    }
 }
 
 
