@@ -159,6 +159,10 @@ main{
     .semesterFag p:nth-child(odd){
         text-align: right;
     }
+    #emnegruppeViten{
+        border: 1px solid var(--oslometSecondary);
+    }
+
 
     .sideKort{
         display: flex;
