@@ -1,6 +1,7 @@
 html {
     scroll-behavior: smooth;
     width: 100vw;
+    height: 100%;
     overflow-x: hidden; /* DENNE VIL VI IKKE HA MEN ORKER IKKE FIKSE PROBLEMET ENDA */
     
 }
@@ -19,6 +20,7 @@ body{
     padding: 0; /* Uten disse to så vil det være lite mellomrom på siden og skjermen*/
     margin: 0;
     width: 100vw;
+    height: 100%;
 }
 main{
 
@@ -164,16 +166,24 @@ main{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        height: 100vw;
+        width: 100%;
     }
     .activityEsker{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
         width: 30vw;
         height: 40vw;
         flex-grow: 1;
         margin: 5vw;
     }
     .activityEsker img{
-        width: 30vw;
-        height: 40vw;
+        width: 15vw;
+        height: 20vw;
+    }
+    .activityEsker h3, p{
+        size: 10%;
     }
     /* FOOTER */
     footer{
