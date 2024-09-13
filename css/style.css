@@ -180,7 +180,7 @@ main{
         border: 1px solid blue;
     }
 
-
+    /* CSS for activity-side */
     .sideKort{
         display: flex;
         flex-direction: row;
@@ -235,6 +235,14 @@ main{
     }
     footer img{
         width: 15vw;
+    }
+
+    /* CSS for accessibilty-side */
+    .accesibility-test-flex{
+        display: flex;
+        flex-direction: row;
+        flex-grow: 1;
+        flex-wrap: wrap;
     }
 }
 
