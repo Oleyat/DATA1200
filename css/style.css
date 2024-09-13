@@ -115,8 +115,14 @@ main{
     /* STUDIE OPPBYGGING TABLE NEDENFOR */
     
     .studie-oppbyging{
-        width: 50vw;
+        width: 100%;
         font-family: var(--oslometPrimaryFont);
+    }
+    .studie-oppbyging tr{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        border-bottom: 1px solid var(--oslometSecondary);
     }
     .studie-oppbyging caption{
         font-size: 1.4em;
@@ -129,7 +135,9 @@ main{
     }
     .studie-oppbyging th{
         font-size: 1em;
+        flex-grow: 1;
         width: 10vw;
+        width: 100%;
         margin-right: 10vw;
     }
 /*     .studie-oppbyging tr:nth-child(even){
