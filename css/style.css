@@ -185,13 +185,10 @@ main{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        height: 100vw;
+        height: 100%;
         width: 100%;
     }
     .activityEsker{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
         width: 30vw;
         height: 40vw;
         flex-grow: 1;
