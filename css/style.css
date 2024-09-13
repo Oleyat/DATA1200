@@ -150,7 +150,7 @@ main{
         display: flex;
         flex-direction: row;
         font-size: 0.8em;
-        width: 12.5vw;
+        width: 14.5vw;
         height: 6vw;
         flex-wrap: wrap;
     }
@@ -163,12 +163,19 @@ main{
     .semesterFag p{
         width: 50%;
         margin-top: 2vw;
+
     }
     .semesterFag p:nth-child(odd){
         text-align: right;
     }
     #emnegruppeViten{
-        border: 1px solid var(--oslometSecondary);
+        border: 1px solid red;
+    }
+    #emnegruppeStat{
+        border: 1px solid green;
+    }
+    #emnegruppeFysMat{
+        border: 1px solid blue;
     }
 
 
