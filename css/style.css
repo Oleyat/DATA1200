@@ -260,8 +260,9 @@ main{
     }
 
     .accesibility-test-flex img{
-        width: 25vw;
-        height: 10vw;
+        width: 40vw;
+        height: 25vw;
+        margin: 3vw;
     }
 }
 
