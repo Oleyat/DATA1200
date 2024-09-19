@@ -133,19 +133,24 @@ main{
         border-collapse: collapse;
     }
     .studie-oppbyging th, td{
-        padding: 0.3em;
+        padding: 0.1em;
+        margin: 0.25vw
     }
     .studie-oppbyging th{
         font-size: 1em;
         flex-grow: 1;
         width: 10vw;
         width: 100%;
-        margin-right: 10vw;
+        margin-right: 1vw;
+        margin-bottom: 2vw;
+        margin-top: 2vw;
     }
 /*     .studie-oppbyging tr:nth-child(even){
         background-color: var(--oslometPrimary);
     }  MIDLERTIDIG COMMENT*/
-    .studie-oppbyging tr{
+    .studie-oppbyging td{
+        border-bottom: 1px solid black;
+        border-right: 1px solid black;
     }
 
     .semesterFag{
@@ -171,13 +176,17 @@ main{
         text-align: right;
     }
     #emnegruppeViten{
-        border: 1px solid red;
     }
     #emnegruppeStat{
-        border: 1px solid green;
+
     }
     #emnegruppeFysMat{
-        border: 1px solid blue;
+    } 
+    .valgfag{
+        background-image: url(../images/optional-icon.svg);
+        background-position-y: bottom;
+        background-position-x: right;
+        background-repeat: no-repeat;
     }
 
 
