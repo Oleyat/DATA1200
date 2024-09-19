@@ -117,14 +117,13 @@ main{
     /* STUDIE OPPBYGGING TABLE NEDENFOR */
     
     .studie-oppbyging{
-        width: 100%;
+        width: 60%;
         font-family: var(--oslometPrimaryFont);
     }
     .studie-oppbyging tr{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        border-bottom: 1px solid var(--oslometSecondary);
     }
     .studie-oppbyging caption{
         font-size: 1.4em;
@@ -138,6 +137,7 @@ main{
     }
     .studie-oppbyging th{
         font-size: 1em;
+        background-color: var(--oslometPrimary);
         flex-grow: 1;
         width: 10vw;
         width: 100%;
@@ -149,8 +149,9 @@ main{
         background-color: var(--oslometPrimary);
     }  MIDLERTIDIG COMMENT*/
     .studie-oppbyging td{
-        border-bottom: 1px solid black;
-        border-right: 1px solid black;
+
+        border-right: 3px solid var(--oslometPrimary);
+        border-bottom: 3px solid var(--oslometPrimary);
     }
 
     .semesterFag{
@@ -158,14 +159,14 @@ main{
         flex-direction: row;
         font-size: 0.8em;
         width: 14.5vw;
-        height: 6vw;
+        height: 5vw;
         flex-wrap: wrap;
     }
     .semesterFag h4{
         width: 100%;
         margin: 0;
         height: 5%;
-        text-decoration: underline 2.5px var(--oslometPrimary);
+        text-decoration: underline 2px var(--oslometPrimary);
     }
     .semesterFag p{
         width: 50%;
@@ -175,13 +176,7 @@ main{
     .semesterFag p:nth-child(odd){
         text-align: right;
     }
-    #emnegruppeViten{
-    }
-    #emnegruppeStat{
 
-    }
-    #emnegruppeFysMat{
-    } 
     .valgfag{
         background-image: url(../images/optional-icon.svg);
         background-position-y: bottom;
