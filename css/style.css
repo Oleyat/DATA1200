@@ -187,7 +187,7 @@ main{
     /* CSS for activity-side */
     .forstebilde{
         width: auto;
-        height: auto;
+        height: 72vw;
         margin-top: 3vw;
         background-color: #FFEA00;
     }
@@ -197,7 +197,7 @@ main{
         margin-bottom: 1vw;
     }
 
-    .forstebilde h2{
+    .forstebilde h1{
         font-size: 2.7em;
         padding: 1vw;
         margin: 1vw;
@@ -208,18 +208,22 @@ main{
         padding: 1vw;
         margin: 1vw;
     }
+    .forstebilde p:nth-child(even){
+        margin-top: 5vw;
+        text-align: center;
+        background-color: #FFEA00;
+    }
 
     .forstebilde a{
-        width: 100%;
-        text-align: center;
-        height: auto;
+        background-color: #ffff;
+        padding: 2vw;
         text-decoration: none;
-        color: black;
     }
 
     .forstebilde a:hover{
         color: #A1BE95;
         transition: 0.3s;
+        size-adjust: 10%;
     }
 
     .sideKort{
@@ -228,6 +232,7 @@ main{
         flex-wrap: wrap;
         height: 100%;
         width: 70%;
+        margin-top: 10vw;
         margin: auto;
     }
     .activityEsker{
