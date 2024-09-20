@@ -112,7 +112,9 @@ main{
     }
     details{
         width: 100%;
-        margin-left: 20%;
+    }
+    summary{
+        text-align: center;
     }
     /* STUDIE OPPBYGGING TABLE NEDENFOR */
     .studie-oppbyging{
@@ -124,6 +126,7 @@ main{
         flex-direction: row;
         flex-wrap: wrap;
         width: 60%;
+        margin-left: 20%;
     }
     .studie-oppbyging caption{
         font-size: 1.4em;
@@ -205,16 +208,20 @@ main{
         margin-top: 5vw;
         text-align: center;
         background-color: #FFEA00;
+        height: 1vw;
     }
     .forstebilde a{
-        background-color: #ffff;
-        padding: 2vw;
+        background-color: #009739;
+        border: 0.8vw solid #009739;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
         text-decoration: none;
+        transition: 0.3s;
     }
     .forstebilde a:hover{
-        color: #A1BE95;
+        color: #012169;
         transition: 0.3s;
-        size-adjust: 10%;
+        padding: 1.5vw;
     }
     .sideKort{
         display: flex;
