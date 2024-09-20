@@ -45,7 +45,7 @@ main{
         padding-left: 3.5vw;
         padding-right: 3.5vw;
     }
-    .main-header{
+    header{
         display: flex;
         flex-direction: row;
         background-color: var(--oslometPrimary);
@@ -67,6 +67,7 @@ main{
     .secondary-box{
         grid-column: 1/3;
         grid-row: 2;
+        font-size: 2em;
     }
     .aside-box{
         grid-column: 3/4;
@@ -112,18 +113,22 @@ main{
         transition: 0.2s;
         text-decoration: underline;
     }
-
+    details{
+        width: 100%;
+        margin-left: 20%;
+    }
 
     /* STUDIE OPPBYGGING TABLE NEDENFOR */
     
     .studie-oppbyging{
-        width: 60%;
+        width: 100%;
         font-family: var(--oslometPrimaryFont);
     }
     .studie-oppbyging tr{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        width: 60%;
     }
     .studie-oppbyging caption{
         font-size: 1.4em;
@@ -185,7 +190,43 @@ main{
     }
 
     /* CSS for activity-side */
-    
+    .forstebilde{
+        width: auto;
+        height: auto;
+        margin-top: 3vw;
+        background-color: #FFEA00;
+    }
+    .forstebilde img{
+        width: 91vw;
+        padding: 1vw;
+        margin-bottom: 1vw;
+    }
+
+    .forstebilde h2{
+        font-size: 2.7em;
+        padding: 1vw;
+        margin: 1vw;
+    }
+
+    .forstebilde p{
+        font-size: 1.7em;
+        padding: 1vw;
+        margin: 1vw;
+    }
+
+    .forstebilde a{
+        width: 100%;
+        text-align: center;
+        height: auto;
+        text-decoration: none;
+        color: black;
+    }
+
+    .forstebilde a:hover{
+        color: #A1BE95;
+        transition: 0.3s;
+    }
+
     .sideKort{
         display: flex;
         flex-direction: row;
