@@ -221,13 +221,13 @@ main{
         margin-top: 5vw;
         text-align: center;
         background-color: #FFEA00;
+        height: 1vw;
     }
 
     .forstebilde a{
         background-color: #009739;
         border: 0.8vw solid #009739;
         color: #000;
-        padding: 2vw;
         font-weight: bold;
         text-decoration: none;
     }
