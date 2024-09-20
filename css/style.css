@@ -227,14 +227,16 @@ main{
     .forstebilde a{
         background-color: #009739;
         border: 0.8vw solid #009739;
-        color: #000;
+        color: rgb(255, 255, 255);
         font-weight: bold;
         text-decoration: none;
+        transition: 0.3s;
     }
 
     .forstebilde a:hover{
         color: #012169;
         transition: 0.3s;
+        padding: 1.5vw;
     }
 
     .sideKort{
