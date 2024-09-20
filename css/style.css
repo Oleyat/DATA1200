@@ -131,7 +131,6 @@ main{
         padding: 10px 15px;
         font-weight: bold;
     }
-<<<<<<< HEAD
 
     summary::after{ /* DETAIL CSS FUNNET MYE FRA https://www.sitepoint.com/style-html-details-element/ */
         content: '';
@@ -151,8 +150,6 @@ main{
         transform: rotate(-180deg);
     }
 
-=======
->>>>>>> d247b26d01989484908fd70f1cee6a6ac0121ca1
     /* STUDIE OPPBYGGING TABLE NEDENFOR */
     .studie-oppbyging{
         width: 100%;
