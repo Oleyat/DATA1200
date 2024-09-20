@@ -115,8 +115,11 @@ main{
     }
     details{
         width: 100%;
-        margin-left: 20%;
     }
+    summary{
+        text-align: center;
+    }
+
 
     /* STUDIE OPPBYGGING TABLE NEDENFOR */
     
@@ -129,6 +132,7 @@ main{
         flex-direction: row;
         flex-wrap: wrap;
         width: 60%;
+        margin-left: 20%;
     }
     .studie-oppbyging caption{
         font-size: 1.4em;
