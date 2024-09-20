@@ -11,12 +11,9 @@ html {
     --oslometSecondary: #2d850a;
     --oslometPrimaryFont: 'Tahoma', sans-serif;
 }
-
 h1, h2, h3, h4, h5, h6, p, a{
     font-family: var(--oslometPrimaryFont);
 }
-
-
 body{
     padding: 0; /* Uten disse to så vil det være lite mellomrom på siden og skjermen*/
     margin: 0;
@@ -134,6 +131,7 @@ main{
         padding: 10px 15px;
         font-weight: bold;
     }
+<<<<<<< HEAD
 
     summary::after{ /* DETAIL CSS FUNNET MYE FRA https://www.sitepoint.com/style-html-details-element/ */
         content: '';
@@ -153,8 +151,9 @@ main{
         transform: rotate(-180deg);
     }
 
+=======
+>>>>>>> d247b26d01989484908fd70f1cee6a6ac0121ca1
     /* STUDIE OPPBYGGING TABLE NEDENFOR */
-    
     .studie-oppbyging{
         width: 100%;
         font-family: var(--oslometPrimaryFont);
@@ -190,7 +189,6 @@ main{
         background-color: var(--oslometPrimary);
     }  MIDLERTIDIG COMMENT*/
     .studie-oppbyging td{
-
         border-right: 3px solid var(--oslometPrimary);
         border-bottom: 3px solid var(--oslometPrimary);
     }
@@ -217,19 +215,16 @@ main{
     .semesterFag p{
         width: 50%;
         margin-top: 2vw;
-
     }
     .semesterFag p:nth-child(odd){
         text-align: right;
     }
-
     .valgfag{
         background-image: url(../images/optional-icon.svg);
         background-position-y: bottom;
         background-position-x: right;
         background-repeat: no-repeat;
     }
-
     /* CSS for activity-side */
     .forstebilde{
         width: auto;
@@ -242,13 +237,11 @@ main{
         padding: 1vw;
         margin-bottom: 1vw;
     }
-
     .forstebilde h1{
         font-size: 2.7em;
         padding: 1vw;
         margin: 1vw;
     }
-
     .forstebilde p{
         font-size: 1.7em;
         padding: 1vw;
@@ -258,20 +251,21 @@ main{
         margin-top: 5vw;
         text-align: center;
         background-color: #FFEA00;
+        height: 1vw;
     }
-
     .forstebilde a{
-        background-color: #ffff;
-        padding: 2vw;
+        background-color: #009739;
+        border: 0.8vw solid #009739;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
         text-decoration: none;
-    }
-
-    .forstebilde a:hover{
-        color: #A1BE95;
         transition: 0.3s;
-        size-adjust: 10%;
     }
-
+    .forstebilde a:hover{
+        color: #012169;
+        transition: 0.3s;
+        padding: 1.5vw;
+    }
     .sideKort{
         display: flex;
         flex-direction: row;
@@ -295,12 +289,10 @@ main{
     .activityEsker p{
         font-size: 0.95em;
     }
-
     .activityEsker a{
         text-decoration: none;
         color: black;
     }
-
     .activityEsker a:hover{
         color: #A1BE95;
         transition: 0.3s;
@@ -350,7 +342,6 @@ main{
     footer img{
         width: 15vw;
     }
-
     /* CSS for accessibilty-side */
     .accesibility-test-flex{
         display: flex;
@@ -358,7 +349,6 @@ main{
         flex-grow: 1;
         flex-wrap: wrap;
     }
-
     .accesibility-test-flex img{
         width: 40vw;
         height: 25vw;
