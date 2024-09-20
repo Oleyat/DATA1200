@@ -186,14 +186,40 @@ main{
 
     /* CSS for activity-side */
     .forstebilde{
-        width: fit-content;
-        height: fit-content;
+        width: auto;
+        height: auto;
         margin-top: 3vw;
         background-color: #FFEA00;
     }
     .forstebilde img{
         width: 91vw;
         padding: 1vw;
+        margin-bottom: 1vw;
+    }
+
+    .forstebilde h2{
+        font-size: 2.7em;
+        padding: 1vw;
+        margin: 1vw;
+    }
+
+    .forstebilde p{
+        font-size: 1.7em;
+        padding: 1vw;
+        margin: 1vw;
+    }
+
+    .forstebilde a{
+        width: 100%;
+        text-align: center;
+        height: auto;
+        text-decoration: none;
+        color: black;
+    }
+
+    .forstebilde a:hover{
+        color: #A1BE95;
+        transition: 0.3s;
     }
 
     .sideKort{
