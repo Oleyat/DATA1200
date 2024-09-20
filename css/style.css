@@ -220,15 +220,17 @@ main{
     }
 
     .forstebilde a{
-        background-color: #ffff;
+        background-color: #009739;
+        border: 0.8vw solid #009739;
+        color: #000;
         padding: 2vw;
+        font-weight: bold;
         text-decoration: none;
     }
 
     .forstebilde a:hover{
-        color: #A1BE95;
+        color: #012169;
         transition: 0.3s;
-        size-adjust: 10%;
     }
 
     .sideKort{
