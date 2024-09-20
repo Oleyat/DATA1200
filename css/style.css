@@ -2,6 +2,7 @@ html {
     scroll-behavior: smooth;
     width: 100vw;
     height: 100%;
+    font-family: var(--oslometPrimaryFont);
     overflow-x: hidden; /* DENNE VIL VI IKKE HA MEN ORKER IKKE FIKSE PROBLEMET ENDA */
     
 }
@@ -114,12 +115,43 @@ main{
         text-decoration: underline;
     }
     details{
+        margin-top: 5vw;
+        margin-bottom: 5vw;
         width: 100%;
+        transition: 0.2s background linear;
     }
     summary{
         text-align: center;
+        height: 2vw;
+        font-size: 1.5em;
+        background-color: var(--oslometPrimary);
+        width: 60%;
+        margin-left: 20%;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 15px;
+        font-weight: bold;
     }
 
+    summary::after{ /* DETAIL CSS FUNNET MYE FRA https://www.sitepoint.com/style-html-details-element/ */
+        content: '';
+        width: 0;
+        height: 0;
+        border-top: 10px solid black;
+        border-inline: 7px solid transparent;
+        transition: 0.2s;
+    }
+    details > summary{
+        transition: color 1s;
+    }
+    details[open] > summary {
+        color: var(--oslometSecondary);
+    }
+    details[open] > summary::after {
+        transform: rotate(-180deg);
+    }
 
     /* STUDIE OPPBYGGING TABLE NEDENFOR */
     
@@ -161,6 +193,11 @@ main{
 
         border-right: 3px solid var(--oslometPrimary);
         border-bottom: 3px solid var(--oslometPrimary);
+    }
+    .emnegruppeTittel{
+        height: 5vw;
+        margin: 0;
+        padding: 0;
     }
 
     .semesterFag{
