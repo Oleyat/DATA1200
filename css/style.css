@@ -45,7 +45,7 @@ main{
         padding-left: 3.5vw;
         padding-right: 3.5vw;
     }
-    .main-header{
+    header{
         display: flex;
         flex-direction: row;
         background-color: var(--oslometPrimary);
@@ -67,6 +67,7 @@ main{
     .secondary-box{
         grid-column: 1/3;
         grid-row: 2;
+        font-size: 2em;
     }
     .aside-box{
         grid-column: 3/4;
@@ -112,18 +113,22 @@ main{
         transition: 0.2s;
         text-decoration: underline;
     }
-
+    details{
+        width: 100%;
+        margin-left: 20%;
+    }
 
     /* STUDIE OPPBYGGING TABLE NEDENFOR */
     
     .studie-oppbyging{
-        width: 60%;
+        width: 100%;
         font-family: var(--oslometPrimaryFont);
     }
     .studie-oppbyging tr{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        width: 60%;
     }
     .studie-oppbyging caption{
         font-size: 1.4em;
@@ -261,22 +266,21 @@ main{
     }
     /* FOOTER */
     footer{
-        height: 25vw;
-        padding-top: 2vw;
+        height: fit-content;
         width: 100%;
         background-color: var(--oslometPrimary);
-        margin-top: 10vw;
+        padding: 2vw;
         display: flex;
         flex-direction: row;
+        
     }
     footer h4{
         font-size: 1em;
     }
     .footer-section{
-        padding-left: 10vw;
+        padding-left: 5vw;
         flex-grow: 1;
         text-align: left;
-        
     }
     footer li{
         list-style: none;
@@ -288,7 +292,16 @@ main{
         text-decoration: none;
         transition: 0.25s;
         color: #000;
-        font-size: 1em;
+        font-size: 1.2em;
+    }
+    footer h4{
+        margin-top: 2vw;
+        margin-left: 0vw;
+    }
+    footer li,a{
+        margin: 1.5vw;
+        margin-right: 3vw;
+        margin-left: 0vw;
     }
     footer a:hover{
         text-decoration: underline;
@@ -309,6 +322,7 @@ main{
         width: 40vw;
         height: 25vw;
         margin: 3vw;
+        border-radius: 3vw;
     }
 }
 
