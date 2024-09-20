@@ -185,7 +185,16 @@ main{
     }
 
     /* CSS for activity-side */
-    .forste
+    .forstebilde{
+        width: fit-content;
+        height: fit-content;
+        margin-top: 3vw;
+        background-color: #FFEA00;
+    }
+    .forstebilde img{
+        width: 91vw;
+        padding: 1vw;
+    }
 
     .sideKort{
         display: flex;
