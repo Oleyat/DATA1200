@@ -131,7 +131,6 @@ main{
         padding: 10px 15px;
         font-weight: bold;
     }
-
     summary::after{ /* DETAIL CSS FUNNET MYE FRA https://www.sitepoint.com/style-html-details-element/ */
         content: '';
         width: 0;
