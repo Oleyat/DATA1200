@@ -6,7 +6,7 @@ html {
     
 }
 :root{ /* Legger inn variabler for farge stilen (!)*/
-    --oslometPrimary: #A1BE95; /* Primary colour*/
+    --oslometPrimary: #FFEA00; /* Primary colour*/
     --oslometSecondary: #2d850a;
     --oslometPrimaryFont: 'Tahoma', sans-serif;
 }
@@ -185,6 +185,7 @@ main{
     }
 
     /* CSS for activity-side */
+    
     .sideKort{
         display: flex;
         flex-direction: row;
