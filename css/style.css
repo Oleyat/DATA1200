@@ -7,8 +7,8 @@ html {
     
 }
 :root{ /* Legger inn variabler for farge stilen (!)*/
-    --oslometPrimary: #FFEA00; /* Primary colour*/
-    --oslometSecondary: #2d850a;
+    --oslometPrimary: #ffee32; /* Primary colour*/
+    --oslometSecondary: #ffd91a;
     --oslometPrimaryFont: 'Tahoma', sans-serif;
 }
 h1, h2, h3, h4, h5, h6, p, a{
@@ -28,6 +28,9 @@ main{
     border: 1px solid green;
 } */
 @media (min-width: 1px){
+    table{
+        border-collapse: collapse;
+    }
     /* Index.html grid PC */
     h1{ /* H1 Stil for siden */
         color: #000;
@@ -111,6 +114,34 @@ main{
         transition: 0.2s;
         text-decoration: underline;
     }
+
+    .studie-informasjon-table{
+        width: 100%;
+    
+    }
+    .studie-informasjon-table caption{
+        font-size: 1.4em;
+        text-align: left;
+    }
+    .studie-informasjon-table tr{
+        width: 100%;
+        height: 5vw;
+    }
+    .studie-informasjon-table th{
+        height: 10px;
+        padding-left: 1vw;
+        text-align: left;
+    }
+    .studie-informasjon-table td{
+        width: 50px;
+        height: 10px;
+        padding-right: 1vw;
+    }
+    .studie-informasjon-table tr:nth-child(odd){
+        background-color: var(--oslometSecondary);
+    }
+
+
     details{
         margin-top: 5vw;
         margin-bottom: 5vw;
@@ -123,7 +154,7 @@ main{
         font-size: 1.5em;
         background-color: var(--oslometPrimary);
         width: 60%;
-        margin-left: 20%;
+/*         margin-left: 20%;  MIDTEN */
         list-style: none;
         display: flex;
         justify-content: space-between;
@@ -131,8 +162,8 @@ main{
         padding: 10px 15px;
         font-weight: bold;
     }
-    summary::after{ /* DETAIL CSS FUNNET MYE FRA https://www.sitepoint.com/style-html-details-element/ */
-        content: '';
+    summary::after{ /* DETAIL CSS - Brukt https://www.sitepoint.com/style-html-details-element/ som hjelå til å style.*/
+        content: ''; /* Brukt mest spesifikt for å modifisere details marker elementet slik at det roterer på seg selv. */
         width: 0;
         height: 0;
         border-top: 10px solid black;
@@ -159,14 +190,9 @@ main{
         flex-direction: row;
         flex-wrap: wrap;
         width: 60%;
-        margin-left: 20%;
+/*         margin-left: 20%; MIDTEN*/
     }
-    .studie-oppbyging caption{
-        font-size: 1.4em;
-    }
-    .studie-oppbyging{
-        border-collapse: collapse;
-    }
+
     .studie-oppbyging th, td{
         padding: 0.1em;
         margin: 0.25vw
