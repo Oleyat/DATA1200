@@ -143,15 +143,15 @@ main{
 
 
     details{
-        margin-top: 5vw;
-        margin-bottom: 5vw;
+        margin-top: 2.5vw;
+        margin-bottom: 2.5vw;
         width: 100%;
         transition: 0.2s background linear;
     }
     summary{
         text-align: center;
         height: 2vw;
-        font-size: 1.5em;
+        font-size: 1.25em;
         background-color: var(--oslometPrimary);
         width: 60%;
 /*         margin-left: 20%;  MIDTEN */
@@ -166,8 +166,8 @@ main{
         content: ''; /* Brukt mest spesifikt for å modifisere details marker elementet slik at det roterer på seg selv. */
         width: 0;
         height: 0;
-        border-top: 10px solid black;
-        border-inline: 7px solid transparent;
+        border-top: 15px solid black;
+        border-inline: 10px solid transparent;
         transition: 0.2s;
     }
     details > summary{
