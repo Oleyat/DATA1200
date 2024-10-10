@@ -120,12 +120,13 @@ main{
     
     }
     .studie-informasjon-table caption{
-        font-size: 1.4em;
+        font-size: 1.6em;
         text-align: left;
     }
     .studie-informasjon-table tr{
         width: 100%;
-        height: 5vw;
+        height: 6.5vw;
+        border-top: 1px solid black;
     }
     .studie-informasjon-table th{
         height: 10px;
@@ -138,29 +139,33 @@ main{
         padding-right: 1vw;
     }
     .studie-informasjon-table tr:nth-child(odd){
-        background-color: var(--oslometSecondary);
+/*         background-color: var(--oslometSecondary); */
     }
 
 
     details{
-        margin-top: 2.5vw;
-        margin-bottom: 2.5vw;
-        width: 100%;
+        margin: 1.25vw;
+        width: 50%;
         transition: 0.2s background linear;
+    }
+    details:hover{
+        text-decoration: underline;
     }
     summary{
         text-align: center;
         height: 2vw;
-        font-size: 1.25em;
-        background-color: var(--oslometPrimary);
-        width: 60%;
+        font-size: 1em;
+        background-color: var(--oslometPrimary); 
 /*         margin-left: 20%;  MIDTEN */
         list-style: none;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-between; /* flytter "pilen" til høyre siden */
         align-items: center;
         padding: 10px 15px;
         font-weight: bold;
+    }
+    .long-details{
+        width: 90%;
     }
     summary::after{ /* DETAIL CSS - Brukt https://www.sitepoint.com/style-html-details-element/ som hjelå til å style.*/
         content: ''; /* Brukt mest spesifikt for å modifisere details marker elementet slik at det roterer på seg selv. */
@@ -171,13 +176,26 @@ main{
         transition: 0.2s;
     }
     details > summary{
-        transition: color 1s;
+        transition: color 0.3s;
+        
     }
     details[open] > summary {
-        color: var(--oslometSecondary);
+/*         color: var(--oslometPrimary); */
     }
     details[open] > summary::after {
         transform: rotate(-180deg);
+    }
+    details p{
+        text-align: left;
+        width: 90vw;
+    }
+    .flex-article{
+        margin-top: 2.5vw;
+        margin-bottom: 2.5vw;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 100%;
     }
 
     /* STUDIE OPPBYGGING TABLE NEDENFOR */
@@ -249,7 +267,7 @@ main{
     }
     /* CSS for activity-side */
     .index-top-fargedrop-innrykk{
-       
+
     }
     .forstebilde{
         width: auto;
