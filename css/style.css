@@ -37,6 +37,9 @@ main{
         font-family: var(--oslometPrimaryFont);
         font-size: 2em; /* Dobbler H1 størrelse. */
     }
+    .gap-top{
+        margin-top: 5vw;
+    }
     .index-top-fargedrop-innrykk{
         background-color: var(--oslometPrimary);
         padding-left: 3vw;
@@ -142,10 +145,19 @@ main{
 /*         background-color: var(--oslometSecondary); */
     }
 
+    .info-kort{
+        border-top: 1px solid black;
+        width: 100%;
+        padding-right: 2.5vw;
+        padding-left: 2.5vw;
+        margin-left: 2.5vw;
+        margin-right: 2.5vw;
+    }
+
 
     details{
         margin: 1.25vw;
-        width: 50%;
+        width: 80%;
         transition: 0.2s background linear;
     }
     details:hover{
@@ -163,9 +175,6 @@ main{
         align-items: center;
         padding: 10px 15px;
         font-weight: bold;
-    }
-    .long-details{
-        width: 90%;
     }
     summary::after{ /* DETAIL CSS - Brukt https://www.sitepoint.com/style-html-details-element/ som hjelå til å style.*/
         content: ''; /* Brukt mest spesifikt for å modifisere details marker elementet slik at det roterer på seg selv. */
@@ -187,16 +196,17 @@ main{
     }
     details p{
         text-align: left;
-        width: 90vw;
+        width: 80%;
     }
-    .flex-article{
+/*     .flex-article{
         margin-top: 2.5vw;
         margin-bottom: 2.5vw;
+        margin-right: 2.5vw;
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
-        width: 100%;
-    }
+        width: 60%;
+    } */
 
     /* STUDIE OPPBYGGING TABLE NEDENFOR */
     .studie-oppbyging{
