@@ -146,14 +146,30 @@ main{
     }
 
     .info-kort{
-        border-top: 1px solid black;
         width: 100%;
-        padding-right: 2.5vw;
-        padding-left: 2.5vw;
-        margin-left: 2.5vw;
-        margin-right: 2.5vw;
+        margin-bottom: 0;
+        padding-bottom: 0;
     }
-
+    .info-kort h2{
+        font-size: 2em;
+        border-bottom: 1px solid black;
+        padding-bottom: 0.2vw;
+    }
+    .info-kort h3{
+        padding-left: 0.5vw;
+        padding-top: 1vw;
+        font-size: 1.5em;
+    }
+    .info-kort img{
+        width: 80%;
+        padding-right: 10%;
+        padding-top: 0%;
+        padding-bottom: 0%;
+    }
+    .info-kort p, h2, h3{
+        padding-left: 0.5vw;
+        margin: 0;
+    }
 
     details{
         margin: 1.25vw;
@@ -352,6 +368,7 @@ main{
     }
     /* FOOTER */
     footer{
+        margin-top: 15vw;
         height: fit-content;
         width: 100%;
         background-color: var(--oslometPrimary);
