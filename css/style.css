@@ -7,8 +7,8 @@ html {
     
 }
 :root{ /* Legger inn variabler for farge stilen (!)*/
-    --oslometPrimary: #ffee32; /* Primary colour*/
-    --oslometSecondary: #ffd91a;
+    --oslometPrimary: #a8e2ff; /* Primary colour*/
+    --oslometSecondary: #73d0ff;
     --oslometPrimaryFont: 'Tahoma', sans-serif;
 }
 h1, h2, h3, h4, h5, h6, p, a{
@@ -37,8 +37,14 @@ main{
         font-family: var(--oslometPrimaryFont);
         font-size: 2em; /* Dobbler H1 størrelse. */
     }
+    .med-header{
+        font-size:2em;
+    }
     .gap-top{
         margin-top: 5vw;
+    }
+    .gap-top-bigger{
+        margin-top: 15vw;
     }
     .index-top-fargedrop-innrykk{
         background-color: var(--oslometPrimary);
@@ -151,7 +157,6 @@ main{
         padding-bottom: 0;
     }
     .info-kort h2{
-        font-size: 2em;
         border-bottom: 1px solid black;
         padding-bottom: 0.2vw;
     }
@@ -176,9 +181,7 @@ main{
         width: 80%;
         transition: 0.2s background linear;
     }
-    details:hover{
-        text-decoration: underline;
-    }
+
     summary{
         text-align: center;
         height: 2vw;
@@ -191,8 +194,9 @@ main{
         align-items: center;
         padding: 10px 15px;
         font-weight: bold;
+        transition: 0.2s;
     }
-    summary::after{ /* DETAIL CSS - Brukt https://www.sitepoint.com/style-html-details-element/ som hjelå til å style.*/
+    summary::after{ /* DETAIL CSS - Brukt https://www.sitepoint.com/style-html-details-element/ som bunnmur til å style. Etter det så har vi endret på selv og lagt til egne deler i designet vi valgte.*/
         content: ''; /* Brukt mest spesifikt for å modifisere details marker elementet slik at det roterer på seg selv. */
         width: 0;
         height: 0;
@@ -200,11 +204,18 @@ main{
         border-inline: 10px solid transparent;
         transition: 0.2s;
     }
+    summary:hover{
+        text-decoration: underline;
+        font-size: 1.07em;
+        transition: 0.1s;
+    }
     details > summary{
         transition: color 0.3s;
         
     }
     details[open] > summary {
+        text-decoration: underline;
+        font-size: 1.07em;
 /*         color: var(--oslometPrimary); */
     }
     details[open] > summary::after {
@@ -233,7 +244,7 @@ main{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        width: 60%;
+        width: 100%;
 /*         margin-left: 20%; MIDTEN*/
     }
 
@@ -290,6 +301,28 @@ main{
         background-position-y: bottom;
         background-position-x: right;
         background-repeat: no-repeat;
+    }
+    .studenthistorier div{
+        width: 95%;
+        background-color: var(--oslometPrimary);
+        padding-bottom: 2vw;
+    }
+    .studenthistorier p{
+        margin: 0;
+        padding-left: 0.5vw;
+        padding-right: 0.5vw;
+    }
+    .studenthistorier h3{
+        font-size: 2em;
+        margin-bottom: 1vw;
+        margin-top: 1vw;
+    }
+    .studenthistorier img{
+        max-width: 100%;
+    }
+    .studenthistorier div:hover{
+        background-color: var(--oslometSecondary);
+        transition: 1s;
     }
     /* CSS for activity-side */
     .index-top-fargedrop-innrykk{
