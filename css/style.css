@@ -1,260 +1,322 @@
 html {
     scroll-behavior: smooth;
-    width: 100vw;
+    width: 100%;
     height: 100%;
     font-family: var(--oslometPrimaryFont);
-    overflow-x: hidden; /* DENNE VIL VI IKKE HA MEN ORKER IKKE FIKSE PROBLEMET ENDA */
-    
+
 }
-:root{ /* Legger inn variabler for farge stilen (!)*/
-    --oslometPrimary: #a8e2ff; /* Primary colour*/
+
+:root {
+    /* Legger inn variabler for farge stilen (!)*/
+    --oslometPrimary: #a8e2ff;
+    /* Primary colour*/
     --oslometSecondary: #73d0ff;
     --oslometPrimaryFont: 'Tahoma', sans-serif;
 }
-h1, h2, h3, h4, h5, h6, p, a{
+
+h1,h2,h3,h4,h5,h6,p, a {
     font-family: var(--oslometPrimaryFont);
 }
-body{
-    padding: 0; /* Uten disse to så vil det være lite mellomrom på siden og skjermen*/
+
+body {
+    padding: 0;
+    /* Uten disse to så vil det være lite mellomrom på siden og skjermen*/
     margin: 0;
-    width: 100vw;
+    width: 100%;
     height: 100%;
 }
-main{
 
-}
+main {}
+
 
 /* *{
     border: 1px solid green;
 } */
-@media (min-width: 1px){
-    table{
-        border-collapse: collapse;
-    }
-    /* Index.html grid PC */
-    h1{ /* H1 Stil for siden */
-        color: #000;
-        font-family: var(--oslometPrimaryFont);
-        font-size: 2em; /* Dobbler H1 størrelse. */
-    }
-    a{
-        text-decoration-color: #3e5eff;
-        text-decoration-thickness: 2.5px;
-        text-decoration-skip-ink: none;
-        color: black;
-    }
-    a:hover{
-        text-decoration-color: #000;
-    }
-    .default-btn{
-        width: 90%;
-        background-color: var(--oslometPrimary);
-        border-width: 10px;
-        padding: 30px;
-        border-color: var(--oslometPrimary);
-        border-radius: 20px 20px 20px 20px;
-        font-size: 1.2em;
-        text-align: center;
-        font-weight: bolder;
-        transition: 0.2s;
-        color: black;
-    }
-    .default-btn:hover{
-        background-color: var(--oslometSecondary);
-        transition: 0.2s;
-    }
-    .default-btn a{
-        text-decoration: none;
-        color: black;
-    }
-    .med-header{
-        font-size:2em;
-    }
-    .gap-top{
-        margin-top: 5vw;
-    }
-    .gap-top-bigger{
-        margin-top: 15vw;
-    }
-    .index-top-fargedrop-innrykk{
-        background-color: var(--oslometPrimary);
-        padding-left: 3vw;
-        padding-right: 3vw;
-    }
-    .innrykk{
-        padding-left: 3.5vw;
-        padding-right: 3.5vw;
-    }
-    header{
-        display: flex;
-        flex-direction: row;
-        background-color: var(--oslometPrimary);
-        height: 6em;
-    }
-    .grid-container{ /* Container for grid- som vises på index */
-        display: grid;
-        grid-template-columns: 30vw auto minmax(300px, 30vw) 40px;
-        grid-auto-rows: minmax(100px, auto);
-    }
-    .main-box{
-        grid-column: 1/3;
-        grid-row: 1;
-    }
-    .main-box img{
-        width: 60vw;
-        height: 30vw;
-    }
-    .secondary-box{
-        grid-column: 1/3;
-        grid-row: 2;
-        font-size: 2em;
-    }
-    .aside-box{
-        grid-column: 3/4;
-        grid-row: 1;
-        font-family: var(--oslometPrimaryFont);
-    }
-    .header-left{ /* Logoen er her */
-        width: 10%;
-        margin-top: 1.25vw;
-        margin-left: 5vw;
-    }
-    .header-left img{
-        width: 6em; /* Bruker em fordi vi vil at logoen skal være så stor i relativitet til teksten ved siden av. */
-    }
-    /* Navigasjons bar PC */
-    /* Må omprogrammeres for å få bedre flyt med forskjellige størrelser */
-    .nav-bar{
-        grid-column: 2/3;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-    }
-    .nav-bar ul{
-        display: flex;
-        flex-direction: row;
-    }
-    .nav-bar  li{
-        margin-top: 3vw;
-        margin-left: 3vw;
-    }
-    .nav-bar  ul li{
-        list-style: none;
-    }
-    .nav-bar  a{ /* Selve navbar teksten. */
-        font-size: 1.1em;
-        font-family:var(--oslometPrimaryFont);
-        text-decoration: none;
-        color: #000;
-        transition: 0.2s;
-    }
-    .nav-bar  a:hover{ /* Efekten som kommer når du legger musa over teksten.*/
-      /*   background-color: var(--oslometSecondary); */
-        transition: 0.2s;
-        text-decoration: underline;
-    }
+table {
+    border-collapse: collapse;
+}
 
-    .studie-informasjon-table{
-        width: 100%;
-    
-    }
-    .studie-informasjon-table caption{
-        font-size: 1.6em;
-        text-align: left;
-    }
-    .studie-informasjon-table tr{
-        width: 100%;
-        height: 6.5vw;
-        border-top: 1px solid black;
-    }
-    .studie-informasjon-table th{
-        height: 10px;
-        padding-left: 1vw;
-        text-align: left;
-    }
-    .studie-informasjon-table td{
-        width: 50px;
-        height: 10px;
-        padding-right: 1vw;
-    }
-    .studie-informasjon-table tr:nth-child(odd){
-/*         background-color: var(--oslometSecondary); */
-    }
+/* Index.html grid PC */
+h1 {
+    /* H1 Stil for siden */
+    color: #000;
+    font-family: var(--oslometPrimaryFont);
+    font-size: 2em;
+    /* Dobbler H1 størrelse. */
+}
 
-    .info-kort{
-        width: 100%;
-        margin-bottom: 0;
-        padding-bottom: 0;
-    }
-    .info-kort h2{
-        border-bottom: 1px solid black;
-        padding-bottom: 0.2vw;
-    }
-    .info-kort h3{
-        padding-left: 0.5vw;
-        padding-top: 1vw;
-        font-size: 1.5em;
-    }
-    .info-kort img{
-        width: 80%;
-        padding-right: 10%;
-        padding-top: 0%;
-        padding-bottom: 0%;
-    }
-    .info-kort p, h2, h3{
-        padding-left: 0.5vw;
-        margin: 0;
-    }
+a {
+    text-decoration-color: #3e5eff;
+    text-decoration-thickness: 2.5px;
+    text-decoration-skip-ink: none;
+    color: black;
+}
 
-    details{
-        margin: 1.25vw;
-        width: 80%;
-        transition: 0.2s background linear;
-    }
+a:hover {
+    text-decoration-color: #000;
+}
 
-    summary{
-        text-align: center;
-        height: 2vw;
-        font-size: 1em;
-        background-color: var(--oslometPrimary); 
-/*         margin-left: 20%;  MIDTEN */
-        list-style: none;
-        display: flex;
-        justify-content: space-between; /* flytter "pilen" til høyre siden */
-        align-items: center;
-        padding: 10px 15px;
-        font-weight: bold;
-        transition: 0.2s;
-    }
-    summary::after{ /* DETAIL CSS - Brukt https://www.sitepoint.com/style-html-details-element/ som bunnmur til å style. Etter det så har vi endret på selv og lagt til egne deler i designet vi valgte.*/
-        content: ''; /* Brukt mest spesifikt for å modifisere details marker elementet slik at det roterer på seg selv. */
-        width: 0;
-        height: 0;
-        border-top: 15px solid black;
-        border-inline: 10px solid transparent;
-        transition: 0.2s;
-    }
-    summary:hover{
-        text-decoration: underline;
-        font-size: 1.07em;
-        transition: 0.1s;
-    }
-    details > summary{
-        transition: color 0.3s;
-        
-    }
-    details[open] > summary {
-        text-decoration: underline;
-        font-size: 1.07em;
-/*         color: var(--oslometPrimary); */
-    }
-    details[open] > summary::after {
-        transform: rotate(-180deg);
-    }
-    details p{
-        text-align: left;
-        width: 80%;
-    }
+.default-btn {
+    width: 80%;
+    background-color: var(--oslometPrimary);
+    border-width: 10px;
+    padding: 30px;
+    border-color: var(--oslometPrimary);
+    border-radius: 20px 20px 20px 20px;
+    font-size: 1em;
+    text-align: center;
+    font-weight: bolder;
+    transition: 0.2s;
+    color: black;
+}
+
+.default-btn:hover {
+    background-color: var(--oslometSecondary);
+    transition: 0.2s;
+}
+
+.default-btn a {
+    text-decoration: none;
+    color: black;
+}
+
+.med-header {
+    font-size: 2em;
+}
+
+.gap-top {
+    margin-top: 5vw;
+}
+
+.gap-top-bigger {
+    margin-top: 15vw;
+}
+
+.index-top-fargedrop-innrykk {
+    background-color: var(--oslometPrimary);
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+
+.innrykk {
+    padding-left: 3.5vw;
+    padding-right: 3.5vw;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--oslometPrimary);
+    height: 6em;
+}
+
+.grid-container {
+    /* Container for grid- som vises på index */
+    display: grid;
+    grid-template-columns: 30vw auto minmax(300px, 30vw);
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.main-box {
+    grid-column: 1/3;
+    grid-row: 1;
+}
+
+.main-box img {
+    width: 60vw;
+    height: 30vw;
+}
+
+.secondary-box {
+    grid-column: 1/3;
+    grid-row: 2;
+    font-size: 2em;
+}
+
+.aside-box {
+    grid-column: 3/4;
+    grid-row: 1;
+    font-family: var(--oslometPrimaryFont);
+}
+
+.header-left {
+    /* Logoen er her */
+    width: 10%;
+    margin-top: 1.25vw;
+    margin-left: 5vw;
+}
+
+.header-left img {
+    width: 6em;
+    /* Bruker em fordi vi vil at logoen skal være så stor i relativitet til teksten ved siden av. */
+}
+
+/* Navigasjons bar PC */
+/* Må omprogrammeres for å få bedre flyt med forskjellige størrelser */
+.nav-bar {
+    grid-column: 2/3;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-bar ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-bar li {
+    margin-top: 3vw;
+    margin-left: 3vw;
+}
+
+.nav-bar ul li {
+    list-style: none;
+}
+
+.nav-bar a {
+    /* Selve navbar teksten. */
+    font-size: 1.1em;
+    font-family: var(--oslometPrimaryFont);
+    text-decoration: none;
+    color: #000;
+    transition: 0.2s;
+}
+
+.nav-bar a:hover {
+    /* Efekten som kommer når du legger musa over teksten.*/
+    /*   background-color: var(--oslometSecondary); */
+    transition: 0.2s;
+    text-decoration: underline;
+}
+.studie-informasjon-table{
+    width: 100%;
+}
+
+.studie-informasjon-table tbody{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.studie-informasjon-table caption {
+    font-size: 1.6em;
+    text-align: left;
+}
+
+.studie-informasjon-table tr {
+    height: 6.5vw;
+    width: 100%;
+    margin: auto;
+    border-top: 1px solid black;
+}
+
+.studie-informasjon-table th {
+    height: 10px;
+    width: 60px;
+    padding-left: 1vw;
+    text-align: left;
+}
+
+.studie-informasjon-table td {
+    width: 100%;
+    text-align: right;
+    height: 10px;
+    padding-right: 1vw;
+}
+
+
+
+.info-kort {
+    width: 100%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.info-kort h2 {
+    border-bottom: 1px solid black;
+    padding-bottom: 0.2vw;
+}
+
+.info-kort h3 {
+    padding-left: 0.5vw;
+    padding-top: 1vw;
+    font-size: 1.5em;
+}
+
+.info-kort img {
+    width: 80%;
+    padding-right: 10%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+}
+
+.info-kort p,
+h2,
+h3 {
+    padding-left: 0.5vw;
+    margin: 0;
+}
+
+details {
+    margin: 1.25vw;
+    width: 80%;
+    transition: 0.2s background linear;
+}
+
+summary {
+    text-align: center;
+    height: 2vw;
+    font-size: 1em;
+    background-color: var(--oslometPrimary);
+    /*         margin-left: 20%;  MIDTEN */
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    /* flytter "pilen" til høyre siden */
+    align-items: center;
+    padding: 10px 15px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+summary::after {
+    /* DETAIL CSS - Brukt https://www.sitepoint.com/style-html-details-element/ som bunnmur til å style. Etter det så har vi endret på selv og lagt til egne deler i designet vi valgte.*/
+    content: '';
+    /* Brukt mest spesifikt for å modifisere details marker elementet slik at det roterer på seg selv. */
+    width: 0;
+    height: 0;
+    border-top: 15px solid black;
+    border-inline: 10px solid transparent;
+    transition: 0.2s;
+}
+
+summary:hover {
+    text-decoration: underline;
+    font-size: 1.07em;
+    transition: 0.1s;
+}
+
+details>summary {
+    transition: color 0.3s;
+
+}
+
+details[open]>summary {
+    text-decoration: underline;
+    font-size: 1.07em;
+    /*         color: var(--oslometPrimary); */
+}
+
+details[open]>summary::after {
+    transform: rotate(-180deg);
+}
+
+details p {
+    text-align: left;
+    width: 80%;
+}
+
 /*     .flex-article{
         margin-top: 2.5vw;
         margin-bottom: 2.5vw;
@@ -265,232 +327,273 @@ main{
         width: 60%;
     } */
 
-    /* STUDIE OPPBYGGING TABLE NEDENFOR */
-    .studie-oppbyging{
-        width: 100%;
-        font-family: var(--oslometPrimaryFont);
-    }
-    .studie-oppbyging tr{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 100%;
-/*         margin-left: 20%; MIDTEN*/
-    }
+/* STUDIE OPPBYGGING TABLE NEDENFOR */
+.studie-oppbyging {
+    width: 100%;
+    font-family: var(--oslometPrimaryFont);
+}
 
-    .studie-oppbyging th, td{
-        padding: 0.1em;
-        margin: 0.25vw
-    }
-    .studie-oppbyging th{
-        font-size: 1em;
-        background-color: var(--oslometPrimary);
-        flex-grow: 1;
-        width: 10vw;
-        width: 100%;
-        margin-right: 1vw;
-        margin-bottom: 2vw;
-        margin-top: 2vw;
-    }
+.studie-oppbyging tr {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    /*         margin-left: 20%; MIDTEN*/
+}
+
+.studie-oppbyging th,
+td {
+    padding: 0.1em;
+    margin: 0.25vw
+}
+
+.studie-oppbyging th {
+    font-size: 1em;
+    background-color: var(--oslometPrimary);
+    flex-grow: 1;
+    width: 10vw;
+    width: 100%;
+    margin-right: 1vw;
+    margin-bottom: 2vw;
+    margin-top: 2vw;
+}
+
 /*     .studie-oppbyging tr:nth-child(even){
         background-color: var(--oslometPrimary);
     }  MIDLERTIDIG COMMENT*/
-    .studie-oppbyging td{
-        border-right: 3px solid var(--oslometPrimary);
-        border-bottom: 3px solid var(--oslometPrimary);
-    }
-    .emnegruppeTittel{
-        height: 5vw;
-        margin: 0;
-        padding: 0;
-    }
-
-    .semesterFag{
-        display: flex;
-        flex-direction: row;
-        font-size: 0.8em;
-        width: 14.5vw;
-        height: 5vw;
-        flex-wrap: wrap;
-    }
-    .semesterFag h4{
-        width: 100%;
-        margin: 0;
-        height: 5%;
-        text-decoration: underline 2px var(--oslometPrimary);
-    }
-    .semesterFag p{
-        width: 50%;
-        margin-top: 2vw;
-    }
-    .semesterFag p:nth-child(odd){
-        text-align: right;
-    }
-    .valgfag{
-        background-image: url(../images/optional-icon.svg);
-        background-position-y: bottom;
-        background-position-x: right;
-        background-repeat: no-repeat;
-    }
-    .studenthistorier div{ /* MAKE ROUNDED BORDERS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-        width: 95%; 
-        background-color: var(--oslometPrimary);
-        padding-bottom: 2vw;
-        border-style: solid;
-        border-color: var(--oslometPrimary);
-        border-radius: 0px  0px 20px 20px;
-    }
-    .studenthistorier p{
-        margin: 0;
-        padding-left: 0.5vw;    
-        padding-right: 0.5vw;
-    }
-    .studenthistorier h3{
-        font-size: 2em;
-        margin-bottom: 1vw;
-        margin-top: 1vw;
-    }
-    .studenthistorier img{
-        max-width: 100%;
-    }
-    .studenthistorier div:hover{
-        background-color: var(--oslometSecondary);
-        transition: 0.5s;
-    }
-    /* CSS for activity-side */
-    .index-top-fargedrop-innrykk{
-
-    }
-    .forstebilde{
-        width: auto;
-        height: 72vw;
-        margin-top: 3vw;
-        background-color: #FFEA00;
-    }
-    .forstebilde img{
-        width: 91vw;
-        padding: 1vw;
-        margin-bottom: 1vw;
-    }
-    .forstebilde h1{
-        font-size: 2.7em;
-        padding: 1vw;
-        margin: 1vw;
-    }
-    .forstebilde p{
-        font-size: 1.7em;
-        padding: 1vw;
-        margin: 1vw;
-    }
-    .forstebilde p:nth-child(even){
-        margin-top: 5vw;
-        text-align: center;
-        background-color: #FFEA00;
-        height: 1vw;
-    }
-    .forstebilde a{
-        background-color: #009739;
-        border: 0.8vw solid #009739;
-        color: rgb(255, 255, 255);
-        font-weight: bold;
-        text-decoration: none;
-        transition: 0.3s;
-    }
-    .forstebilde a:hover{
-        color: #012169;
-        transition: 0.3s;
-        padding: 1.5vw;
-    }
-    .sideKort{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        height: 100%;
-        width: 70%;
-        margin-top: 10vw;
-        margin: auto;
-    }
-    .activityEsker{
-        width: 27vw;
-        height: 36vw;
-        flex-grow: 1;
-        padding: 1vw;
-        border: 10px solid black
-    }
-    .activityEsker img{
-        width: 100%;
-        height: 100%;
-    }
-    .activityEsker p{
-        font-size: 0.95em;
-    }
-    .activityEsker a{
-        text-decoration: none;
-        color: black;
-    }
-    .activityEsker a:hover{
-        color: #A1BE95;
-        transition: 0.3s;
-    }
-    /* FOOTER */
-    footer{
-        height: fit-content;
-        width: 100%;
-        background-color: var(--oslometPrimary);
-        padding: 2vw;
-        display: flex;
-        flex-direction: row;
-        
-    }
-    footer h4{
-        font-size: 1em;
-    }
-    .footer-section{
-        padding-left: 5vw;
-        flex-grow: 1;
-        text-align: left;
-    }
-    footer li{
-        list-style: none;
-    }
-    footer ul{
-        padding: 0;
-    }
-    footer a, p{
-        text-decoration: none;
-        transition: 0.25s;
-        color: #000;
-        font-size: 1.2em;
-    }
-    footer h4{
-        margin-top: 2vw;
-        margin-left: 0vw;
-    }
-    footer li,a{
-        margin: 1.5vw;
-        margin-right: 3vw;
-        margin-left: 0vw;
-    }
-    footer a:hover{
-        text-decoration: underline;
-    }
-    footer img{
-        width: 15vw;
-    }
-    /* CSS for accessibilty-side */
-    .accesibility-test-flex{
-        display: flex;
-        flex-direction: row;
-        flex-grow: 1;
-        flex-wrap: wrap;
-    }
-    .accesibility-test-flex img{
-        width: 40vw;
-        height: 25vw;
-        margin: 3vw;
-        border-radius: 3vw;
-    }
+.studie-oppbyging td {
+    border-right: 3px solid var(--oslometPrimary);
+    border-bottom: 3px solid var(--oslometPrimary);
 }
+
+.emnegruppeTittel {
+    height: 5vw;
+    margin: 0;
+    padding: 0;
+}
+
+.semesterFag {
+    display: flex;
+    flex-direction: row;
+    font-size: 0.8em;
+    width: 14.5vw;
+    height: 5vw;
+    flex-wrap: wrap;
+}
+
+.semesterFag h4 {
+    width: 100%;
+    margin: 0;
+    height: 5%;
+    text-decoration: underline 2px var(--oslometPrimary);
+    text-decoration-skip-ink: none;
+}
+
+.semesterFag p {
+    width: 50%;
+    margin-top: 2vw;
+}
+
+.semesterFag p:nth-child(odd) {
+    text-align: right;
+}
+
+.valgfag {
+    background-image: url(../images/optional-icon.svg);
+    background-position-y: bottom;
+    background-position-x: right;
+    background-repeat: no-repeat;
+}
+
+.studenthistorier div {
+    /* MAKE ROUNDED BORDERS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+    width: 95%;
+    background-color: var(--oslometPrimary);
+    padding-bottom: 2vw;
+    border-style: solid;
+    border-color: var(--oslometPrimary);
+    border-radius: 0px 0px 20px 20px;
+}
+
+.studenthistorier p {
+    margin: 0;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+
+}
+
+.studenthistorier h3 {
+    font-size: 2em;
+    margin-bottom: 1vw;
+    margin-top: 1vw;
+}
+
+.studenthistorier img {
+    max-width: 100%;
+}
+
+.studenthistorier div:hover {
+    background-color: var(--oslometSecondary);
+    transition: 0.5s;
+}
+
+/* CSS for activity-side */
+.index-top-fargedrop-innrykk {}
+
+.forstebilde {
+    width: auto;
+    height: 72vw;
+    margin-top: 3vw;
+    background-color: #FFEA00;
+}
+
+.forstebilde img {
+    width: 91vw;
+    padding: 1vw;
+    margin-bottom: 1vw;
+}
+
+.forstebilde h1 {
+    font-size: 2.7em;
+    padding: 1vw;
+    margin: 1vw;
+}
+
+.forstebilde p {
+    font-size: 1.7em;
+    padding: 1vw;
+    margin: 1vw;
+}
+
+.forstebilde p:nth-child(even) {
+    margin-top: 5vw;
+    text-align: center;
+    background-color: #FFEA00;
+    height: 1vw;
+}
+
+.forstebilde a {
+    background-color: #009739;
+    border: 0.8vw solid #009739;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.forstebilde a:hover {
+    color: #012169;
+    transition: 0.3s;
+    padding: 1.5vw;
+}
+
+.sideKort {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 70%;
+    margin-top: 10vw;
+    margin: auto;
+}
+
+.activityEsker {
+    width: 27vw;
+    height: 36vw;
+    flex-grow: 1;
+    padding: 1vw;
+    border: 10px solid black
+}
+
+.activityEsker img {
+    width: 100%;
+    height: 100%;
+}
+
+.activityEsker p {
+    font-size: 0.95em;
+}
+
+.activityEsker a {
+    text-decoration: none;
+    color: black;
+}
+
+.activityEsker a:hover {
+    color: #A1BE95;
+    transition: 0.3s;
+}
+
+/* FOOTER */
+footer {
+    height: fit-content;
+    width: 100%;
+    background-color: var(--oslometPrimary);
+    display: flex;
+    flex-direction: row;
+
+}
+
+footer h4 {
+    font-size: 1em;
+}
+
+.footer-section {
+    flex-grow: 1;
+    text-align: left;
+}
+
+footer li {
+    list-style: none;
+}
+
+footer ul {
+    padding: 0;
+}
+
+footer a,
+p {
+    text-decoration: none;
+    transition: 0.25s;
+    color: #000;
+    font-size: 1.2em;
+}
+
+footer h4 {
+    margin-top: 2vw;
+    margin-left: 0vw;
+}
+
+footer li,
+a {
+    margin: 1.5vw;
+    margin-right: 3vw;
+    margin-left: 0vw;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer img {
+    width: 15vw;
+}
+
+/* CSS for accessibilty-side */
+.accesibility-test-flex {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    flex-wrap: wrap;
+}
+
+.accesibility-test-flex img {
+    width: 40vw;
+    height: 25vw;
+    margin: 3vw;
+    border-radius: 3vw;
+}
+
 
 
 
@@ -503,3 +606,38 @@ bruke en dropdown menu */
 
 }
  */
+
+@media (max-width: 780px){
+    .aside-box{
+        grid-column: 1/2;
+        grid-row: 2;
+        
+    }
+    .grid-container {
+    /* Container for grid- som vises på index */
+        grid-template-columns: 1fr ;
+        grid-auto-rows: minmax(100px, auto);
+        gap: 10px;
+    }
+    .main-box {
+        grid-column: 1/2;
+        grid-row: 1;
+    }
+    .main-box img {
+        width: 100%;
+        height: 400px;
+    }
+    
+    .secondary-box {
+        grid-column: 1/2;
+        grid-row: 2;
+        font-size: 1.5em;
+    }
+    .studie-informasjon-table tr {
+        height: 6.5vw;
+        width: 50%;
+        gap: 10px;
+        margin: auto;
+        border-top: 1px solid black;
+    }
+}
