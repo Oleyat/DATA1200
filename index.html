@@ -11,9 +11,9 @@
 <body>
     <header>
         <div class="header-left">
-            <img src="./images/OsloMet-Logo.png" alt="OsloMet-Logo">
+            <img src="./images/OsloMet-Logo.png" alt="OsloMet-Logo" role="logo">
         </div>
-        <nav class="nav-bar"> <!-- Navigasjons meny -->
+        <nav class="nav-bar" role="navigation"> <!-- Navigasjons meny -->
             <ul>
                 <li><a href="#">Hjem</a></li>
                 <li><a href="./sites/github.html">Github</a></li>
@@ -125,7 +125,7 @@
                     </details>
                     <details name="kun-en-open">
                         <summary>Hva lærer du?</summary>
-
+                
                     </details>
                     <details name="kun-en-open">
                         <summary>Hvordan foregår undervisningen?</summary>
@@ -142,7 +142,7 @@
                             <li>gruppearbeid</li>
                             <li>arbeidslivsrelevant bacheloroppgave</li>
                         </ul>
-
+                
                         For å gjennomføre studiet på normert tid, må du regne med å bruke om lag 40 timer per uke på
                         studierelatert arbeid gjennom hele semesteret. 
                         </p>
@@ -152,7 +152,7 @@
                         <p>
                             <a href="https://student.oslomet.no/semesteravgift">Du betaler en semesteravgift hvert
                                 semester (student.oslomet.no).</a>
-
+                
                             <a
                                 href="https://student.oslomet.no/tuition-fees-for-international-students-from-outside-eu-eea">Er
                                 du internasjonalstudent fra utenfor EU og EØS, må du betale studieavgift
@@ -165,14 +165,14 @@
                         <p>
                             Med dette studiet får du IT-kompetanse som er etterspurt i arbeidslivet, særlig om du velger
                             spesialiseringene vitenskapelige beregninger eller statistiske og datadrevne metoder.
-
+                
                             Spesialiseringen i matematikk og fysikk retter seg mer mot videre studier, men også her får
                             du etterspurt kompetanse i arbeidslivet etter bachelorstudiet.
-
+                
                             Matematisk modellering og datavitenskap blir stadig viktigere som basisgrunnlag, i for
                             eksempel beregninger knyttet til klima, forsikring og finans, og datadrevne metoder for
                             verdiskaping.
-
+                
                             Datadrevne metoder og maskinlæring er i dag svært mye brukt i arbeidslivet.
                         </p>
                     </details>
@@ -183,8 +183,8 @@
                     <details>
                         <summary>Videre studiemuligheter ved OsloMet</summary>
                     </details>
-                    <details>
-                        <summary>Studiets Oppbygging</summary>
+                    <details class="table-fixed-view">
+                        <summary class="fixed">Studiets Oppbygging</summary>
                         <table class="studie-oppbyging"> <!-- Studie oppbyggings visning i table.-->
                             <caption>Studietsoppbygging vises nedenfor. Sortert for hvert semester og de ulike retningene.</caption>
                             <!--                 <thead>
@@ -197,28 +197,28 @@
                                     <td>
                                         <div class="semesterFag">
                                             <!-- Lager et "kort" design for hvert fag. dette lar oss vise mer info -->
-                                            <p>Diskret Matematikk</p> <!-- fag tittel -->
+                                            <a href="">Diskret Matematikk</a> <!-- fag tittel -->
                                             <p>DAPE1300</p> <!-- fag kode -->
                                             <p>10stp.</p> <!-- studiepoeng -->
                                         </div> <!-- Kortene vil automatisk sortere hvor infoen står via css -->
                                     </td>
                                     <td>
                                         <div class="semesterFag">
-                                            <p>Programmering</p>
+                                            <a href="">Programmering</a>
                                             <p>DAPE1400</p>
                                             <p>10stp.</p>
                                         </div>
                                     </td>
                                     <td>
                                         <div class="semesterFag">
-                                            <p>Teknologi og samfunn for programmerere</p>
+                                            <a href="">Teknologi og samfunn for programmerere</a>
                                             <p>DATA1100</p>
                                             <p>5stp.</p>
                                         </div>
                                     </td>
                                     <td>
                                         <div class="semesterFag">
-                                            <p>Innføring i modeller og beregringer</p>
+                                            <a href="">Innføring i modeller og beregringer</a>
                                             <p>MAMO1100</p>
                                             <p>5stp.</p>
                                         </div>
@@ -228,21 +228,21 @@
                                     <th scope="row">2. semester</th>
                                     <td>
                                         <div class="semesterFag">
-                                            <p>Matematikk 1000</p>
+                                            <a href="">Matematikk 1000</a>
                                             <p>DAFE1000</p>
                                             <p>10stp.</p>
                                         </div>
                                     </td>
                                     <td>
                                         <div class="semesterFag">
-                                            <p>Fysikk og Kjemi</p>
+                                            <a href="">Fysikk og Kjemi</a>
                                             <p>DAPE2101</p>
                                             <p>10stp.</p>
                                         </div>
                                     </td>
                                     <td>
                                         <div class="semesterFag">
-                                            <p>Databaser</p>
+                                            <a href="">Databaser</a>
                                             <p>DATA1500</p>
                                             <p>10stp.</p>
                                         </div>
@@ -252,14 +252,14 @@
                                     <th scope="row">3. semester</th>
                                     <td>
                                         <div class="semesterFag">
-                                            <p>Matematikk 2000 med statistikk</p>
+                                            <a href="">Matematikk 2000 med statistikk</a>
                                             <p>DAPE2000</p>
                                             <p>10stp.</p>
                                         </div>
                                     </td>
                                     <td>
                                         <div class="semesterFag">
-                                            <p>Moderne Fysikk</p>
+                                            <a href="">Moderne Fysikk</a>
                                             <p>MAMO2100</p>
                                             <p>10stp.</p>
                                         </div>
@@ -269,7 +269,7 @@
                                     <th scope="row">4. semester</th>
                                     <td>
                                         <div class="semesterFag">
-                                            <p>Matematikk 4000</p>
+                                            <a href="">Matematikk 4000</a>
                                             <p>DAVE3705</p>
                                             <p>10stp.</p>
                                         </div>
@@ -279,7 +279,7 @@
                                     <th scope="row">5. semester</th>
                                     <td>
                                         <div class="semesterFag">
-                                            <p>Matematikk 3000</p>
+                                            <a href="">Matematikk 3000</a>
                                             <p>DAVE3700</p>
                                             <p>10stp.</p>
                                         </div>
@@ -289,7 +289,7 @@
                                     <th scope="row">6. semester</th>
                                     <td>
                                         <div class="semesterFag">
-                                            <p>Bacheloroppgave</p>
+                                            <a href="">Bacheloroppgave</a>
                                             <p>DATA3900</p>
                                             <p>20stp.</p>
                                         </div>
@@ -300,7 +300,7 @@
                                     <th scope="row">3. semester</th>
                                     <td>
                                         <div class="semesterFag">
-                                            <p>Lineær Algebra og introduksjon til gruppeteori</p>
+                                            <a href="">Lineær Algebra og introduksjon til gruppeteori</a>
                                             <p>MAMO2300</p>
                                             <p>10stp.</p>
                                         </div>
@@ -310,14 +310,14 @@
                                     <th scope="row">4. semester</th>
                                     <td>
                                         <div class="semesterFag">
-                                            <p>Termodynamikk og statistisk fysikk</p>
+                                            <a href="">Termodynamikk og statistisk fysikk</a>
                                             <p>MAMO2400</p>
                                             <p>10stp.</p>
                                         </div>
                                     </td>
                                     <td>
                                         <div class="semesterFag">
-                                            <p>Symmetrier og algebraiske strukturer</p>
+                                            <a href="">Symmetrier og algebraiske strukturer</a>
                                             <p>MAMO2500</p>
                                             <p>10stp.</p>
                                         </div>
@@ -327,35 +327,35 @@
                                     <th scope="row">5. semester</th>
                                     <td>
                                         <div class="semesterFag">
-                                            <p>Reell analyse</p>
+                                            <a href="">Reell analyse</a>
                                             <p>MAMO3300</p>
                                             <p>10stp.</p>
                                         </div>
                                     </td>
-                                    <td>
-                                        <div class="semesterFag valgfag">
-                                            <p>Introduksjon til IT-forskning</p>
+                                    <td class="valgfag">
+                                        <div class="semesterFag">
+                                            <a href="">Introduksjon til IT-forskning</a>
                                             <p>DATA3730</p>
                                             <p>10stp.</p>
                                         </div>
                                     </td>
                                     <td>
                                         <div class="semesterFag valgfag">
-                                            <p>Introduction to Data Science with Scripting</p>
+                                            <a href="">Introduction to Data Science with Scripting</a>
                                             <p>DATA3800</p>
                                             <p>10stp.</p>
                                         </div>
                                     </td>
                                     <td>
                                         <div class="semesterFag valgfag">
-                                            <p>Simulering og visualisering</p>
+                                            <a href="">Simulering og visualisering</a>
                                             <p>MAMO2500</p>
                                             <p>10stp.</p>
                                         </div>
                                     </td>
                                     <td>
                                         <div class="semesterFag valgfag">
-                                            <p>Datasikkerhet</p>
+                                            <a href="">Datasikkerhet</a>
                                             <p>ITPE3100</p>
                                             <p>10stp.</p>
                                         </div>
@@ -365,28 +365,28 @@
                                     <th scope="row">6. semester</th>
                                     <td>
                                         <div class="semesterFag valgfag">
-                                            <p>Testing av programvare</p>
+                                            <a href="">Testing av programvare</a>
                                             <p>ADTS2310</p>
                                             <p>10stp.</p>
                                         </div>
                                     </td>
                                     <td>
                                         <div class="semesterFag valgfag">
-                                            <p>Datanettverk og skytjenester</p>
+                                            <a href="">Datanettverk og skytjenester</a>
                                             <p>DATA2410</p>
                                             <p>10stp.</p>
                                         </div>
                                     </td>
                                     <td>
                                         <div class="semesterFag valgfag">
-                                            <p>Ressurseffektive programmer</p>
+                                            <a href="">Ressurseffektive programmer</a>
                                             <p>DAVE3606</p>
                                             <p>10stp.</p>
                                         </div>
                                     </td>
                                     <td>
                                         <div class="semesterFag valgfag">
-                                            <p>Avansert modellering og beregninger</p>
+                                            <a href="">Avansert modellering og beregninger</a>
                                             <p>MAMO2300</p>
                                             <p>10stp.</p>
                                         </div>
@@ -399,7 +399,7 @@
                                     <th scope="row">3. semester</th>
                                     <td>
                                         <div class="semesterFag">
-                                            <p>Algoritmer og datastrukturer</p>
+                                            <a href="">Algoritmer og datastrukturer</a>
                                             <p>DATS2300</p>
                                             <p>10stp.</p>
                                         </div>
@@ -409,21 +409,21 @@
                                     <th scope="row">4. semester</th>
                                     <td>
                                         <div class="semesterFag">
-                                            <p>Statistisk analyse</p>
+                                            <a href="">Statistisk analyse</a>
                                             <p>MAMO3100</p>
                                             <p>10stp.</p>
                                         </div>
                                     </td>
                                     <td>
                                         <div class="semesterFag valgfag">
-                                            <p>Visualisering</p>
+                                            <a href="">Visualisering</a>
                                             <p>MAMO2300</p>
                                             <p>10stp.</p>
                                         </div>
                                     </td>
                                     <td>
                                         <div class="semesterFag valgfag">
-                                            <p>Avansert modellering og beregninger</p>
+                                            <a href="">Avansert modellering og beregninger</a>
                                             <p>MAMO2300</p>
                                             <p>10stp.</p>
                                         </div>
@@ -432,35 +432,35 @@
                                     <th scope="row">5. semester</th>
                                     <td>
                                         <div class="semesterFag">
-                                            <p>Introduksjon til Kunstig Intelligens</p>
+                                            <a href="">Introduksjon til Kunstig Intelligens</a>
                                             <p>DAVE3625</p>
                                             <p>10stp.</p>
                                         </div>
                                     </td>
                                     <td>
                                         <div class="semesterFag valgfag">
-                                            <p>Introduksjon til IT-forskning</p>
+                                            <a href="">Introduksjon til IT-forskning</a>
                                             <p>DATA3730</p>
                                             <p>10stp.</p>
                                         </div>
                                     </td>
                                     <td>
                                         <div class="semesterFag valgfag">
-                                            <p>Anvendt kunstig intelligens og datascience prosjekt</p>
+                                            <a href="">Anvendt kunstig intelligens og datascience prosjekt</a>
                                             <p>DATA3750</p>
                                             <p>10stp.</p>
                                         </div>
                                     </td>
                                     <td>
                                         <div class="semesterFag valgfag">
-                                            <p>Datasikkerhet</p>
+                                            <a href="">Datasikkerhet</a>
                                             <p>ITPE3100</p>
                                             <p>10stp.</p>
                                         </div>
                                     </td>
                                     <td>
                                         <div class="semesterFag valgfag">
-                                            <p>Simulering og visualisering</p>
+                                            <a href="">Simulering og visualisering</a>
                                             <p>MAMO3200</p>
                                             <p>10stp.</p>
                                         </div>
@@ -470,21 +470,21 @@
                                     <th scope="row">6. semester</th>
                                     <td>
                                         <div class="semesterFag valgfag">
-                                            <p>Testing av programvare</p>
+                                            <a href="">Testing av programvare</a>
                                             <p>ADTS2310</p>
                                             <p>10stp.</p>
                                         </div>
                                     </td>
                                     <td>
                                         <div class="semesterFag valgfag">
-                                            <p>Datanettverk og skytjenester</p>
+                                            <a href="">Datanettverk og skytjenester</a>
                                             <p>DATA2410</p>
                                             <p>10stp.</p>
                                         </div>
                                     </td>
                                     <td>
                                         <div class="semesterFag valgfag">
-                                            <p>Ressurseffektive programmer</p>
+                                            <a href="">Ressurseffektive programmer</a>
                                             <p>DAVE3606</p>
                                             <p>10stp.</p>
                                         </div>
@@ -494,7 +494,7 @@
                                 <th scope="row">3. semester</th>
                                 <td>
                                     <div class="semesterFag">
-                                        <p>Algoritmer og datastrukturer</p>
+                                        <a href="">Algoritmer og datastrukturer</a>
                                         <p>DATS2300</p>
                                         <p>10stp.</p>
                                     </div>
@@ -504,14 +504,14 @@
                                     <th scope="row">4. semester</th>
                                     <td>
                                         <div class="semesterFag">
-                                            <p>Ressurseffektive programmer</p>
+                                            <a href="">Ressurseffektive programmer</a>
                                             <p>DAVE3606</p>
                                             <p>10stp.</p>
                                         </div>
                                     </td>
                                     <td>
                                         <div class="semesterFag">
-                                            <p>Avansert modellering og beregninger</p>
+                                            <a href="">Avansert modellering og beregninger</a>
                                             <p>MAMO2200</p>
                                             <p>10stp.</p>
                                         </div>
@@ -520,35 +520,35 @@
                                     <th scope="row">5. semester</th>
                                     <td>
                                         <div class="semesterFag">
-                                            <p>Simulering og visualisering</p>
+                                            <a href="">Simulering og visualisering</a>
                                             <p>MAMO3200</p>
                                             <p>10stp.</p>
                                         </div>
                                     </td>
                                     <td>
                                         <div class="semesterFag valgfag">
-                                            <p>Introduksjon til IT-forskning</p>
+                                            <a href="">Introduksjon til IT-forskning</a>
                                             <p>DATA3730</p>
                                             <p>10stp.</p>
                                         </div>
                                     </td>
                                     <td>
                                         <div class="semesterFag valgfag">
-                                            <p>Datasikkerhet</p>
+                                            <a href="">Datasikkerhet</a>
                                             <p>ITPE3100</p>
                                             <p>10stp.</p>
                                         </div>
                                     </td>
                                     <td>
                                         <div class="semesterFag valgfag">
-                                            <p>Lineær algebra og introduksjon til gruppeteori</p>
+                                            <a href="">Lineær algebra og introduksjon til gruppeteori</a>
                                             <p>MAMO2300</p>
                                             <p>10stp.</p>
                                         </div>
                                     </td>
                                     <td>
                                         <div class="semesterFag valgfag">
-                                            <p>Reell analyse</p>
+                                            <a href="">Reell analyse</a>
                                             <p>MAMO3300</p>
                                             <p>10stp.</p>
                                         </div>
@@ -558,28 +558,28 @@
                                     <th scope="row">6. semester</th>
                                     <td>
                                         <div class="semesterFag valgfag">
-                                            <p>Visualisering</p>
-                                            <p>ADSE3200</p>
+                                            <a href="">Visualisering</a>
+                                            <p>ADSE3200</pa
                                             <p>10stp.</p>
                                         </div>
                                     </td>
                                     <td>
                                         <div class="semesterFag valgfag">
-                                            <p>Testing av programvare</p>
+                                            <a href="">Testing av programvare</a>
                                             <p>ADTS2310</p>
                                             <p>10stp.</p>
                                         </div>
                                     </td>
                                     <td>
                                         <div class="semesterFag valgfag">
-                                            <p>Datanettverk og skytjenester</p>
+                                            <a href="">Datanettverk og skytjenester</a>
                                             <p>DATA2410</p>
                                             <p>10stp.</p>
                                         </div>
                                     </td>
                                     <td>
                                         <div class="semesterFag valgfag">
-                                            <p>Symmetrier og algebraiske strukturer</p>
+                                            <a href="">Symmetrier og algebraiske strukturer</a>
                                             <p>MAMO2500</p>
                                             <p>10stp.</p>
                                         </div>
@@ -598,11 +598,11 @@
                         <p>+47 672 37 240</p>
                         <p>kristoffer.hellton@oslomet.no</p>
                     </div>
-                    </aside>
+                </aside>
             </div>
         </section>
         <section class="innrykk gap-top-bigger">
-            <h2 class="med-header">Studenthistorier</h2>
+            <h2 class="med-header" aria-label="Studenthistorier Tittel">Studenthistorier</h2>
             <div class="grid-container">
                 <article class="main-box studenthistorier">
                     <div>
@@ -628,36 +628,6 @@
         </section>
 
     </main>
-    <article>
-        <h2>test!!!</h2>
-        <p> tesaaaaaaaaaaaaaa aaaaaaa,,,,aaaa aaaaaaassaaat</p>
-        <h3>woah</h3>
-        <h2>test!!!</h2>
-        <p> tesaaaaaaaaaaaaaa aaaa,aaaaaaa aaaaaaassaaat</p>
-        <h3>woah</h3>,
-        <h2>test!!!</h2>
-        <p> tesaaaaaaa,a,aaaaaa aaaaaaaaaaa aaaaaaassaaat</p>
-        <h3>woah</h3>
-        <h2>test!!!</h2>
-        <p> tesaaaaaaaa,aaaaaa aaaaaaaaaaa aaaaaaassaaat</p>
-        <h3>woah</h3>
-        <h2>test!!!</h2>
-        <p> tesaaaaaaaaa,,,aaaaa aaaaaaaaaaa aaaaaaassaaat</p>
-        <h3>woah</h3>
-        <h2>test!!!</h2>
-        <p> tesaaaaaaaaaaaa,,aa aaaaaaaaaaa aaaaaaassaaat</p>
-        <h3>woah</h3>
-        <h2>test!!!</h2>
-        <p> tesaaaaaa,aaaaaaaa aaaaaaaaaaa aaaaaaassaaat</p>
-        <h3>woah</h3>
-        <h2>test!!!</h2>
-        <p> tesaaaaaaa,,,aaaaaaa aaaaaaaaaaa aaaaaaassaaat</p>
-        <h3>woah</h3>
-        <h2>test!!!</h2>
-        <p> tesaaaaaaaaaa,,,a,a,a,a, a,,aa,a,aa,,a,aaaa aaaaaaassaaat</p>
-        <h3>woah</h3>
-        
-    </article>
     <footer class="innrykk gap-top-bigger"> <!-- legger til spacing. -->
         <div class="footer-section">
             <img src="./images/OsloMet-Logo.png" alt="Oslomet-Logo"></img>
