@@ -96,10 +96,8 @@ a:visited{ /* Endrer fargen på linker som er blitt trukket på. */
     margin-top: 15vw;
 }
 
-.index-top-fargedrop-innrykk {
+.index-top-fargedrop {
     background-color: var(--oslometPrimary);
-    padding-left: 3vw;
-    padding-right: 3vw;
 }
 
 .innrykk {
@@ -327,15 +325,6 @@ details a{
     margin: 0;
 }
 
-/*     .flex-article{
-        margin-top: 2.5vw;
-        margin-bottom: 2.5vw;
-        margin-right: 2.5vw;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        width: 60%;
-    } */
 
 /* STUDIE OPPBYGGING TABLE NEDENFOR */
 .studie-oppbyging {
@@ -677,20 +666,15 @@ bruke en dropdown menu */
     .studie-oppbyging td{
         height: 15vw;
     }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media (min-width: 1000px) {
+    .innrykk{
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+    footer{
+        width: 100%;
+        margin: 0;
+    }
 }
