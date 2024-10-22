@@ -31,10 +31,10 @@
             </ul>
         </details>
     </header>
-    <main>
+    <main aria-label="Main content">
         <section class="index-top-fargedrop">
             <div class="grid-container innrykk">
-                <article class="main-box">
+                <article class="main-box" aria-label="header text">
                     <div>
                         <h1>Matematisk modellering og datavitenskap – ingeniør</h1>
                         <img src="./images/bilde.png" alt="oslomet-bilder">
@@ -207,312 +207,317 @@
                         <p>I studiets oppbyging nedenfor kan du se hvordan studiet ser ut per semester.</p>
                         <p>Vær klar over at dette studiet har forskjellige retninger du kan velge.</p>
                         <p class="valgfag">Fagene med stjernen er valgfag.</p>
-                        <details class="table-fixed-view">
+                        <details class>
                             <summary class="fixed">Studiets Oppbygging</summary>
                             <!-- fixed class makes the summary element sticky so it doesnt scroll away. -->
-                            <table class="studie-oppbyging"> <!-- Studie oppbyggings visning i table.-->
-                                <caption>Studietsoppbygging vises nedenfor. Sortert for hvert semester og de ulike
-                                    retningene.</caption>
-                                <tbody>
-                                    <tr>
-                                        <th scope="row">1. semester</th>
-                                        <td>
-                                            <!-- Lager et "kort" design for hvert fag. dette lar oss vise mer info -->
-                                            <a href="">Diskret Matematikk</a> <!-- fag tittel -->
-                                            <p>DAPE1300</p> <!-- fag kode -->
-                                            <p>10stp.</p> <!-- studiepoeng -->
-                                            <!-- Kortene vil automatisk sortere hvor infoen står via css -->
-                                        </td>
-                                        <td>
-                                            <a href="">Programmering</a>
-                                            <p>DAPE1400</p>
-                                            <p>10stp.</p>
-                                        </td>
-                                        <td>
-                                            <a href="">Teknologi og samfunn for programmerere</a>
-                                            <p>DATA1100</p>
-                                            <p>5stp.</p>
-                                        </td>
-                                        <td>
-                                            <a href="">Innføring i modeller og beregringer</a>
-                                            <p>MAMO1100</p>
-                                            <p>5stp.</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">2. semester</th>
-                                        <td>
-                                            <a href="">Matematikk 1000</a>
-                                            <p>DAFE1000</p>
-                                            <p>10stp.</p>
-                                        </td>
-                                        <td>
-                                            <a href="">Fysikk og Kjemi</a>
-                                            <p>DAPE2101</p>
-                                            <p>10stp.</p>
-                                        </td>
-                                        <td>
-                                            <a href="">Databaser</a>
-                                            <p>DATA1500</p>
-                                            <p>10stp.</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">3. semester</th>
-                                        <td>
-                                            <a href="">Matematikk 2000 med statistikk</a>
-                                            <p>DAPE2000</p>
-                                            <p>10stp.</p>
-                                        </td>
-                                        <td>
-                                            <a href="">Moderne Fysikk</a>
-                                            <p>MAMO2100</p>
-                                            <p>10stp.</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">4. semester</th>
-                                        <td>
-                                            <a href="">Matematikk 4000</a>
-                                            <p>DAVE3705</p>
-                                            <p>10stp.</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">5. semester</th>
-                                        <td>
-                                            <a href="">Matematikk 3000</a>
-                                            <p>DAVE3700</p>
-                                            <p>10stp.</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">6. semester</th>
-                                        <td>
-                                            <a href="">Bacheloroppgave</a>
-                                            <p>DATA3900</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row" class="emnegruppeTittel">Emnegruppe: Matematikk og fysikk</th>
-                                        <th scope="row">3. semester</th>
-                                        <td>
-                                            <a href="">Lineær Algebra og introduksjon til gruppeteori</a>
-                                            <p>MAMO2300</p>
-                                            <p>10stp.</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">4. semester</th>
-                                        <td>
-                                            <a href="">Termodynamikk og statistisk fysikk</a>
-                                            <p>MAMO2400</p>
-                                            <p>10stp.</p>
-                                        </td>
-                                        <td>
-                                            <a href="">Symmetrier og algebraiske strukturer</a>
-                                            <p>MAMO2500</p>
-                                            <p>10stp.</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">5. semester</th>
-                                        <td>
-                                            <a href="">Reell analyse</a>
-                                            <p>MAMO3300</p>
-                                            <p>10stp.</p>
-                                        </td>
-                                        <td class="valgfag">
-                                            <a href="">Introduksjon til IT-forskning</a>
-                                            <p>DATA3730</p>
-                                            <p>10stp.</p>
-                                        </td>
-                                        <td class="valgfag">
-                                            <a href="">Introduction to Data Science with Scripting</a>
-                                            <p>DATA3800</p>
-                                            <p>10stp.</p>
-                                        </td>
-                                        <td class="valgfag">
-                                            <a href="">Simulering og visualisering</a>
-                                            <p>MAMO2500</p>
-                                            <p>10stp.</p>
-                                        </td>
-                                        <td class="valgfag">
-                                            <a href="">Datasikkerhet</a>
-                                            <p>ITPE3100</p>
-                                            <p>10stp.</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">6. semester</th>
-                                        <td class="valgfag">
-                                            <a href="">Testing av programvare</a>
-                                            <p>ADTS2310</p>
-                                            <p>10stp.</p>
-                                        </td>
-                                        <td class="valgfag">
-                                            <a href="">Datanettverk og skytjenester</a>
-                                            <p>DATA2410</p>
-                                            <p>10stp.</p>
-                                        </td>
-                                        <td class="valgfag">
-                                            <a href="">Ressurseffektive programmer</a>
-                                            <p>DAVE3606</p>
-                                            <p>10stp.</p>
-                                        </td>
-                                        <td class="valgfag">
-                                            <a href="">Avansert modellering og beregninger</a>
-                                            <p>MAMO2300</p>
-                                            <p>10stp.</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row" class="emnegruppeTittel">Emnegruppe: Statistikk og datadrevne
-                                            metoder
+                            <div class="table-fixed-view"> <!-- Div for å gjøre det slik at objektet ikke har tomrom under seg. See css height 0. -->
+                                <table class="studie-oppbyging"> <!-- Studie oppbyggings visning i table.-->
+                                    <caption>Studietsoppbygging vises nedenfor. Sortert for hvert semester og de ulike
+                                        retningene.</caption>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1. semester</th>
+                                            <td>
+                                                <!-- Lager et "kort" design for hvert fag. dette lar oss vise mer info -->
+                                                <a href="">Diskret Matematikk</a> <!-- fag tittel -->
+                                                <p>DAPE1300</p> <!-- fag kode -->
+                                                <p>10stp.</p> <!-- studiepoeng -->
+                                                <!-- Kortene vil automatisk sortere hvor infoen står via css -->
+                                            </td>
+                                            <td>
+                                                <a href="">Programmering</a>
+                                                <p>DAPE1400</p>
+                                                <p>10stp.</p>
+                                            </td>
+                                            <td>
+                                                <a href="">Teknologi og samfunn for programmerere</a>
+                                                <p>DATA1100</p>
+                                                <p>5stp.</p>
+                                            </td>
+                                            <td>
+                                                <a href="">Innføring i modeller og beregringer</a>
+                                                <p>MAMO1100</p>
+                                                <p>5stp.</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2. semester</th>
+                                            <td>
+                                                <a href="">Matematikk 1000</a>
+                                                <p>DAFE1000</p>
+                                                <p>10stp.</p>
+                                            </td>
+                                            <td>
+                                                <a href="">Fysikk og Kjemi</a>
+                                                <p>DAPE2101</p>
+                                                <p>10stp.</p>
+                                            </td>
+                                            <td>
+                                                <a href="">Databaser</a>
+                                                <p>DATA1500</p>
+                                                <p>10stp.</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3. semester</th>
+                                            <td>
+                                                <a href="">Matematikk 2000 med statistikk</a>
+                                                <p>DAPE2000</p>
+                                                <p>10stp.</p>
+                                            </td>
+                                            <td>
+                                                <a href="">Moderne Fysikk</a>
+                                                <p>MAMO2100</p>
+                                                <p>10stp.</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">4. semester</th>
+                                            <td>
+                                                <a href="">Matematikk 4000</a>
+                                                <p>DAVE3705</p>
+                                                <p>10stp.</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">5. semester</th>
+                                            <td>
+                                                <a href="">Matematikk 3000</a>
+                                                <p>DAVE3700</p>
+                                                <p>10stp.</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">6. semester</th>
+                                            <td>
+                                                <a href="">Bacheloroppgave</a>
+                                                <p>DATA3900</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="emnegruppeTittel">Emnegruppe: Matematikk og fysikk
+                                            </th>
+                                            <th scope="row">3. semester</th>
+                                            <td>
+                                                <a href="">Lineær Algebra og introduksjon til gruppeteori</a>
+                                                <p>MAMO2300</p>
+                                                <p>10stp.</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">4. semester</th>
+                                            <td>
+                                                <a href="">Termodynamikk og statistisk fysikk</a>
+                                                <p>MAMO2400</p>
+                                                <p>10stp.</p>
+                                            </td>
+                                            <td>
+                                                <a href="">Symmetrier og algebraiske strukturer</a>
+                                                <p>MAMO2500</p>
+                                                <p>10stp.</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">5. semester</th>
+                                            <td>
+                                                <a href="">Reell analyse</a>
+                                                <p>MAMO3300</p>
+                                                <p>10stp.</p>
+                                            </td>
+                                            <td class="valgfag">
+                                                <a href="">Introduksjon til IT-forskning</a>
+                                                <p>DATA3730</p>
+                                                <p>10stp.</p>
+                                            </td>
+                                            <td class="valgfag">
+                                                <a href="">Introduction to Data Science with Scripting</a>
+                                                <p>DATA3800</p>
+                                                <p>10stp.</p>
+                                            </td>
+                                            <td class="valgfag">
+                                                <a href="">Simulering og visualisering</a>
+                                                <p>MAMO2500</p>
+                                                <p>10stp.</p>
+                                            </td>
+                                            <td class="valgfag">
+                                                <a href="">Datasikkerhet</a>
+                                                <p>ITPE3100</p>
+                                                <p>10stp.</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">6. semester</th>
+                                            <td class="valgfag">
+                                                <a href="">Testing av programvare</a>
+                                                <p>ADTS2310</p>
+                                                <p>10stp.</p>
+                                            </td>
+                                            <td class="valgfag">
+                                                <a href="">Datanettverk og skytjenester</a>
+                                                <p>DATA2410</p>
+                                                <p>10stp.</p>
+                                            </td>
+                                            <td class="valgfag">
+                                                <a href="">Ressurseffektive programmer</a>
+                                                <p>DAVE3606</p>
+                                                <p>10stp.</p>
+                                            </td>
+                                            <td class="valgfag">
+                                                <a href="">Avansert modellering og beregninger</a>
+                                                <p>MAMO2300</p>
+                                                <p>10stp.</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="emnegruppeTittel">Emnegruppe: Statistikk og
+                                                datadrevne
+                                                metoder
+                                            </th>
+                                            <th scope="row">3. semester</th>
+                                            <td class="valgfag">
+                                                <a href="">Algoritmer og datastrukturer</a>
+                                                <p>DATS2300</p>
+                                                <p>10stp.</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">4. semester</th>
+                                            <td>
+                                                <a href="">Statistisk analyse</a>
+                                                <p>MAMO3100</p>
+                                                <p>10stp.</p>
+                                            </td>
+                                            <td class="valgfag">
+                                                <a href="">Visualisering</a>
+                                                <p>MAMO2300</p>
+                                                <p>10stp.</p>
+                                            </td>
+                                            <td class="valgfag">
+                                                <a href="">Avansert modellering og beregninger</a>
+                                                <p>MAMO2300</p>
+                                                <p>10stp.</p>
+                                            </td>
+                                        <tr>
+                                            <th scope="row">5. semester</th>
+                                            <td>
+                                                <a href="">Introduksjon til Kunstig Intelligens</a>
+                                                <p>DAVE3625</p>
+                                                <p>10stp.</p>
+                                            </td>
+                                            <td class="valgfag">
+                                                <a href="">Introduksjon til IT-forskning</a>
+                                                <p>DATA3730</p>
+                                                <p>10stp.</p>
+                                            </td>
+                                            <td class="valgfag">
+                                                <a href="">Anvendt kunstig intelligens og datascience prosjekt</a>
+                                                <p>DATA3750</p>
+                                                <p>10stp.</p>
+                                            </td>
+                                            <td class="valgfag">
+                                                <a href="">Datasikkerhet</a>
+                                                <p>ITPE3100</p>
+                                                <p>10stp.</p>
+                                            </td>
+                                            <td class="valgfag">
+                                                <a href="">Simulering og visualisering</a>
+                                                <p>MAMO3200</p>
+                                                <p>10stp.</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">6. semester</th>
+                                            <td class="valgfag">
+                                                <a href="">Testing av programvare</a>
+                                                <p>ADTS2310</p>
+                                                <p>10stp.</p>
+                                            </td>
+                                            <td class="valgfag">
+                                                <a href="">Datanettverk og skytjenester</a>
+                                                <p>DATA2410</p>
+                                                <p>10stp.</p>
+                                            </td>
+                                            <td class="valgfag">
+                                                <a href="">Ressurseffektive programmer</a>
+                                                <p>DAVE3606</p>
+                                                <p>10stp.</p>
+                                            </td>
+                                        </tr>
+                                        <th scope="row" class="emnegruppeTittel">Emnegruppe: Vitenskapelige beregninger
                                         </th>
                                         <th scope="row">3. semester</th>
-                                        <td class="valgfag">
+                                        <td>
                                             <a href="">Algoritmer og datastrukturer</a>
                                             <p>DATS2300</p>
                                             <p>10stp.</p>
                                         </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">4. semester</th>
-                                        <td>
-                                            <a href="">Statistisk analyse</a>
-                                            <p>MAMO3100</p>
-                                            <p>10stp.</p>
-                                        </td>
-                                        <td class="valgfag">
-                                            <a href="">Visualisering</a>
-                                            <p>MAMO2300</p>
-                                            <p>10stp.</p>
-                                        </td>
-                                        <td class="valgfag">
-                                            <a href="">Avansert modellering og beregninger</a>
-                                            <p>MAMO2300</p>
-                                            <p>10stp.</p>
-                                        </td>
-                                    <tr>
-                                        <th scope="row">5. semester</th>
-                                        <td>
-                                            <a href="">Introduksjon til Kunstig Intelligens</a>
-                                            <p>DAVE3625</p>
-                                            <p>10stp.</p>
-                                        </td>
-                                        <td class="valgfag">
-                                            <a href="">Introduksjon til IT-forskning</a>
-                                            <p>DATA3730</p>
-                                            <p>10stp.</p>
-                                        </td>
-                                        <td class="valgfag">
-                                            <a href="">Anvendt kunstig intelligens og datascience prosjekt</a>
-                                            <p>DATA3750</p>
-                                            <p>10stp.</p>
-                                        </td>
-                                        <td class="valgfag">
-                                            <a href="">Datasikkerhet</a>
-                                            <p>ITPE3100</p>
-                                            <p>10stp.</p>
-                                        </td>
-                                        <td class="valgfag">
-                                            <a href="">Simulering og visualisering</a>
-                                            <p>MAMO3200</p>
-                                            <p>10stp.</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">6. semester</th>
-                                        <td class="valgfag">
-                                            <a href="">Testing av programvare</a>
-                                            <p>ADTS2310</p>
-                                            <p>10stp.</p>
-                                        </td>
-                                        <td class="valgfag">
-                                            <a href="">Datanettverk og skytjenester</a>
-                                            <p>DATA2410</p>
-                                            <p>10stp.</p>
-                                        </td>
-                                        <td class="valgfag">
-                                            <a href="">Ressurseffektive programmer</a>
-                                            <p>DAVE3606</p>
-                                            <p>10stp.</p>
-                                        </td>
-                                    </tr>
-                                    <th scope="row" class="emnegruppeTittel">Emnegruppe: Vitenskapelige beregninger</th>
-                                    <th scope="row">3. semester</th>
-                                    <td>
-                                        <a href="">Algoritmer og datastrukturer</a>
-                                        <p>DATS2300</p>
-                                        <p>10stp.</p>
-                                    </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">4. semester</th>
-                                        <td>
-                                            <a href="">Ressurseffektive programmer</a>
-                                            <p>DAVE3606</p>
-                                            <p>10stp.</p>
-                                        </td>
-                                        <td>
-                                            <a href="">Avansert modellering og beregninger</a>
-                                            <p>MAMO2200</p>
-                                            <p>10stp.</p>
-                                        </td>
-                                    <tr>
-                                        <th scope="row">5. semester</th>
-                                        <td>
-                                            <a href="">Simulering og visualisering</a>
-                                            <p>MAMO3200</p>
-                                            <p>10stp.</p>
-                                        </td>
-                                        <td class="valgfag">
-                                            <a href="">Introduksjon til IT-forskning</a>
-                                            <p>DATA3730</p>
-                                            <p>10stp.</p>
-                                        </td>
-                                        <td class="valgfag">
-                                            <a href="">Datasikkerhet</a>
-                                            <p>ITPE3100</p>
-                                            <p>10stp.</p>
-                                        </td>
-                                        <td class="valgfag">
-                                            <a href="">Lineær algebra og introduksjon til gruppeteori</a>
-                                            <p>MAMO2300</p>
-                                            <p>10stp.</p>
-                                        </td>
-                                        <td class="valgfag">
-                                            <a href="">Reell analyse</a>
-                                            <p>MAMO3300</p>
-                                            <p>10stp.</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">6. semester</th>
-                                        <td class="valgfag">
-                                            <a href="">Visualisering</a>
-                                            <p>ADSE3200</p>
-                                            <p>10stp.</p>
-                                        </td>
-                                        <td class="valgfag">
-                                            <a href="">Testing av programvare</a>
-                                            <p>ADTS2310</p>
-                                            <p>10stp.</p>
-                                        </td>
-                                        <td class="valgfag">
-                                            <a href="">Datanettverk og skytjenester</a>
-                                            <p>DATA2410</p>
-                                            <p>10stp.</p>
-                                        </td>
-                                        <td class="valgfag">
-                                            <a href="">Symmetrier og algebraiske strukturer</a>
-                                            <p>MAMO2500</p>
-                                            <p>10stp.</p>
-                                        </td>
-                                    </tr>
-                                </tbody>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">4. semester</th>
+                                            <td>
+                                                <a href="">Ressurseffektive programmer</a>
+                                                <p>DAVE3606</p>
+                                                <p>10stp.</p>
+                                            </td>
+                                            <td>
+                                                <a href="">Avansert modellering og beregninger</a>
+                                                <p>MAMO2200</p>
+                                                <p>10stp.</p>
+                                            </td>
+                                        <tr>
+                                            <th scope="row">5. semester</th>
+                                            <td>
+                                                <a href="">Simulering og visualisering</a>
+                                                <p>MAMO3200</p>
+                                                <p>10stp.</p>
+                                            </td>
+                                            <td class="valgfag">
+                                                <a href="">Introduksjon til IT-forskning</a>
+                                                <p>DATA3730</p>
+                                                <p>10stp.</p>
+                                            </td>
+                                            <td class="valgfag">
+                                                <a href="">Datasikkerhet</a>
+                                                <p>ITPE3100</p>
+                                                <p>10stp.</p>
+                                            </td>
+                                            <td class="valgfag">
+                                                <a href="">Lineær algebra og introduksjon til gruppeteori</a>
+                                                <p>MAMO2300</p>
+                                                <p>10stp.</p>
+                                            </td>
+                                            <td class="valgfag">
+                                                <a href="">Reell analyse</a>
+                                                <p>MAMO3300</p>
+                                                <p>10stp.</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">6. semester</th>
+                                            <td class="valgfag">
+                                                <a href="">Visualisering</a>
+                                                <p>ADSE3200</p>
+                                                <p>10stp.</p>
+                                            </td>
+                                            <td class="valgfag">
+                                                <a href="">Testing av programvare</a>
+                                                <p>ADTS2310</p>
+                                                <p>10stp.</p>
+                                            </td>
+                                            <td class="valgfag">
+                                                <a href="">Datanettverk og skytjenester</a>
+                                                <p>DATA2410</p>
+                                                <p>10stp.</p>
+                                            </td>
+                                            <td class="valgfag">
+                                                <a href="">Symmetrier og algebraiske strukturer</a>
+                                                <p>MAMO2500</p>
+                                                <p>10stp.</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
                             </table>
+                            </div>
                         </details>
                     </div>
                 </article>

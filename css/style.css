@@ -316,11 +316,16 @@ details[open]>summary {
 details[open]>summary::after {
     transform: rotate(-180deg);
 }
+.table-fixed-view {
+    height: 0px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    transition: height 0.3s ease;
+}
 
 details[open] .table-fixed-view{ /* Fjerner tomrommet som hadde kommet under om den ikke var her. */
     height: 400px;
     overflow-y: auto;
-    overflow-x: hidden;
 }
 
 details p {
@@ -337,11 +342,6 @@ details a{
     font-family: var(--oslometPrimaryFont);
 }
 
-.table-fixed-view {
-    height: 400px;
-    overflow-y: auto;
-    overflow-x: hidden;
-}
 .fixed{
     position: sticky;
     top: 0;
@@ -705,7 +705,7 @@ bruke en dropdown menu */
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1350px) {
     .innrykk{
         margin-left: 10vw;
         margin-right: 10vw;
