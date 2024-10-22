@@ -33,6 +33,18 @@ main {}
 table {
     border-collapse: collapse;
 }
+.default-table{
+    width: 100%;
+}
+.default-table td{
+    padding: 1vw;
+}
+
+
+.default-table tr:nth-of-type(even){
+    background-color: var(--oslometPrimary);
+
+}
 
 /* Index.html grid PC */
 h1 {
@@ -438,6 +450,9 @@ details a{
     background-color: var(--oslometSecondary);
     transition: 0.5s;
 }
+
+
+
 
 /* CSS for activity-side */
 .index-top-fargedrop-innrykk {}
