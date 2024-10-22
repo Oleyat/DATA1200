@@ -33,13 +33,12 @@ main {}
 table {
     border-collapse: collapse;
 }
-.default-table{
-    width: 100%;
-}
-.default-table td{
-    padding: 1vw;
-}
 
+.default-flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 
 .default-table tr:nth-of-type(even){
     background-color: var(--oslometPrimary);
@@ -421,7 +420,6 @@ details a{
 
 .studenthistorier div {
     /* MAKE ROUNDED BORDERS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-    width: 95%;
     background-color: var(--oslometPrimary);
     padding-bottom: 2vw;
     border-style: solid;
@@ -451,6 +449,10 @@ details a{
     transition: 0.5s;
 }
 
+.max-width{
+    width: 20vw;
+    border: 1px solid red;
+}
 
 
 
