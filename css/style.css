@@ -142,8 +142,8 @@ header {
 }
 
 .main-box img {
-    max-width: 80%;
-    max-height: 80%;
+    max-width: 100%;
+    max-height: auto;
     border-bottom: 5px solid var(--oslometSecondary);
 }
 
@@ -215,6 +215,7 @@ header {
 
 .studie-informasjon-table{
     width: 100%;
+    box-shadow: -8px 7px 9px -13px rgba(0,0,0,1);
 }
 
 .studie-informasjon-table tbody{
