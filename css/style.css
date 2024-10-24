@@ -626,11 +626,13 @@ bruke en dropdown menu */
 
 }
  */
-
-@media (max-width: 815px){
-    /* Skriftstørrelser. */
+@media (max-width: 400px){
+    /* Skriftstørrelser.  for små skjermer*/
+    table td, th{
+        font-size: 0.7em;
+    }
     p{
-        font-size: 0.5em;
+        font-size: 0.6em;
     }
     h1{
         font-size: 1.2em;
@@ -638,6 +640,20 @@ bruke en dropdown menu */
     h2{
         font-size: 1em;
     }
+    .font-lg{
+        font-size: 1em;
+    }
+    .font-med{
+        font-size: 0.7em;
+    }
+    .main-box img {
+        display: none;
+    }
+}
+
+
+@media (max-width: 815px){
+    /* Skriftstørrelser. */
     .grid-container {
         /* Container for grid- som vises på index */
             grid-template-columns: 1fr ;
@@ -654,9 +670,6 @@ bruke en dropdown menu */
         grid-column: 1/2;
         grid-row: 2;
         
-    }
-    .main-box img {
-        display: none;
     }
     
     .secondary-box {
@@ -705,39 +718,8 @@ bruke en dropdown menu */
         display: none;
     }
 
-
-    .burger-menu{
-        display:contents;
-        z-index: 100;
-        width: 100%;
-    }
-    .burger-menu summary{
-        width: 10vw;
-        height: 100%;
-        margin-left: 20vw;
-        background-color: var(--oslometPrimary);
-    }
-    .burger-menu ul{
-        position: fixed;
-        margin-top: 10vh;
-        height: 90vh;
-        z-index: 100;
-        background-color: var(--oslometPrimary);
-        margin-left: -10vw;
-    }
-    .burger-menu li{
-        width: 100vw;
-        text-align: center;
-        list-style: none;
-        margin-left: 0vw;
-        border-bottom: 1px solid black;
-        height: 40vw;
-    }
     .studie-oppbyging td{
         height: 15vw;
-    }
-    .burger-menu a{
-        font-size: 2em;
     }
 }
 
