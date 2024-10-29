@@ -77,10 +77,9 @@ caption{text-align: left;}
 
 .default-btn { /* Default knappen. */
     width: 80%;
-    background-color: var(--oslometPrimary);
+    background-color: var(--oslometSecondary);
     border-width: 10px;
     padding: 30px;
-    border-color: var(--oslometPrimary);
     font-size: 1em;
     text-align: center;
     font-weight: bolder;
@@ -89,7 +88,7 @@ caption{text-align: left;}
 }
 
 .default-btn:hover {
-    background-color: var(--oslometSecondary);
+    background-color: var(--oslometPrimary);
     transition: 0.2s;
 }
 
@@ -465,10 +464,11 @@ details a{
     border: 1px solid red;
 }
 
-.video{
+.grid-middle{
     display: grid;
     grid-template-columns: 15vw auto 15vw;
 }
+
 
 
 iframe{
@@ -482,53 +482,9 @@ iframe{
 
 
 /* CSS for activity-side */
-.index-top-fargedrop-innrykk {}
 
-.forstebilde {
-    width: auto;
-    height: 72vw;
-    margin-top: 3vw;
-    background-color: #FFEA00;
-}
-
-.forstebilde img {
-    width: 91vw;
-    padding: 1vw;
-    margin-bottom: 1vw;
-}
-
-.forstebilde h1 {
-    font-size: 2.7em;
-    padding: 1vw;
-    margin: 1vw;
-}
-
-.forstebilde p {
-    font-size: 1.7em;
-    padding: 1vw;
-    margin: 1vw;
-}
-
-.forstebilde p:nth-child(even) {
-    margin-top: 5vw;
-    text-align: center;
-    background-color: #FFEA00;
-    height: 1vw;
-}
-
-.forstebilde a {
-    background-color: #009739;
-    border: 0.8vw solid #009739;
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-.forstebilde a:hover {
-    color: #012169;
-    transition: 0.3s;
-    padding: 1.5vw;
+.capo-background{
+    background-image: url(../images/Activitystart.jpg);
 }
 
 .sideKort {
@@ -726,7 +682,7 @@ bruke en dropdown menu */
     .info-kort div{
         width: 50%;
     }
-    .video{
+    .grid-middle{
         grid-template-columns: 2vw auto 2vw;
     }
     iframe{

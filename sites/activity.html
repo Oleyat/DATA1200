@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OsloMet</title> 
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../images/favicon-32x32.png">
 </head>
 <body>
     <header class>
@@ -21,17 +22,36 @@
         </nav>
     </header>
     <main>
-        <section class="index-top-fargedrop-innrykk">
-            <div class="forstebilde">
-                <img src="../images/Activitystart.jpg">
-                <h1>Velkommen til Capoeira på OsloMet CAPOMET</h1>
-                <p>Her på OsloMet kan du ta del i en bred mengde med forskjellige aktiviteter.
-                    Et av disse er Capoeira, en brasiliansk kampsport som inkluderer kamp, akrobatikk og musikk.
-                </p>
-                <p><a href="https://snl.no/capoeira">LES MER</a></p>
-            </div>
+        <section class="index-top-fargedrop"> <!-- lager forside bilde delen. -->
+            <div class="grid-container innrykk">
+                <article class="main-box" aria-label="header text">
+                    <div>
+                        <h1>Velkommen til Capoeira hos OsloMet</h1>
+                        <img src="../images/capologo.png" alt="oslomet-bilder-capoeira">
+                    </div>
+                    <div class="secondary-box font-lg">
+                        <p>
+                            Her på OsloMet kan du ta del i en bred mengde med forskjellige aktiviteter. Et av disse er Capoeira, en brasiliansk kampsport som inkluderer kamp, akrobatikk og musikk.
+                        </p>   
+                    </div>
+                </article>
+                <aside class="aside-box info-kort">
+                    <h2 class="font-lg">CAPOMET!</h2>
+                    <h3>OsloMet sin Capoeira Forening</h3>
+                    <img src="../images/capologobig.png" alt="Capomet logo Image">
+                    <div>
+                        <a href="https://student.oslomet.no/bli-med-studentforening">
+                            <div class="default-btn">
+                                <p>Meld deg på her. (student.oslomet.no)</p>
+                            </div>
+                            <p>
+                                <a href="https://snl.no/capoeira">Les mer om capoeira her (snl.no)</a>
+                            </p>
+                        </a>
+                    </div>
+                </aside>
         </section>
-        <section class="innrykk">
+        <section class="innrykk gap-top-bigger">
             <article class="sideKort">
                 <div class="activityEsker">
                 <h3>Historisk Bakgrunn</h3>
@@ -76,7 +96,7 @@
             </article>
         </section>
     </main>
-    <footer>
+    <footer class="gap-top-bigger">
         <div class="footer-section">
             <img src="../images/OsloMet-Logo.png"></img>
             <h3>OSLO METROPOLITIAN UNIVERSITY</h3>
