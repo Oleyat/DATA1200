@@ -73,6 +73,7 @@ a:visited{ /* Endrer fargen på linker som er blitt trukket på. */
     text-decoration-color: #283b9b;
     color: #283b9b; 
 }
+caption{text-align: left;}
 
 .default-btn { /* Default knappen. */
     width: 80%;
@@ -224,10 +225,10 @@ header {
     flex-wrap: wrap;
 }
 
-.studie-informasjon-table caption {
-    font-size: 1.6em;
+/* .studie-informasjon-table caption {
+    font-size: 1.6em; test
     text-align: left;
-}
+} */
 
 .studie-informasjon-table tr {
     height: 6.5vw;
@@ -461,6 +462,20 @@ details a{
     border: 1px solid red;
 }
 
+.video{
+    display: grid;
+    grid-template-columns: 15vw auto 15vw;
+    height: 70vh;
+}
+
+
+iframe{
+    grid-column: 2/3;
+    grid-row: 1;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
 
 
 /* CSS for activity-side */
@@ -632,16 +647,13 @@ bruke en dropdown menu */
  */
 @media (max-width: 400px){
     /* Skriftstørrelser.  for små skjermer*/
-    table td, th{
+    table td, th, p{
         font-size: 0.7em;
-    }
-    p{
-        font-size: 0.6em;
     }
     h1{
         font-size: 1.2em;
     }
-    h2{
+    h2, caption{
         font-size: 1em;
     }
     .font-lg{
@@ -651,7 +663,7 @@ bruke en dropdown menu */
         font-size: 0.7em;
     }
     .main-box img {
-        display: none;
+ /*        display: none; */
     }
 }
 
@@ -684,6 +696,9 @@ bruke en dropdown menu */
         width: 95%;
         font-size: 0.9em;
     }
+    summary{ /* Gjør summaryene større siden det er små skjerm. */
+        height: 4vh;
+    }
 
     .main-box {
         grid-column: 1/2;
@@ -691,7 +706,7 @@ bruke en dropdown menu */
     }
 
     .studie-informasjon-table tr {
-        height: 6.5vw;
+        height: 6.5vh; /* Gjør større for små skjermer. */
         width: 100%;
         margin: auto;
         border-top: 1px solid black;
