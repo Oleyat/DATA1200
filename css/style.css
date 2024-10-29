@@ -468,7 +468,6 @@ details a{
 .video{
     display: grid;
     grid-template-columns: 15vw auto 15vw;
-    height: 70vh;
 }
 
 
@@ -477,6 +476,7 @@ iframe{
     grid-row: 1;
     width: 100%;
     height: 100%;
+    padding-bottom: 39.25%;
     border: none;
 }
 
@@ -725,6 +725,12 @@ bruke en dropdown menu */
     }
     .info-kort div{
         width: 50%;
+    }
+    .video{
+        grid-template-columns: 2vw auto 2vw;
+    }
+    iframe{
+        padding-bottom: 18%;
     }
     footer{
         flex-wrap: wrap;
