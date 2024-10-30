@@ -40,6 +40,7 @@ table {
 .default-flex{ /* Flex box-er */
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .default-table tr:nth-of-type(even){
@@ -73,7 +74,9 @@ a:visited{ /* Endrer fargen på linker som er blitt trukket på. */
     text-decoration-color: #283b9b;
     color: #283b9b; 
 }
-caption{text-align: left;}
+caption{
+    text-align: left;
+}
 
 .default-btn { /* Default knappen. */
     width: 80%;
