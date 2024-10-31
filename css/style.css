@@ -283,11 +283,9 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
 
 .header-left img {
     width: 6em;
-    /* Bruker em fordi vi vil at logoen skal være så stor i relativitet til teksten ved siden av. */
 }
 
-/* Navigasjons bar PC */
-/* Må omprogrammeres for å få bedre flyt med forskjellige størrelser */
+/* Navigasjons bar */
 .nav-bar {
     grid-column: 2/3;
     width: 100%;
