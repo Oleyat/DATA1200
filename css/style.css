@@ -528,7 +528,7 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
     height: 36vw;
     flex-grow: 1;
     padding: 1vw;
-    border: 10px solid black
+    margin: 1vw;
 }
 
 .activityEsker img {
@@ -538,16 +538,6 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
 
 .activityEsker p {
     font-size: 0.95em;
-}
-
-.activityEsker a {
-    text-decoration: none;
-    color: black;
-}
-
-.activityEsker a:hover {
-    color: #A1BE95;
-    transition: 0.3s;
 }
 
 /* FOOTER */
@@ -688,4 +678,4 @@ bruke en dropdown menu */
         margin-left: 10vw;
         margin-right: 10vw;
     }
-}
+}               
