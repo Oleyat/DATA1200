@@ -231,11 +231,15 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
     margin-top: 5vw;
 }
 
+.gap-bottom{
+    margin-bottom: 5vw;
+}
+
 .gap-top-bigger {
     margin-top: 15vw;
 }
 
-.index-top-fargedrop {
+.fargedrop { /* Bakgrunnsfarge for seksjoner. */
     background-color: var(--oslometPrimary);
 }
 
@@ -505,6 +509,9 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
 .grid-middle{
     display: grid;
     grid-template-columns: 15vw auto 15vw;
+}
+.grid-item-mid{
+    grid-column: 2/3;
 }
 
 /* CSS for activity-side */
