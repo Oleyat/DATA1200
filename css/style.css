@@ -395,8 +395,8 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
 .table-fixed-view {
     /* Gjemmer Studie-oppbygging detail størrelsen siden den tar opp 400px. i høyde. Kommer når detail-en åpner. */
     height: 0px;
-    overflow-y: hidden;
-    overflow-x: hidden;
+    resize: vertical;
+    overflow: auto;
     transition: height 0.3s ease;
 }
 .fixed{
@@ -513,32 +513,19 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
     background-image: url(../images/Activitystart.jpg);
 }
 
-.sideKort {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: 100%;
-    width: 70%;
-    margin-top: 10vw;
-    margin: auto;
-}
-
-.activityEsker {
-    width: 27vw;
-    height: 36vw;
+.activity-box {
+    width: 30vw;
+    height: 60vh;
     flex-grow: 1;
     padding: 1vw;
     margin: 1vw;
 }
 
-.activityEsker img {
+.activity-box img {
     width: 100%;
     height: 100%;
 }
 
-.activityEsker p {
-    font-size: 0.95em;
-}
 
 /* FOOTER */
 
@@ -608,6 +595,13 @@ bruke en dropdown menu */
     summary{ /* Gjør summaryene større siden det er små skjerm. */
         height: 4vh;
     }
+    .default-flex{
+        flex-direction: column;
+    }
+    .default-btn{
+        width: 90%;
+
+    }
     /* Skriftstørrelser. */
     .grid-container {
         /* Container for grid- som vises på index */
@@ -651,9 +645,9 @@ bruke en dropdown menu */
         padding-top: 0%;
         padding-bottom: 0%;
     }
-    .info-kort div{
+/*     .info-kort div{
         width: 50%;
-    }
+    } */
     .grid-middle{
         grid-template-columns: 2vw auto 2vw;
     }
@@ -666,6 +660,9 @@ bruke en dropdown menu */
     }
     .studie-oppbyging td{
         height: 15vw;
+    }
+    .activity-box{
+        width: 80vw;
     }
 }
 
