@@ -82,6 +82,8 @@ h1 {
 
 p {
     font-size: 1em;
+    line-height: 1.5rem;
+    letter-spacing: .09rem;
 }
 
 a { /* Endrer stilen på a elementer globalt. */
@@ -473,11 +475,11 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
 
 .studenthistorier div {
     /* MAKE ROUNDED BORDERS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-    background-color: var(--oslometPrimary);
+    background-color: var(--oslometPrimary); 
     padding-bottom: 2vw;
     border-style: solid;
     border-color: var(--oslometPrimary);
-    border-radius: 0px 0px 20px 20px;
+    border-radius: 0px 0px 20px 20px; 
 }
 
 .studenthistorier p {
@@ -496,10 +498,7 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
     max-width: 100%;
 }
 
-.studenthistorier div:hover {
-    background-color: var(--oslometSecondary);
-    transition: 0.5s;
-}
+
 
 .max-width{
     width: 20vw;
@@ -525,7 +524,7 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
     height: 60vh;
     flex-grow: 1;
     padding: 1vw;
-    margin: 1vw;
+    margin: 2vw;
 }
 
 .activity-box img {
