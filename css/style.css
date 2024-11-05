@@ -475,11 +475,7 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
 
 .studenthistorier div {
     /* MAKE ROUNDED BORDERS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-    background-color: var(--oslometPrimary); 
     padding-bottom: 2vw;
-    border-style: solid;
-    border-color: var(--oslometPrimary);
-    border-radius: 0px 0px 20px 20px; 
 }
 
 .studenthistorier p {
