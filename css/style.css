@@ -512,6 +512,7 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
 .activity-box img {
     width: 100%;
     height: 100%;
+    border-bottom: 5px solid var(--oslometPrimary);
 }
 
 
