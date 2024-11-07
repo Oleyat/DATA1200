@@ -12,7 +12,7 @@
 <body>
     <header>
         <div class="header-left">
-            <img src="./images/OsloMet-Logo.png" alt="OsloMet-Logo" role="img">
+            <img src="./images/OsloMet-Logo.png" alt="OsloMet-Logo">
         </div>
         <nav class="nav-bar" role="navigation"> <!-- Navigasjons meny -->
             <ul>
@@ -22,23 +22,14 @@
                 <li><a href="./sites/activity.html">Activity</a></li>
             </ul>
         </nav>
-        <details class="burger-menu" role="button" aria-label="Burger Menu">
-            <summary>Menu</summary>
-            <ul>
-                <li><a href="#">Hjem</a></li>
-                <li><a href="./sites/github.html">Github</a></li>
-                <li><a href="./sites/accessibility.html">Accessibility</a></li>
-                <li><a href="./sites/activity.html">Activity</a></li>
-            </ul>
-        </details>
     </header>
     <main aria-label="Main content">
-        <section class="index-top-fargedrop">
+        <section class="fargedrop">
             <div class="grid-container innrykk">
                 <article class="main-box" aria-label="header text">
                     <div>
                         <h1>Matematisk modellering og datavitenskap – ingeniør</h1>
-                        <img src="./images/test-img.png" alt="oslomet-bilder">
+                        <img src="./images/matmod.png" alt="oslomet-bilder">
                     </div>
                     <div class="secondary-box font-lg">
                         <p>Få innsikt i matematiske modeller og datadrevne metoder som kan løse mange praktiske og
@@ -586,7 +577,7 @@
                         </details>
                     </div>
                 </article>
-                <aside class="aside-box info-kort">
+                <aside class="aside-box info-kort" aria-label="Faglig leder">
                     <h2 class="font-lg">Faglig leder</h2>
                     <h3 class="font-med">Kristoffer Herland Hellton</h3>
                     <img src="./images/faglig-leder.png" alt="Kristoffer Herland Hellton">
@@ -598,7 +589,7 @@
                 </aside>
             </div>
         </section>
-        <section class="index-top-fargedrop grid-middle gap-top">
+        <section class="fargedrop grid-middle gap-top">
             <iframe src="https://film.oslomet.no/v.ihtml/player.html?source=embed&photo%5fid=95216483" allowfullscreen title="Tre studenter fra studiet forteller hvorfor de liker å studere dette. De snakker om at det er fint å være nerd." loading="lazy">
             </iframe> <!-- Her bruker vi iframe- siden vi ikke har tilgang til videofilen. -->
         </section>
@@ -608,7 +599,7 @@
                 <article class="main-box studenthistorier">
                     <div>
                         <img src="./images/studenthistorier.jpg" alt="Studenthistorier Default">
-                        <p>Teknologi og design</p>
+                        <small>Teknologi og design</small>
                         <h3>Spå fremtiden med matematikk og datavitenskap</h3>
                         <p>Har du lyst til å finne ut hva som vil skje i fremtiden? Lær å bruke verktøy for å forutsi
                             alt fra været og strømprisene til utviklingen i boligmarkedet.</p>
@@ -686,3 +677,55 @@
 </body>
 
 </html>
+
+<!-- Image sources: -->
+<!-- 
+    favicon-32x32.png
+        - Endret version av OsloMet sin favicon. Hentet fra 
+        https://www.oslomet.no/studier/tkd/matematisk-modellering-datavitenskap 
+    OsloMet-Logo.png
+        - OsloMet sin text-logo. Hentet fra  (?)
+        https://www.nlogic.no/content/uploads/2023/06/nlogic-oslomet-logo-referanse-300x210.png
+    
+    -------------------------------INDEX
+    matmod.png
+        - Matematisk modellering bilde.
+        https://www.pngegg.com/en/png-obwrq
+            Siden gir tillatelse til ikke-kommersiel bruk av bildet.
+    faglig-leder.png
+        - Bilde av Kristoffer Herland Hellton hentet fra:
+        https://www.oslomet.no/studier/tkd/matematisk-modellering-datavitenskap
+    studenthistorier.jpg
+        - Bilde av to studenter i OsloMet. Hentet fra:
+        https://www.oslomet.no/studier/tkd/matematisk-modellering-datavitenskap
+    -------------------------------ACTIVITY
+    capologo.png (FINN NY)
+        - Main bilde. Hentet fra (!!!)
+        https://www.freepik.com/premium-vector/capoeira-icon-silhouette-illustration-dance-sport-brazilian-doodle-sketch-black-sign_23754648.htm
+    capologobig.png
+        - Texten er en kombinasjon av eget design og OsloMet sin text-logo. Bildet under er hentet fra:
+        https://commons.wikimedia.org/wiki/File:Capoeira_pictogram.svg
+            Av: Citius Altius Fortius
+            Lisensen gir oss rett til å remixe, bruke og dele bildet. 
+    HistoricCapoeira.jpg
+        - !!! Fant ikke fotograf.
+        https://images.squarespace-cdn.com/content/v1/58db15ab20099ebcba56af35/b9b988ec-8a5f-4061-82cd-2f4007113c30/image-asset+%2832%29.jpeg?format=1000w
+    CapoeiraRoda.jpg
+        - Kilde: Capoeira Roda in Niteroi, 2019 (!!)
+        https://cdn.thecollector.com/wp-content/uploads/2024/06/capoeira-crowd-niteroi-globo.jpg
+    CapoeiraFitness.jpg
+        - FANT IKKE ORDENTLIG KILDE
+    CapoeiraBatizado.jpg
+        - FANT IKKE KILDEN
+    join-today.png
+        - Brukt ved siden av knappene på capoeira siden.
+        https://thumb.ac-illust.com/55/551c5df1612c9dd2b19b69fca04e8080_w.jpeg
+            Av: nicki
+            Lisensen gir oss rett til å bruke bildet i personlig og komersiell* sammenheng. (*Kan ikke være hoved objektet i komersiell sammenheng men det gjelder ikke nå da dette er et personlig bruk og vi selger ingenting.)
+    gym.jpg
+        - Brukt nederst på activity siden.
+        https://commons.wikimedia.org/wiki/File:Kongespeilet_i_Slottsparken.JPG?uselang=nb#Lisensiering
+            Av: Helge Høifødt.
+            Lisensen gir tilattelse til å bruke bildet this ethvert formål uten noe vilkår.
+
+-->

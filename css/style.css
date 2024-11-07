@@ -82,6 +82,8 @@ h1 {
 
 p {
     font-size: 1em;
+    line-height: 1.5rem;
+    letter-spacing: .09rem;
 }
 
 a { /* Endrer stilen på a elementer globalt. */
@@ -231,11 +233,15 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
     margin-top: 5vw;
 }
 
+.gap-bottom{
+    margin-bottom: 5vw;
+}
+
 .gap-top-bigger {
     margin-top: 15vw;
 }
 
-.index-top-fargedrop {
+.fargedrop { /* Bakgrunnsfarge for seksjoner. */
     background-color: var(--oslometPrimary);
 }
 
@@ -395,8 +401,8 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
 .table-fixed-view {
     /* Gjemmer Studie-oppbygging detail størrelsen siden den tar opp 400px. i høyde. Kommer når detail-en åpner. */
     height: 0px;
-    overflow-y: hidden;
-    overflow-x: hidden;
+    resize: vertical;
+    overflow: auto;
     transition: height 0.3s ease;
 }
 .fixed{
@@ -469,11 +475,7 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
 
 .studenthistorier div {
     /* MAKE ROUNDED BORDERS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-    background-color: var(--oslometPrimary);
     padding-bottom: 2vw;
-    border-style: solid;
-    border-color: var(--oslometPrimary);
-    border-radius: 0px 0px 20px 20px;
 }
 
 .studenthistorier p {
@@ -492,19 +494,23 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
     max-width: 100%;
 }
 
-.studenthistorier div:hover {
-    background-color: var(--oslometSecondary);
-    transition: 0.5s;
-}
-
 .max-width{
     width: 20vw;
     border: 1px solid red;
 }
 
-.grid-middle{
+.grid-middle{ /* Lager grid med innebygd innrykk fra sidene.  */
     display: grid;
     grid-template-columns: 15vw auto 15vw;
+}
+
+.grid-article{ /* Klasse for grid med to ruter som auto-sorter nedover. */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+}
+.grid-item-mid{ /* Brukes for å plassere item i .grid-middle */
+    grid-column: 2/3;
 }
 
 /* CSS for activity-side */
@@ -513,42 +519,20 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
     background-image: url(../images/Activitystart.jpg);
 }
 
-.sideKort {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: 100%;
-    width: 70%;
-    margin-top: 10vw;
-    margin: auto;
-}
-
-.activityEsker {
-    width: 27vw;
-    height: 36vw;
-    flex-grow: 1;
+.activity-box {
+    grid-column: 1fr;
+/*     width: 30vw;
+    height: 60vh; */
+/*     flex-grow: 1; */
     padding: 1vw;
-    border: 10px solid black
+    margin: 2vw;
 }
 
-.activityEsker img {
+.activity-box img {
     width: 100%;
     height: 100%;
 }
 
-.activityEsker p {
-    font-size: 0.95em;
-}
-
-.activityEsker a {
-    text-decoration: none;
-    color: black;
-}
-
-.activityEsker a:hover {
-    color: #A1BE95;
-    transition: 0.3s;
-}
 
 /* FOOTER */
 
@@ -618,6 +602,13 @@ bruke en dropdown menu */
     summary{ /* Gjør summaryene større siden det er små skjerm. */
         height: 4vh;
     }
+    .default-flex{
+        flex-direction: column;
+    }
+    .default-btn{
+        width: 79vw;
+
+    }
     /* Skriftstørrelser. */
     .grid-container {
         /* Container for grid- som vises på index */
@@ -661,11 +652,14 @@ bruke en dropdown menu */
         padding-top: 0%;
         padding-bottom: 0%;
     }
-    .info-kort div{
+/*     .info-kort div{
         width: 50%;
-    }
+    } */
     .grid-middle{
         grid-template-columns: 2vw auto 2vw;
+    }
+    .grid-article{
+        grid-template-columns: 1fr;
     }
     .footer-section{
         width: 100%;
@@ -676,6 +670,9 @@ bruke en dropdown menu */
     }
     .studie-oppbyging td{
         height: 15vw;
+    }
+    .activity-box{
+        width: 80vw;
     }
 }
 
@@ -688,4 +685,4 @@ bruke en dropdown menu */
         margin-left: 10vw;
         margin-right: 10vw;
     }
-}
+}               
