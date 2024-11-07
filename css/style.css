@@ -494,18 +494,22 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
     max-width: 100%;
 }
 
-
-
 .max-width{
     width: 20vw;
     border: 1px solid red;
 }
 
-.grid-middle{
+.grid-middle{ /* Lager grid med innebygd innrykk fra sidene.  */
     display: grid;
     grid-template-columns: 15vw auto 15vw;
 }
-.grid-item-mid{
+
+.grid-article{ /* Klasse for grid med to ruter som auto-sorter nedover. */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+}
+.grid-item-mid{ /* Brukes for å plassere item i .grid-middle */
     grid-column: 2/3;
 }
 
@@ -516,9 +520,10 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
 }
 
 .activity-box {
-    width: 30vw;
-    height: 60vh;
-    flex-grow: 1;
+    grid-column: 1fr;
+/*     width: 30vw;
+    height: 60vh; */
+/*     flex-grow: 1; */
     padding: 1vw;
     margin: 2vw;
 }
@@ -652,6 +657,9 @@ bruke en dropdown menu */
     } */
     .grid-middle{
         grid-template-columns: 2vw auto 2vw;
+    }
+    .grid-article{
+        grid-template-columns: 1fr;
     }
     .footer-section{
         width: 100%;
