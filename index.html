@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="./images/favicon-32x32.png">
 </head>
-
 <body>
     <header>
         <div class="header-left">
-            <img src="./images/OsloMet-Logo.png" alt="OsloMet-Logo">
+            <!-- Oslomet Logo på venstre -->
+            <img src="./images/OsloMet-Logo.png" alt="OsloMet Text Logo">
         </div>
         <nav class="nav-bar" role="navigation"> <!-- Navigasjons meny -->
             <ul>
@@ -24,24 +24,25 @@
         </nav>
     </header>
     <main aria-label="Main content">
-        <section class="fargedrop">
-            <div class="grid-container innrykk">
+        <section class="fargedrop"><!-- Fargedrop = Bakgrunnsfarge -->
+            <div class="grid-container innrykk"> <!-- Topp del av siden. Første man ser -->
                 <article class="main-box" aria-label="header text">
-                    <div>
+                    <div> 
                         <h1>Matematisk modellering og datavitenskap – ingeniør</h1>
                         <img src="./images/matmod.png" alt="oslomet-bilder">
-                    </div>
+                    </div> <!-- Info tekst box -->
                     <div class="secondary-box font-lg">
                         <p>Få innsikt i matematiske modeller og datadrevne metoder som kan løse mange praktiske og
                             samfunnsnyttige oppgaver.</p>
                     </div>
                 </article>
                 <aside class="aside-box" aria-label="Studie informasjon">
-                    <h2>Studie Informasjon</h2>
+                    <h2>Studie Informasjon</h2> <!-- Rask info om studiet. Kunne vært under. -->
                     <p>I tabellen finner du viktig informasjon om bachelorprogrammet Matematisk Modellering og
                         Datavitenskap.</p>
                     <!-- Kunne egentlig fjerne denne også legge den inne i caption-en nedenfor -->
                     <table class="studie-informasjon-table" aria-labelledby="studie-informasjon-caption">
+                        <!-- Table kunne vært gjort på andre måter (f.ex liste, men tenker table er bedre for å gi info på denne måten mtp. si css ikke funker) -->
                         <!-- Table for å gi generell info. Lenker til captionen nedenfor for ARIA markering. -->
                         <caption id="studie-informasjon-caption">Bachelorprogram</caption>
                         <tbody>
@@ -79,11 +80,11 @@
             </div>
         </section>
         <section class="innrykk gap-top">
-            <h2>Informasjon</h2> <!-- Heading forinformason seksjonen -->
+            <h2>Informasjon</h2> <!-- Heading for hoved-informason seksjonen -->
             <div class="grid-container">
                 <article class="main-box"> <!-- Informasjon seksjonen. venstre side med alle details boksene. -->
                     <div>
-                        <details name="kun-en-open"> <!-- name so it only lets you have one open at a time. -->
+                        <details name="kun-en-open"> <!-- "kun-en-open" så den kun kan ha en boks åpen samtidig. -->
                             <summary>Studiestart</summary>
                             <p>Informasjon om program, timeplaner, pensum, fadderuker og mye mer finner du på <a
                                     href="https://student.oslomet.no/bachelor-matematisk-modellering-datavitenskap">studiestartsiden
@@ -263,14 +264,16 @@
                         <p>Vær klar over at dette studiet har forskjellige retninger du kan velge.</p>
                         <p class="valgfag">Fagene med stjernen er valgfag.</p>
                         <details class>
+                            <!--  Stort table med alle fagene i studiet. -->
                             <summary class="fixed">Studiets Oppbygging</summary>
-                            <!-- fixed class makes the summary element sticky so it doesnt scroll away. -->
+                            <!-- fixed class så toppen ikke går vekk -->
                             <div class="table-fixed-view">
                                 <!-- Div for å gjøre det slik at objektet ikke har tomrom under seg. See css height 0. -->
                                 <table class="studie-oppbyging"> <!-- Studie oppbyggings visning i table.-->
                                     <caption>Studietsoppbygging vises nedenfor. Sortert for hvert semester og de ulike
                                         retningene.</caption>
-                                    <tbody>
+                                    <tbody> <!-- Brukt Table til å displaye alle fagene i studiet i en nesten-liste-lik måte. -->
+                                        <!-- På denne måten er det lesbart både i reader-mode visning da tablen er enkel. men ser også bra ut her og uten css. -->
                                         <tr>
                                             <th scope="row">1. semester</th>
                                             <td>
@@ -577,6 +580,7 @@
                         </details>
                     </div>
                 </article>
+                <!-- Faglig leder del -->
                 <aside class="aside-box info-kort" aria-label="Faglig leder">
                     <h2 class="font-lg">Faglig leder</h2>
                     <h3 class="font-med">Kristoffer Herland Hellton</h3>
@@ -589,10 +593,12 @@
                 </aside>
             </div>
         </section>
+        <!-- Video -->
         <section class="fargedrop grid-middle gap-top">
             <iframe src="https://film.oslomet.no/v.ihtml/player.html?source=embed&photo%5fid=95216483" allowfullscreen title="Tre studenter fra studiet forteller hvorfor de liker å studere dette. De snakker om at det er fint å være nerd." loading="lazy">
             </iframe> <!-- Her bruker vi iframe- siden vi ikke har tilgang til videofilen. -->
         </section>
+        <!-- Studenthistorier. -->
         <section class="innrykk gap-top">
             <h2 class="font-lg" aria-label="Studenthistorier Tittel">Studenthistorier</h2>
             <div class="grid-container">
@@ -622,6 +628,7 @@
             </div>
         </section>
         <section class="innrykk gap-top">
+            <!-- Interesserte studier -->
             <h2 class="font-lg">Du er kanskje også interessert i disse?</h2>
             <div class="grid-container">
                 <article class="main-box">
@@ -641,7 +648,7 @@
         </section>
 
     </main>
-    
+    <!-- Main ferdig. Footer -->
     <footer class="gap-top-bigger"> <!-- legger til spacing. -->
         <div class="grid-footer">
             <div class="footer-main">
@@ -716,9 +723,11 @@
         https://commons.wikimedia.org/wiki/File:Capoeira_pictogram.svg
             Av: Citius Altius Fortius
             Lisensen gir oss rett til å remixe, bruke og dele bildet. 
-    HistoricCapoeira.jpg
-        - !!! Fant ikke fotograf.
-        https://images.squarespace-cdn.com/content/v1/58db15ab20099ebcba56af35/b9b988ec-8a5f-4061-82cd-2f4007113c30/image-asset+%2832%29.jpeg?format=1000w
+    Capoeira-legal.jpg
+        - Bilde
+        https://en.wikipedia.org/wiki/Capoeira#/media/File:Capoeira-three-berimbau-one-pandeiro.jpg
+            Av: Sam Fentress
+            https://creativecommons.org/licenses/by-sa/3.0/ Lisens lar oss bruke, og remixe så lenge vi følger retlingslinsjene
     CapoeiraRoda.jpg
         - Kilde: Capoeira Roda in Niteroi, 2019 (!!)
         https://cdn.thecollector.com/wp-content/uploads/2024/06/capoeira-crowd-niteroi-globo.jpg
@@ -737,4 +746,16 @@
             Av: Helge Høifødt.
             Lisensen gir tilattelse til å bruke bildet this ethvert formål uten noe vilkår.
 
+
+
+
+
+
+
+
+
+
+
+            //https://velhosmestres.com/en/gato-1982-3
+            //Foto av Reynivaldo Brito
 -->
