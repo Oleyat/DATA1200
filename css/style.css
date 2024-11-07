@@ -65,6 +65,12 @@ footer h4 {
     font-size: 1em;
 }
 
+footer img{
+    width: 15%;
+    height: 15%;
+    margin: 1vw;
+}
+
 /* text stiler */
 h1 {
     color: #000;
@@ -539,6 +545,8 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
 .footer-main{
     grid-column: 1 / 2;
     margin: 1vw;
+    margin-left: 2vw;
+    margin-top: 3vw;
 }
 
 .footer-main h3{
@@ -558,6 +566,13 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
 .footer-aside{
     grid-column: 3 / 4;
     margin: 1vw;
+}
+
+.footer-aside a{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2vw;
+    font-size: 1.1em;
 }
 
 /* CSS for accessibilty-side */
