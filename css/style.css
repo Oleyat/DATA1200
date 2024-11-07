@@ -205,6 +205,7 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
 }
 .font-lg {
     font-size: 2em;
+    width: fit-content;
 }
 .font-med{
     font-size: 1.3em;
