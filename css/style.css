@@ -38,10 +38,6 @@ footer li {
     list-style: none;
 }
 
-footer ul {
-    padding: 0;
-}
-
 footer a {
     text-decoration: none;
     transition: 0.25s;
@@ -49,26 +45,12 @@ footer a {
     font-size: 1.2em;
 }
 
-footer h4 {
-    margin-top: 2vw;
-    margin-left: 0vw;
-}
-
-footer li,a {
-    margin: 1.5vw;
-    margin-right: 3vw;
-    margin-left: 0vw;
-}
-
 footer a:hover {
     text-decoration: underline;
 }
+
 footer h4 {
     font-size: 1em;
-}
-
-footer img {
-    width: 15vw;
 }
 
 /* text stiler */
@@ -544,6 +526,10 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
 .footer-main{
     grid-column: 1 / 2;
     margin: 1vw;
+}
+
+.footer-main h3{
+    padding-left: 0vw;
 }
 
 .footer-middle{
