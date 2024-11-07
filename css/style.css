@@ -34,6 +34,10 @@ footer {
     background-color: var(--oslometPrimary);
 }
 
+footer ul{
+    padding-left: 0vw;
+}
+
 footer li {
     list-style: none;
 }
@@ -47,6 +51,10 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+footer h3{
+    font-size: 1.5em;
 }
 
 footer h4 {
@@ -518,9 +526,9 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
 /* FOOTER */
 .grid-footer{
     display: grid;
-    grid-template-columns: 30vw 30vw minmax(100px, auto);
+    grid-template-columns: 35vw 35vw minmax(100px, auto);
     grid-auto-rows: auto;
-    gap: 10vw;
+    gap: 5vw;
 }
 
 .footer-main{
