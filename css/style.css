@@ -34,6 +34,10 @@ footer {
     background-color: var(--oslometPrimary);
 }
 
+footer p{
+    margin: 0.2vw;
+}
+
 footer ul{
     padding-left: 0vw;
 }
@@ -46,7 +50,7 @@ footer a {
     text-decoration: none;
     transition: 0.25s;
     color: #000;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 footer a:hover {
@@ -544,6 +548,11 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
 .footer-middle{
     grid-column: 2 / 3;
     margin: 1vw;
+}
+
+.footer-middle li, a{
+    margin: 0.5vw;
+    font-weight: bold;
 }
 
 .footer-aside{
