@@ -31,8 +31,6 @@ header {
 footer {
     height: fit-content;
     background-color: var(--oslometPrimary);
-    display: flex;
-    flex-direction: row;
 }
 
 footer li {
@@ -535,10 +533,26 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
 
 
 /* FOOTER */
+.grid-footer{
+    display: grid;
+    grid-template-columns: 30vw 30vw minmax(100px, auto);
+    grid-auto-rows: auto;
+    gap: 10vw;
+}
 
-.footer-section {
-    flex-grow: 1;
-    text-align: left;
+.footer-main{
+    grid-column: 1 / 2;
+    margin: 1vw;
+}
+
+.footer-middle{
+    grid-column: 2 / 3;
+    margin: 1vw;
+}
+
+.footer-aside{
+    grid-column: 3 / 4;
+    margin: 1vw;
 }
 
 /* CSS for accessibilty-side */
