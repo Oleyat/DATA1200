@@ -200,6 +200,7 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
     border: none;
 }
 
+
 /* ------ Generelle klasser. ------ */
 /* default-flex, default-table, default-btn */
 
@@ -207,6 +208,10 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+}
+
+.big-img{
+    width: 100%;
 }
 
 .default-table tr:nth-of-type(even){
