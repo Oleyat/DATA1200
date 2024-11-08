@@ -1,3 +1,15 @@
+/* CSS STRUKTUR */
+/* 
+    Øverst vil du finne globale klasser.
+    CSS-en er strukturert slik at du finner ting på rekkefølgen det kommer på nettsiden.
+    Med unntak av globale klasser og populære klasser. De finner du øverst.
+
+    Du finner også overskrifter og underoverskrifter nedover css-filen.
+    Det vil også stå hvilke elementer som kommer nedenfor.
+*/
+
+
+/* ------ CSS VARIABLER ------ */
 :root {
     /* Legger inn variabler for farge stilen (!)*/
     --oslometPrimary: #a8e2ff;
@@ -5,6 +17,9 @@
     --oslometSecondary: #73d0ff;
     --oslometPrimaryFont: 'Tahoma', sans-serif;
 }
+
+/* ------ Globale klasser ------ */
+/* -- HTML, body, header, footer -- */
 
 html {
     /* Skroller smooth */
@@ -56,9 +71,13 @@ footer a:hover{
 
 footer img{
     margin: 1vw;
+    width: 15%;
+    height: 15%;
 }
 
-/* text stiler */
+/* -- Font endringer -- */
+/* h1, p, a, */
+
 h1 {
     color: #000;
     font-family: var(--oslometPrimaryFont);
@@ -89,6 +108,9 @@ a:visited{ /* Endrer fargen på linker som er blitt trukket på. */
     text-decoration-color: #283b9b;
     color: #283b9b; 
 }
+
+/* -- details, summary -- */
+/* details, summary */
 
 details {
     margin-bottom: 1.25vw;
@@ -134,22 +156,15 @@ details>summary {
 }
 
 details[open]>summary {
+    /* Details "overskrift" teksten */
     text-decoration: underline;
     font-size: 1.07em;
 }
 
 details[open]>summary::after {
+    /* Roterer pilen */
     transform: rotate(-180deg);
 }
-
-caption{
-    text-align: left;
-}
-
-table {
-    border-collapse: collapse;
-}
-
 details p {
     text-align: left;
     width: 100%;
@@ -163,6 +178,19 @@ details[open] .table-fixed-view{ /* Fjerner tomrommet som hadde kommet under om 
     overflow-y: auto;
 }
 
+/* Table, caption */
+/* caption, table */
+
+caption{
+    text-align: left;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+/* -- IFRAME -- */
+
 iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. */
     grid-column: 2/3; /* Plassering i video-klasse gridden. */
     grid-row: 1;
@@ -172,6 +200,8 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
     border: none;
 }
 
+/* ------ Generelle klasser. ------ */
+/* default-flex, default-table, default-btn */
 
 .default-flex{ /* generell Flex box-er */
     display: flex;
@@ -205,6 +235,9 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
     color: black;
 }
 
+/* -- Font klasser -- */
+/* font-bold, font-lg, font-med */
+
 .font-bold{
     font-weight: bold;
 }
@@ -215,6 +248,8 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
     font-size: 1.3em;
 }
 
+/* -- Mellomrom klasser  og seksjon endringer-- */
+/* gap-top, gap-bottom, gap-top-bigger, fargedrop, innrykk*/
 .gap-top {
     margin-top: 5vw;
 }
@@ -227,21 +262,38 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
     margin-top: 15vw;
 }
 
+
 .fargedrop { /* Bakgrunnsfarge for seksjoner. */
     background-color: var(--oslometPrimary);
 }
 
-.innrykk {
+.innrykk { /* Side innrykk */
     padding-left: 3.5vw;
     padding-right: 3.5vw;
 }
 
+/* -- grid -- */
+/* grid-container, grid-middle, grid-article, grid-item-mid, main-box, secondary-box, aside-box */
 .grid-container {
     /* Container for grid- som vises på index */
     display: grid;
     grid-template-columns: 30vw auto minmax(300px, 30vw); /* Siden 1 er 30vw så dytter den litt på bildet. */
     gap: 2vw;
     grid-auto-rows: minmax(100px, auto);
+}
+
+.grid-middle{ /* Lager grid med innebygd innrykk fra sidene.  */
+    display: grid;
+    grid-template-columns: 15vw auto 15vw;
+}
+
+.grid-article{ /* Klasse for grid med to ruter som auto-sorter nedover. */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+}
+.grid-item-mid{ /* Brukes for å plassere item i .grid-middle */
+    grid-column: 2/3;
 }
 
 .main-box {
@@ -266,6 +318,7 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
     font-family: var(--oslometPrimaryFont);
 }
 
+/* -- header -- */
 .header-left {
     /* Logoen er her */
     width: 10%;
@@ -277,7 +330,8 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
     width: 6em;
 }
 
-/* Navigasjons bar */
+/* -- Navigasjons bar -- */
+/* .nav-bar */
 .nav-bar {
     grid-column: 2/3;
     width: 100%;
@@ -316,12 +370,11 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
     text-decoration: underline;
 }
 
-.burger-menu{
-    display: none;
-}
-
+/* -- Studie info table. -- */
+/* studie-informasjon-table */
 .studie-informasjon-table{
     width: 100%;
+    /* lille outlinen */
     box-shadow: -8px 7px 9px -13px rgba(0,0,0,1);
 }
 
@@ -330,11 +383,6 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
     flex-direction: row;
     flex-wrap: wrap;
 }
-
-/* .studie-informasjon-table caption {
-    font-size: 1.6em; test
-    text-align: left;
-} */
 
 .studie-informasjon-table tr {
     height: 6.5vw;
@@ -357,6 +405,8 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
     padding-right: 1vw;
 }
 
+/* -- Info-kort -- */
+/* info-kort */
 .info-kort {
     width: 100%;
     margin-bottom: 0;
@@ -385,6 +435,8 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
     margin: 0;
 }
 
+/* table-fixed */
+/* table-fixed-view, fixed */
 .table-fixed-view {
     /* Gjemmer Studie-oppbygging detail størrelsen siden den tar opp 400px. i høyde. Kommer når detail-en åpner. */
     height: 0px;
@@ -397,7 +449,8 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
     top: 0;
 }
 
-/* STUDIE OPPBYGGING TABLE. */
+/* -- STUDIE OPPBYGGING TABLE.  -- */
+/* studie-oppbygging, emnegruppetittel, valgfag*/
 .studie-oppbyging {
     font-family: var(--oslometPrimaryFont);
 }
@@ -460,6 +513,8 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
     background-repeat: no-repeat;
 }
 
+/* -- Studenthistorier/ Generell artikkel boks -- */
+/* studenthistorier */
 .studenthistorier div {
     /* MAKE ROUNDED BORDERS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
     padding-bottom: 2vw;
@@ -481,36 +536,11 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
     max-width: 100%;
 }
 
-.max-width{
-    width: 20vw;
-    border: 1px solid red;
-}
-
-.grid-middle{ /* Lager grid med innebygd innrykk fra sidene.  */
-    display: grid;
-    grid-template-columns: 15vw auto 15vw;
-}
-
-.grid-article{ /* Klasse for grid med to ruter som auto-sorter nedover. */
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-auto-rows: auto;
-}
-.grid-item-mid{ /* Brukes for å plassere item i .grid-middle */
-    grid-column: 2/3;
-}
-
-/* CSS for activity-side */
-
-.capo-background{
-    background-image: url(../images/Activitystart.jpg);
-}
+/* ------ CSS for activity-side ------ */
+/* activity-box */
 
 .activity-box {
     grid-column: 1fr;
-/*     width: 30vw;
-    height: 60vh; */
-/*     flex-grow: 1; */
     padding: 1vw;
     margin: 2vw;
 }
@@ -521,8 +551,8 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
     border-bottom: 5px solid var(--oslometPrimary);
 }
 
-
-/* FOOTER */
+/* ------ FOOTER ------ */
+/* grid-footer, footer-section */
 .grid-footer{
     display: grid;
    /*  grid-template-columns: 35vw 35vw minmax(100px, auto); */
@@ -535,20 +565,6 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
     grid-column: 1fr;
     margin: 1vw;
 }
-
-
-/* .footer-main{
-    grid-column: 1 / 2;
-    margin: 1vw;
-    margin-left: 2vw;
-    margin-top: 3vw;
-} */
-
-footer img{
-    width: 15%;
-    height: 15%;
-}
-
 
 .footer-section li, a{
     margin: 0.5vw;
@@ -563,33 +579,7 @@ footer img{
     font-size: 0.9em;
 }
 
-/* CSS for accessibilty-side */
-.accesibility-test-flex {
-    display: flex;
-    flex-direction: row;
-    flex-grow: 1;
-    flex-wrap: wrap;
-}
-
-.accesibility-test-flex img {
-    width: 40vw;
-    height: 25vw;
-    margin: 3vw;
-    border-radius: 3vw;
-}
-
-
-
-
-
-/* NEDENFOR GJELDER FOR SKJERMER UNDER 768PX*/
-
-/* For å ordne navbar for små telefoner så vil det være best å 
-bruke en dropdown menu */
-/* @media (max-width: 765px){
-
-}
- */
+/* BABY-SCREEN */
 @media (max-width: 400px){
     /* Skriftstørrelser.  for små skjermer*/
     table td, th, p{
@@ -611,8 +601,7 @@ bruke en dropdown menu */
         font-size: 0.7em;
     }
 }
-
-
+/* ------ MID-SCREEN ------ */
 @media (max-width: 815px){
     iframe{
         padding-bottom: 18%;
@@ -632,9 +621,7 @@ bruke en dropdown menu */
     }
     .default-btn{
         width: 79vw;
-
     }
-    /* Skriftstørrelser. */
     .grid-container {
         /* Container for grid- som vises på index */
             grid-template-columns: 1fr ;
@@ -652,7 +639,6 @@ bruke en dropdown menu */
         grid-row: 2;
         
     }
-    
     .secondary-box {
         grid-column: 1/2;
         grid-row: 2;
@@ -661,7 +647,6 @@ bruke en dropdown menu */
         grid-column: 1/2;
         grid-row: 1;
     }
-
     .studie-informasjon-table tr {
         height: 6.5vh; /* Gjør større for små skjermer. */
         width: 100%;
@@ -677,9 +662,6 @@ bruke en dropdown menu */
         padding-top: 0%;
         padding-bottom: 0%;
     }
-/*     .info-kort div{
-        width: 50%;
-    } */
     .grid-middle{
         grid-template-columns: 2vw auto 2vw;
     }
@@ -696,7 +678,7 @@ bruke en dropdown menu */
         width: 80vw;
     }
 }
-
+/* ------- WIDE-SCREEN ------ */
 @media (min-width: 1350px) {
     .innrykk{
         margin-left: 10vw;
