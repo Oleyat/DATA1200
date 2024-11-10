@@ -557,6 +557,17 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
     border-bottom: 5px solid var(--oslometPrimary);
 }
 
+/* ------ CSS for accessibility-side ------ */
+.main-box-image{
+    width: 50%;
+    height: 50%;
+}
+
+.main-box p{
+    letter-spacing: .1rem;
+    font-size: 0.8em;
+}
+
 /* ------ FOOTER ------ */
 /* grid-footer, footer-section */
 .grid-footer{
