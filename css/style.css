@@ -580,7 +580,24 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
 
 .test-grid{
     display: grid;
-    grid-template-columns: 40vw 40vw auto;
+    grid-template-columns: 33vw 33vw auto;
+    grid-auto-rows: auto;
+}
+
+.test-results h2, h3{
+    margin: 2vw;
+}
+
+.test-results h4{
+    margin: 1vw;
+    margin-left: 3vw;
+    margin-top: 2vw;
+}
+
+.test-results img{
+    width: 90%;
+    height: auto;
+    margin: 1vw;
 }
 
 /* ------ FOOTER ------ */
