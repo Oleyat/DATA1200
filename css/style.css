@@ -558,7 +558,7 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
 }
 
 /* ------ CSS for accessibility-side ------ */
-.main-box-image{
+.main-box-image img{
     width: 50%;
     height: 50%;
 }
@@ -566,6 +566,21 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
 .main-box p{
     letter-spacing: .1rem;
     font-size: 0.8em;
+}
+
+.test-images img{
+    width: 90%;
+    height: auto;
+    margin: 1vw;
+}
+
+.test-images h3{
+    padding: 0;
+}
+
+.test-grid{
+    display: grid;
+    grid-template-columns: 40vw 40vw auto;
 }
 
 /* ------ FOOTER ------ */
