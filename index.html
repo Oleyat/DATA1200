@@ -283,7 +283,9 @@
                         <h3>Hvordan ser studiet ut?</h3>
                         <p>I studiets oppbyging nedenfor kan du se hvordan studiet ser ut per semester.</p>
                         <p>Vær klar over at dette studiet har forskjellige retninger du kan velge.</p>
-                        <p class="valgfag">Fagene med stjernen er valgfag.</p>
+                        <p class="valgfag" aria-hidden="true">Fagene med stjernen er valgfag.</p> <!-- Hidden fordi skjermlesere kan ikke se stjernen. -->
+                        <p class="screen-reader-only">VIKTIG! Det vil bli opplest Fag navn først. Følgt etter Fag-kode, antall studiepoeng, og om det er et valgfag..</p>
+                        <!-- Neden for vil det være mye usynlig paragrafer for å lese opp om det er valgfag for skjermlesere. Det er siden de ikke kan se stjernen. -->
                         <details class>
                             <!--  Stort table med alle fagene i studiet. -->
                             <summary class="fixed">Studiets Oppbygging</summary>
@@ -409,21 +411,25 @@
                                                 <a href="">Introduksjon til IT-forskning</a>
                                                 <p>DATA3730</p>
                                                 <p>10stp.</p>
+                                                <p class="screen-reader-only">DATA3730 er et valgfag.</p>
                                             </td>
                                             <td class="valgfag">
                                                 <a href="">Introduction to Data Science with Scripting</a>
                                                 <p>DATA3800</p>
                                                 <p>10stp.</p>
+                                                <p class="screen-reader-only">DATA3800 er et valgfag.</p>
                                             </td>
                                             <td class="valgfag">
                                                 <a href="">Simulering og visualisering</a>
                                                 <p>MAMO2500</p>
                                                 <p>10stp.</p>
+                                                <p class="screen-reader-only">MAMO2500 er et valgfag.</p>
                                             </td>
                                             <td class="valgfag">
                                                 <a href="">Datasikkerhet</a>
                                                 <p>ITPE3100</p>
                                                 <p>10stp.</p>
+                                                <p class="screen-reader-only">ITPE3100 er et valgfag.</p>
                                             </td>
                                         </tr>
                                         <tr>
@@ -432,21 +438,25 @@
                                                 <a href="">Testing av programvare</a>
                                                 <p>ADTS2310</p>
                                                 <p>10stp.</p>
+                                                <p class="screen-reader-only">ADTS2310 er et valgfag.</p>
                                             </td>
                                             <td class="valgfag">
                                                 <a href="">Datanettverk og skytjenester</a>
                                                 <p>DATA2410</p>
                                                 <p>10stp.</p>
+                                                <p class="screen-reader-only">DATA2410 er et valgfag.</p>
                                             </td>
                                             <td class="valgfag">
                                                 <a href="">Ressurseffektive programmer</a>
                                                 <p>DAVE3606</p>
                                                 <p>10stp.</p>
+                                                <p class="screen-reader-only">DAVE3606 er et valgfag.</p>
                                             </td>
                                             <td class="valgfag">
                                                 <a href="">Avansert modellering og beregninger</a>
                                                 <p>MAMO2300</p>
                                                 <p>10stp.</p>
+                                                <p class="screen-reader-only">MAMO2300 er et valgfag.</p>
                                             </td>
                                         </tr>
                                         <tr>
@@ -459,6 +469,7 @@
                                                 <a href="">Algoritmer og datastrukturer</a>
                                                 <p>DATS2300</p>
                                                 <p>10stp.</p>
+                                                <p class="screen-reader-only">DATS2300 er et valgfag.</p>
                                             </td>
                                         </tr>
                                         <tr>
@@ -467,16 +478,19 @@
                                                 <a href="">Statistisk analyse</a>
                                                 <p>MAMO3100</p>
                                                 <p>10stp.</p>
+                                                <p class="screen-reader-only">MAMO3100 er et valgfag.</p>
                                             </td>
                                             <td class="valgfag">
                                                 <a href="">Visualisering</a>
                                                 <p>MAMO2300</p>
                                                 <p>10stp.</p>
+                                                <p class="screen-reader-only">MAMO2300 er et valgfag.</p>
                                             </td>
                                             <td class="valgfag">
                                                 <a href="">Avansert modellering og beregninger</a>
                                                 <p>MAMO2300</p>
                                                 <p>10stp.</p>
+                                                <p class="screen-reader-only">MAMO2300 er et valgfag.</p>
                                             </td>
                                         <tr>
                                             <th scope="row">5. semester</th>
@@ -489,21 +503,25 @@
                                                 <a href="">Introduksjon til IT-forskning</a>
                                                 <p>DATA3730</p>
                                                 <p>10stp.</p>
+                                                <p class="screen-reader-only">DATA3730 er et valgfag.</p>
                                             </td>
                                             <td class="valgfag">
                                                 <a href="">Anvendt kunstig intelligens og datascience prosjekt</a>
                                                 <p>DATA3750</p>
                                                 <p>10stp.</p>
+                                                <p class="screen-reader-only">DATA3750 er et valgfag.</p>
                                             </td>
                                             <td class="valgfag">
                                                 <a href="">Datasikkerhet</a>
                                                 <p>ITPE3100</p>
                                                 <p>10stp.</p>
+                                                <p class="screen-reader-only">ITPE3100 er et valgfag.</p>
                                             </td>
                                             <td class="valgfag">
                                                 <a href="">Simulering og visualisering</a>
                                                 <p>MAMO3200</p>
                                                 <p>10stp.</p>
+                                                <p class="screen-reader-only">MAMO3200 er et valgfag.</p>
                                             </td>
                                         </tr>
                                         <tr>
@@ -512,16 +530,19 @@
                                                 <a href="">Testing av programvare</a>
                                                 <p>ADTS2310</p>
                                                 <p>10stp.</p>
+                                                <p class="screen-reader-only">ADTS2310 er et valgfag.</p>
                                             </td>
                                             <td class="valgfag">
                                                 <a href="">Datanettverk og skytjenester</a>
                                                 <p>DATA2410</p>
                                                 <p>10stp.</p>
+                                                <p class="screen-reader-only">DATA2410 er et valgfag.</p>
                                             </td>
                                             <td class="valgfag">
                                                 <a href="">Ressurseffektive programmer</a>
                                                 <p>DAVE3606</p>
                                                 <p>10stp.</p>
+                                                <p class="screen-reader-only">DAVE3606 er et valgfag.</p>
                                             </td>
                                         </tr>
                                         <th scope="row" class="emnegruppeTittel">Emnegruppe: Vitenskapelige beregninger
@@ -556,21 +577,25 @@
                                                 <a href="">Introduksjon til IT-forskning</a>
                                                 <p>DATA3730</p>
                                                 <p>10stp.</p>
+                                                <p class="screen-reader-only">DATA3730 er et valgfag.</p>
                                             </td>
                                             <td class="valgfag">
                                                 <a href="">Datasikkerhet</a>
                                                 <p>ITPE3100</p>
                                                 <p>10stp.</p>
+                                                <p class="screen-reader-only">ITPE3100 er et valgfag.</p>
                                             </td>
                                             <td class="valgfag">
                                                 <a href="">Lineær algebra og introduksjon til gruppeteori</a>
                                                 <p>MAMO2300</p>
                                                 <p>10stp.</p>
+                                                <p class="screen-reader-only">MAMO2300 er et valgfag.</p>
                                             </td>
                                             <td class="valgfag">
                                                 <a href="">Reell analyse</a>
                                                 <p>MAMO3300</p>
                                                 <p>10stp.</p>
+                                                <p class="screen-reader-only">MAMO3300 er et valgfag.</p>
                                             </td>
                                         </tr>
                                         <tr>
@@ -579,21 +604,25 @@
                                                 <a href="">Visualisering</a>
                                                 <p>ADSE3200</p>
                                                 <p>10stp.</p>
+                                                <p class="screen-reader-only">ADSE3200 er et valgfag.</p>
                                             </td>
                                             <td class="valgfag">
                                                 <a href="">Testing av programvare</a>
                                                 <p>ADTS2310</p>
                                                 <p>10stp.</p>
+                                                <p class="screen-reader-only">ADTS2310 er et valgfag.</p>
                                             </td>
                                             <td class="valgfag">
                                                 <a href="">Datanettverk og skytjenester</a>
                                                 <p>DATA2410</p>
                                                 <p>10stp.</p>
+                                                <p class="screen-reader-only">DATA2410 er et valgfag.</p>
                                             </td>
                                             <td class="valgfag">
                                                 <a href="">Symmetrier og algebraiske strukturer</a>
                                                 <p>MAMO2500</p>
                                                 <p>10stp.</p>
+                                                <p class="screen-reader-only">MAMO2500 er et valgfag.</p>
                                             </td>
                                         </tr>
                                     </tbody>
