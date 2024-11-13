@@ -39,7 +39,6 @@ body {
 header {
     display: flex;
     flex-direction: row;
-/*     flex-wrap: wrap; */
     background-color: var(--oslometPrimary);
     height: 6em;
 }
@@ -61,14 +60,15 @@ footer li {
 }
 
 footer a {
-    text-decoration: none;
     transition: 0.25s;
     color: #000;
-    font-size: 1.2em;
+    font-size: 1.1em;
+    text-decoration: none;
 }
 footer a:hover{
     text-decoration: underline;
 }
+
 
 footer img{
     margin: 1vw;
@@ -81,10 +81,12 @@ footer img{
 
 h1 {
     color: #000;
-    font-family: var(--oslometPrimaryFont);
     font-size: 2em;
     /* Dobbler H1 størrelse. */
 }
+h2{}
+h3{}
+h4{}
 
 p {
     font-size: 1em;
@@ -147,7 +149,6 @@ summary::after {
 
 summary:hover {
     text-decoration: underline;
-    font-size: 1.07em;
     transition: 0.1s;
 }
 
@@ -159,7 +160,6 @@ details>summary {
 details[open]>summary {
     /* Details "overskrift" teksten */
     text-decoration: underline;
-    font-size: 1.07em;
 }
 
 details[open]>summary::after {
@@ -224,7 +224,6 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
     background-color: var(--oslometSecondary);
     border-width: 10px;
     padding: 30px;
-    font-size: 1em;
     text-align: center;
     font-weight: bolder;
     transition: 0.2s;
@@ -321,7 +320,6 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
 .aside-box {
     grid-column: 3/4;
     grid-row: 1;
-    font-family: var(--oslometPrimaryFont);
 }
 
 /* -- header -- */
@@ -338,38 +336,37 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
 
 /* -- Navigasjons bar -- */
 /* .nav-bar */
-.nav-bar {
+nav {
     grid-column: 2/3;
     width: 100%;
     display: flex;
     flex-direction: row;
 }
 
-.nav-bar ul {
+nav ul {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
 }
 
-.nav-bar li {
+nav li {
     margin-top: 3vw;
     margin-left: 3vw;
 }
 
-.nav-bar ul li {
+nav ul li {
     list-style: none;
 }
 
-.nav-bar a {
+nav a {
     /* Selve navbar teksten. */
     font-size: 1.1em;
-    font-family: var(--oslometPrimaryFont);
     text-decoration: none;
     color: #000;
     transition: 0.2s;
 }
 
-.nav-bar a:hover {
+nav a:hover {
     /* Efekten som kommer når du legger musa over teksten.*/
     /*   background-color: var(--oslometSecondary); */
     transition: 0.2s;
@@ -457,9 +454,7 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
 
 /* -- STUDIE OPPBYGGING TABLE.  -- */
 /* studie-oppbygging, emnegruppetittel, valgfag*/
-.studie-oppbyging {
-    font-family: var(--oslometPrimaryFont);
-}
+
 
 .studie-oppbyging tr {
     display: flex;
@@ -533,7 +528,6 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
 }
 
 .studenthistorier h3 {
-    font-size: 2em;
     margin-bottom: 1vw;
     margin-top: 1vw;
 }
@@ -629,7 +623,6 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
     display: flex;
     align-items: center;
     margin-bottom: 1vw;
-    font-size: 1.1em;
 }
 
 /* BABY-SCREEN */
