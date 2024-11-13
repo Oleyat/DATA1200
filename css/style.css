@@ -567,6 +567,10 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
     letter-spacing: .1rem;
 }
 
+.test-images h2, .test-images h3, .test-images p{
+    margin: 1vw;
+}
+
 .test-images img{
     width: 90%;
     height: auto;
