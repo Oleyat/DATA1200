@@ -584,9 +584,10 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
     grid-auto-rows: auto;
 }
 
-.test-results h2 h3 p{
+.test-results h2, .test-results h3, .test-results p{
     margin: 2vw;
 }
+
 
 .test-results h4{
     margin: 1vw;
