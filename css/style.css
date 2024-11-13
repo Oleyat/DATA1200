@@ -436,7 +436,7 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
     padding-bottom: 0%;
 }
 
-.info-kort p h2 h3 {
+.info-kort p, h2, h3 {
     padding-left: 0.5vw;
     margin: 0;
 }
@@ -615,7 +615,7 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
     margin: 1vw;
 }
 
-.footer-section li a{
+.footer-section li, a{
     margin: 0.5vw;
     font-weight: bold;
 }
