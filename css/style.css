@@ -262,7 +262,6 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
 }
 
 .default-btn { /* Default knappen. */
-    width: 80%;
     background-color: var(--oslometSecondary);
     border-width: 10px;
     padding: 30px;
@@ -683,9 +682,6 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
     .default-flex{
         flex-direction: column;
     }
-    .default-btn{
-        width: 79vw;
-    }
     .grid-container {
         /* Container for grid- som vises på index */
             grid-template-columns: 1fr ;
@@ -721,8 +717,8 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
         width: 100vw    ;
     }
     .info-kort img {
-        width: 40%;
-        padding-right: 10%;
+/*         width: 40%; */
+/*         padding-right: 10%; */
         padding-top: 0%;
         padding-bottom: 0%;
     }
