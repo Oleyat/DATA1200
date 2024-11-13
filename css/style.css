@@ -565,7 +565,6 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
 
 .main-box p{
     letter-spacing: .1rem;
-    font-size: 0.8em;
 }
 
 .test-images img{
@@ -633,7 +632,7 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
 @media (max-width: 400px){
     /* Skriftstørrelser.  for små skjermer*/
     table td, th, p{
-        font-size: 0.7em;
+        font-size: 1.2em;
     }
     h1{
         font-size: 1.2em;
@@ -648,7 +647,7 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
         font-size: 1em;
     }
     .font-med{
-        font-size: 0.7em;
+        font-size: 1.5em;
     }
 }
 /* ------ MID-SCREEN ------ */
