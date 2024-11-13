@@ -74,7 +74,9 @@ nav a {
     color: #000;
     transition: 0.2s;
 }
-nav a:visited{ /* må overstyre default a:visited så det ikke blir blå farge i navbaren. */
+
+nav a:visited {
+    /* må overstyre default a:visited så det ikke blir blå farge i navbaren. */
     color: black;
 }
 
@@ -89,11 +91,11 @@ footer {
     height: fit-content;
 }
 
-footer p{
+footer p {
     margin: 0.2vw;
 }
 
-footer ul{
+footer ul {
     padding-left: 0vw;
 }
 
@@ -107,28 +109,25 @@ footer a {
     font-size: 1.1em;
     text-decoration: none;
 }
-footer a:hover{
+
+footer a:hover {
     text-decoration: underline;
 }
 
 
-footer img{
+footer img {
     margin: 1vw;
-    width: 10%;
-    height: 10%;
+    width: 5vw;
 }
 
 /* -- Font endringer -- */
 /* h1, p, a, */
 
-h1 {
-    color: #000;
-    font-size: 2em;
-    /* Dobbler H1 størrelse. */
-}
-h2{}
-h3{}
-h4{}
+h2 {}
+
+h3 {}
+
+h4 {}
 
 p {
     font-size: 1em;
@@ -136,7 +135,8 @@ p {
     /* letter-spacing: .09rem; */
 }
 
-a { /* Endrer stilen på a elementer globalt. */
+a {
+    /* Endrer stilen på a elementer globalt. */
     text-decoration-color: #3e5eff;
     text-decoration-thickness: 2.5px;
     text-decoration-skip-ink: none;
@@ -149,9 +149,10 @@ a:hover {
     text-decoration-color: #000;
 }
 
-a:visited{ /* Endrer fargen på linker som er blitt trukket på. */
+a:visited {
+    /* Endrer fargen på linker som er blitt trukket på. */
     text-decoration-color: #283b9b;
-    color: #283b9b; 
+    color: #283b9b;
 }
 
 /* -- details, summary -- */
@@ -160,7 +161,7 @@ a:visited{ /* Endrer fargen på linker som er blitt trukket på. */
 details {
     margin-bottom: 1.25vw;
     margin-top: 1.25vw;
-    width: 90%;
+    width: 100%;
     transition: 0.2s background linear;
 }
 
@@ -208,15 +209,18 @@ details[open]>summary::after {
     /* Roterer pilen */
     transform: rotate(-180deg);
 }
+
 details p {
     text-align: left;
     width: 100%;
 }
-details a{
+
+details a {
     margin: 0;
 }
 
-details[open] .table-fixed-view{ /* Fjerner tomrommet som hadde kommet under om den ikke var her. */
+details[open] .table-fixed-view {
+    /* Fjerner tomrommet som hadde kommet under om den ikke var her. */
     height: 400px;
     overflow-y: auto;
 }
@@ -224,7 +228,7 @@ details[open] .table-fixed-view{ /* Fjerner tomrommet som hadde kommet under om 
 /* Table, caption */
 /* caption, table */
 
-caption{
+caption {
     text-align: left;
 }
 
@@ -234,12 +238,15 @@ table {
 
 /* -- IFRAME -- */
 
-iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. */
-    grid-column: 2/3; /* Plassering i video-klasse gridden. */
+iframe {
+    /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. */
+    grid-column: 2/3;
+    /* Plassering i video-klasse gridden. */
     grid-row: 1;
     width: 100%;
     height: 100%;
-    padding-bottom: 39.25%; /* Forsøk på å fjerne svarte-boksene. */
+    padding-bottom: 39.25%;
+    /* Forsøk på å fjerne svarte-boksene. */
     border: none;
 }
 
@@ -247,21 +254,23 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
 /* ------ Generelle klasser. ------ */
 /* default-flex, default-table, default-btn */
 
-.default-flex{ /* generell Flex box-er */
+.default-flex {
+    /* generell Flex box-er */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
-.big-img{
+.big-img {
     width: 100%;
 }
 
-.default-table tr:nth-of-type(even){
+.default-table tr:nth-of-type(even) {
     background-color: var(--oslometPrimary);
 }
 
-.default-btn { /* Default knappen. */
+.default-btn {
+    /* Default knappen. */
     background-color: var(--oslometSecondary);
     border-width: 10px;
     padding: 30px;
@@ -271,9 +280,25 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
     color: black;
 }
 
+.btn-pil {
+    /* Liten pil som skal dekorere default-btn knapper */
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 5px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transition: 0.2s;
+}
+
 .default-btn:hover {
     background-color: var(--oslometPrimary);
     transition: 0.2s;
+}
+
+.default-btn:hover .btn-pil { /* roterer pilen slik at det gir effekt når noen hovrere over en knapp */
+    transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
 }
 
 .default-btn a {
@@ -281,16 +306,21 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
     color: black;
 }
 
+
+
 /* -- Font klasser -- */
 /* font-bold, font-lg, font-med */
 
-.font-bold{
+.font-bold {
     font-weight: bold;
 }
-.font-lg {
+
+.font-lg,
+h1 {
     font-size: 2em;
 }
-.font-med{
+
+.font-med {
     font-size: 1.3em;
 }
 
@@ -299,9 +329,10 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
 /* Denne CSS klasse-koden er hentet fra:  */
 /* https://medium.com/web-dev-survey-from-kyoto/the-visually-hidden-technique-303f8e2bd409 */
 .screen-reader-only {
-    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px 1px 1px 1px);
+    /* IE6, IE7 */
     clip: rect(1px, 1px, 1px, 1px);
-    height: 1px; 
+    height: 1px;
     overflow: hidden;
     position: absolute;
     white-space: nowrap;
@@ -314,7 +345,7 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
     margin-top: 5vw;
 }
 
-.gap-bottom{
+.gap-bottom {
     margin-bottom: 5vw;
 }
 
@@ -323,11 +354,13 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
 }
 
 
-.fargedrop { /* Bakgrunnsfarge for seksjoner. */
+.fargedrop {
+    /* Bakgrunnsfarge for seksjoner. */
     background-color: var(--oslometPrimary);
 }
 
-.innrykk { /* Side innrykk */
+.innrykk {
+    /* Side innrykk */
     padding-left: 3.5vw;
     padding-right: 3.5vw;
 }
@@ -337,22 +370,27 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
 .grid-container {
     /* Container for grid- som vises på index */
     display: grid;
-    grid-template-columns: 30vw auto minmax(300px, 30vw); /* Siden 1 er 30vw så dytter den litt på bildet. */
+    grid-template-columns: 30vw auto minmax(300px, 30vw);
+    /* Siden 1 er 30vw så dytter den litt på bildet. */
     gap: 2vw;
     grid-auto-rows: minmax(100px, auto);
 }
 
-.grid-middle{ /* Lager grid med innebygd innrykk fra sidene.  */
+.grid-middle {
+    /* Lager grid med innebygd innrykk fra sidene.  */
     display: grid;
     grid-template-columns: 15vw auto 15vw;
 }
 
-.grid-article{ /* Klasse for grid med to ruter som auto-sorter nedover. */
+.grid-article {
+    /* Klasse for grid med to ruter som auto-sorter nedover. */
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: auto;
 }
-.grid-item-mid{ /* Brukes for å plassere item i .grid-middle */
+
+.grid-item-mid {
+    /* Brukes for å plassere item i .grid-middle */
     grid-column: 2/3;
 }
 
@@ -391,13 +429,13 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
 
 /* -- Studie info table. -- */
 /* studie-informasjon-table */
-.studie-informasjon-table{
+.studie-informasjon-table {
     width: 100%;
     /* lille outlinen */
-    box-shadow: -8px 7px 9px -13px rgba(0,0,0,1);
+    /*   box-shadow: -8px 7px 9px -13px rgba(0,0,0,1); */
 }
 
-.studie-informasjon-table tbody{
+.studie-informasjon-table tbody {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -449,7 +487,9 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
     padding-bottom: 0%;
 }
 
-.info-kort p, h2, h3 {
+.info-kort p,
+h2,
+h3 {
     padding-left: 0.5vw;
     margin: 0;
 }
@@ -463,7 +503,8 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
     overflow: auto;
     transition: height 0.3s ease;
 }
-.fixed{
+
+.fixed {
     position: sticky;
     top: 0;
 }
@@ -478,7 +519,8 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
     flex-wrap: wrap;
 }
 
-.studie-oppbyging th,td {
+.studie-oppbyging th,
+td {
     padding: 0.1vw;
     margin: 0.25vw
 }
@@ -492,7 +534,7 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
     margin-top: 2vw;
 }
 
-.studie-oppbyging td {  
+.studie-oppbyging td {
     border-bottom: 3px solid var(--oslometPrimary);
     display: flex;
     flex-direction: row;
@@ -501,17 +543,20 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
     width: 100%;
     flex-wrap: wrap;
 }
-.studie-oppbyging td a{ 
+
+.studie-oppbyging td a {
     font-size: 1.2em;
     height: 50%;
     margin-bottom: 2vw;
 }
-.studie-oppbyging  p {
+
+.studie-oppbyging p {
     height: 50%;
     width: 50%;
     margin-top: 0;
     margin-bottom: 0;
 }
+
 .studie-oppbyging td p:nth-child(odd) {
     text-align: right;
 }
@@ -522,7 +567,8 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
     padding: 0;
 }
 
-.valgfag { /* Bildet er hentet fra https://www.oslomet.no/studier/tkd/matematisk-modellering-datavitenskap */
+.valgfag {
+    /* Bildet er hentet fra https://www.oslomet.no/studier/tkd/matematisk-modellering-datavitenskap */
     /* Legger inn bilde av stjerne for å markere valgfag i studieoppbyggningen. */
     background-image: url(../images/optional-icon.svg);
     background-position-y: top;
@@ -568,47 +614,49 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
 }
 
 /* ------ CSS for accessibility-side ------ */
-.main-box-image img{
+.main-box-image img {
     width: 50%;
     height: 50%;
 }
 
-.main-box p{
+.main-box p {
     letter-spacing: .1rem;
 }
 
-.test-images img{
+.test-images img {
     width: 90%;
     height: auto;
     margin: 1vw;
 }
 
-.test-images h3{
+.test-images h3 {
     padding: 0;
 }
 
-.test-grid{
+.test-grid {
     display: grid;
     grid-template-columns: 33vw 33vw auto;
     grid-auto-rows: auto;
 }
 
-.test-results h2, .test-results h3, .test-results p{
+.test-results h2,
+.test-results h3,
+.test-results p {
     margin: 2vw;
 }
 
-.test-results h3{
+.test-results h3 {
     border-bottom: 2px solid #73d0ff;
 }
 
 
-.test-results h4{
+.test-results h4 {
     margin: 1vw;
     margin-left: 3vw;
     margin-top: 2vw;
 }
 
-.test-results img{
+.test-results img {
     width: 90%;
     height: auto;
     margin: 1vw;
@@ -616,26 +664,27 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
 
 /* ------ FOOTER ------ */
 /* grid-footer, footer-section */
-.grid-footer{
+.grid-footer {
     display: grid;
-   /*  grid-template-columns: 35vw 35vw minmax(100px, auto); */
+    /*  grid-template-columns: 35vw 35vw minmax(100px, auto); */
     grid-template-columns: 1fr 1fr 1fr;
     grid-auto-rows: auto;
     gap: 5vw;
 }
 
 
-.footer-section{
+.footer-section {
     grid-column: 1fr;
     margin: 1vw;
 }
 
-.footer-section li, a{
+.footer-section li,
+a {
     margin: 0.5vw;
     font-weight: bold;
 }
 
-.footer-section a{
+.footer-section a {
     /* Må være flex slik at bilde logoene til footeren stiller seg opp ordentlig. */
     display: flex;
     align-items: center;
@@ -643,106 +692,148 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
 }
 
 /* BABY-SCREEN */
-@media (max-width: 400px){
+@media (max-width: 400px) {
+
     /* Skriftstørrelser.  for små skjermer*/
-    table td, th, p{
+    table td,
+    th,
+    p {
         font-size: 1.2em;
     }
-    h1{
+
+    h1 {
         font-size: 1.2em;
     }
-    h2, caption{
+
+    h2,
+    caption {
         font-size: 1em;
     }
-    footer img{
-        width: 5vw;
+
+    footer img {
+        width: 10vw;
     }
-    .font-lg{
+
+    .font-lg {
         font-size: 1em;
     }
-    .font-med{
+
+    .font-med {
         font-size: 1.5em;
     }
 }
+
 /* ------ MID-SCREEN ------ */
-@media (max-width: 957px){
-    iframe{
+@media (max-width: 957px) {
+    iframe {
         padding-bottom: 18%;
     }
-    footer img{
-        width: 5vw;
+
+    footer img {
+        width: 10vw;
     }
-    details, summary{
-        width: 96%;
+
+    details,
+    summary {
         font-size: 0.9em;
     }
-    summary{ /* Gjør summaryene større siden det er små skjerm. */
+
+    summary {
+        /* Gjør summaryene større siden det er små skjerm. */
         height: 4vh;
         font-size: 1.25em;
     }
-    .default-flex{
+
+    .default-flex {
         flex-direction: column;
     }
+
     .grid-container {
         /* Container for grid- som vises på index */
-            grid-template-columns: 1fr ;
-            grid-auto-rows: minmax(100px, auto);
-            gap: 10px;
-        }
-    .gap-top{
+        grid-template-columns: 1fr;
+        grid-auto-rows: minmax(100px, auto);
+        gap: 10px;
+    }
+
+    .gap-top {
         margin-top: 10vh;
     }
-    .gap-top-bigger{
+
+    .gap-top-bigger {
         margin-top: 15vh;
     }
-    .aside-box{
+
+    .aside-box {
         grid-column: 1/2;
         grid-row: 2;
-        
+
     }
+
     .secondary-box {
         grid-column: 1/2;
         grid-row: 2;
     }
+
     .main-box {
         grid-column: 1/2;
         grid-row: 1;
     }
+
     .studie-informasjon-table tr {
-        height: 6.5vh; /* Gjør større for små skjermer. */
+        height: 6.5vh;
+        /* Gjør større for små skjermer. */
         width: 100%;
         margin: auto;
         border-top: 1px solid black;
     }
-    .studie-informasjon-table td{
-        width: 100vw    ;
+
+    .studie-informasjon-table td {
+        width: 100vw;
     }
+
     .info-kort img {
-/*         width: 40%; */
-/*         padding-right: 10%; */
+        /*         width: 40%; */
+        /*         padding-right: 10%; */
         padding-top: 0%;
         padding-bottom: 0%;
     }
-    .grid-middle{
+
+    .grid-middle {
         grid-template-columns: 2vw auto 2vw;
     }
-    .grid-article{
+
+    .grid-article {
         grid-template-columns: 1fr;
     }
-    .grid-footer{
+
+    .grid-footer {
         grid-template-columns: 1fr;
     }
-    .studie-oppbyging td{
+
+    .studie-oppbyging td {
         height: 15vw;
     }
-    .activity-box{
+
+    .activity-box {
         width: 80vw;
     }
 }
+
 /* ------- WIDE-SCREEN ------ */
 @media (min-width: 1350px) {
-    .innrykk{
+    .innrykk {
         margin-left: 10vw;
         margin-right: 10vw;
     }
-}               
+}
+
+/* Vi leste hos dev.moz at noen folk kan ha nedsettelser eller sykdommer som blir påvirket av animasjoner. Så dette er en media for å minimere slikt. */
+@media (prefers-reduced-motion) {
+    .default-btn:hover .btn-pil { /* roterer pilen slik at det gir effekt når noen hovrere over en knapp */
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        border-color: #ff2929;   /* Rød så lettere å se */
+        
+    }
+    
+}
