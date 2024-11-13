@@ -43,6 +43,48 @@ header {
     height: 6em;
 }
 
+/* -- Navigasjons bar -- */
+/* .nav-bar */
+nav {
+    grid-column: 2/3;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+nav li {
+    margin-top: 3vw;
+    margin-left: 3vw;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav a {
+    /* Selve navbar teksten. */
+    font-size: 1.1em;
+    text-decoration: none;
+    color: #000;
+    transition: 0.2s;
+}
+nav a:visited{ /* må overstyre default a:visited så det ikke blir blå farge i navbaren. */
+    color: black;
+}
+
+nav a:hover {
+    /* Efekten som kommer når du legger musa over teksten.*/
+    /*   background-color: var(--oslometSecondary); */
+    transition: 0.2s;
+    text-decoration: underline;
+}
+
 footer {
     height: fit-content;
 }
@@ -91,7 +133,7 @@ h4{}
 p {
     font-size: 1em;
     line-height: 1.5rem;
-    letter-spacing: .09rem;
+    /* letter-spacing: .09rem; */
 }
 
 a { /* Endrer stilen på a elementer globalt. */
@@ -253,6 +295,16 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
     font-size: 1.3em;
 }
 
+.screen-reader-only {
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px; 
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
 /* -- Mellomrom klasser  og seksjon endringer-- */
 /* gap-top, gap-bottom, gap-top-bigger, fargedrop, innrykk*/
 .gap-top {
@@ -332,45 +384,6 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
 
 .header-left img {
     width: 6em;
-}
-
-/* -- Navigasjons bar -- */
-/* .nav-bar */
-nav {
-    grid-column: 2/3;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-}
-
-nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-
-nav li {
-    margin-top: 3vw;
-    margin-left: 3vw;
-}
-
-nav ul li {
-    list-style: none;
-}
-
-nav a {
-    /* Selve navbar teksten. */
-    font-size: 1.1em;
-    text-decoration: none;
-    color: #000;
-    transition: 0.2s;
-}
-
-nav a:hover {
-    /* Efekten som kommer når du legger musa over teksten.*/
-    /*   background-color: var(--oslometSecondary); */
-    transition: 0.2s;
-    text-decoration: underline;
 }
 
 /* -- Studie info table. -- */
@@ -607,6 +620,7 @@ nav a:hover {
     grid-auto-rows: auto;
     gap: 5vw;
 }
+
 
 .footer-section{
     grid-column: 1fr;
