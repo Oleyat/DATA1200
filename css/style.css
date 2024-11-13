@@ -295,6 +295,10 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
     font-size: 1.3em;
 }
 
+/* Skjemrleser klasse */
+/* Denne klassen gjemmer objekter slik at de ikke kan ses av bruker men kun av skjermlesere. */
+/* Denne CSS klasse-koden er hentet fra:  */
+/* https://medium.com/web-dev-survey-from-kyoto/the-visually-hidden-technique-303f8e2bd409 */
 .screen-reader-only {
     clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
     clip: rect(1px, 1px, 1px, 1px);
