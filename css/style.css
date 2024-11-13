@@ -656,7 +656,7 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
     }
 }
 /* ------ MID-SCREEN ------ */
-@media (max-width: 815px){
+@media (max-width: 957px){
     iframe{
         padding-bottom: 18%;
     }
