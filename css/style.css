@@ -673,11 +673,12 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
         width: 5vw;
     }
     details, summary{
-        width: 95%;
+        width: 96%;
         font-size: 0.9em;
     }
     summary{ /* Gjør summaryene større siden det er små skjerm. */
         height: 4vh;
+        font-size: 1.25em;
     }
     .default-flex{
         flex-direction: column;
