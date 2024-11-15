@@ -136,6 +136,9 @@ a:visited {
     text-decoration-color: #283b9b;
     color: #283b9b;
 }
+small{
+    height: 100px;
+}
 
 /* -- details, summary -- */
 /* details, summary */
