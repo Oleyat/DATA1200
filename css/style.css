@@ -30,7 +30,6 @@ html {
 }
 
 body {
-    padding: 0;
     height: 100%;
 }
 
@@ -47,7 +46,6 @@ nav {
 nav ul {
     background-color: #fff;
     border-radius: 4vw;
-    padding: 0;
     align-items: center;
 }
 
@@ -252,6 +250,15 @@ html, body, a, details, details p, iframe, .main-box img, .big-img, .studie-info
 body, a, details a, .info-kort p, .info-kort h2, .info-kort h3, .emnegruppeTittel, .studenthistorier p{
     margin: 0;
 }
+/* padding:0 */
+body, nav ul, .aside-box ul, .emnegruppeTittel, .test-images h3{
+    padding: 0;
+}
+/* display grid */
+.grid-container, .grid-article, .grid-middle, .grid-footer, .test-grid{
+    display: grid;
+} 
+
 
 /* ------ Generelle klasser. ------ */
 /* default-flex, default-table, default-btn */
@@ -302,8 +309,7 @@ body, a, details a, .info-kort p, .info-kort h2, .info-kort h3, .emnegruppeTitte
     font-weight: bold;
 }
 
-.font-lg,
-h1 {
+.font-lg, h1 {
     font-size: 2em;
 }
 
@@ -350,7 +356,6 @@ h1 {
 /* grid-container, grid-middle, grid-article, grid-item-mid, main-box, secondary-box, aside-box */
 .grid-container {
     /* Container for grid- som vises på index */
-    display: grid;
     grid-template-columns: 30vw auto minmax(300px, 30vw);
     /* Siden 1 er 30vw så dytter den litt på bildet. */
     gap: 2vw;
@@ -359,13 +364,11 @@ h1 {
 
 .grid-middle {
     /* Lager grid med innebygd innrykk fra sidene.  */
-    display: grid;
     grid-template-columns: 15vw auto 15vw;
 }
 
 .grid-article {
     /* Klasse for grid med to ruter som auto-sorter nedover. */
-    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: auto;
 }
@@ -393,10 +396,6 @@ h1 {
 .aside-box {
     grid-column: 3/4;
     grid-row: 1;
-}
-
-.aside-box ul{
-    padding: 0;
 }
 
 .aside-box li {
@@ -531,7 +530,6 @@ h1 {
 
 .emnegruppeTittel {
     height: 5vw;
-    padding: 0;
 }
 
 .valgfag {
@@ -588,13 +586,7 @@ h1 {
     letter-spacing: .1rem;
 }
 
-
-.test-images h3 {
-    padding: 0;
-}
-
 .test-grid {
-    display: grid;
     grid-template-columns: 33vw 33vw auto;
     grid-auto-rows: auto;
 }
@@ -625,7 +617,6 @@ h1 {
 /* ------ FOOTER ------ */
 /* grid-footer, footer-section */
 .grid-footer {
-    display: grid;
     /*  grid-template-columns: 35vw 35vw minmax(100px, auto); */
     grid-template-columns: 1fr 1fr 1fr;
     grid-auto-rows: auto;
@@ -650,61 +641,6 @@ a {
     margin-bottom: 1vw;
 }
 
-/* BABY-SCREEN */
-@media (max-width: 412px) {
-
-    /* Skriftstørrelser.  for små skjermer*/
-    table td,
-    th,
-    p {
-        font-size: 1.2em;
-    }
-
-    header {
-        height: 15vh;
-    }
-
-    nav {
-        width: 100vw;
-        height: 5vh;
-    }
-
-    nav a {
-        font-size: 0.9em;
-    }
-
-    nav ul, ul li {
-        margin: 0;
-        padding: 0;
-    }
-
-    nav ul {
-        width: 100vw;
-        justify-content: space-evenly;
-    }
-
-    h1 {
-        font-size: 1.2em;
-    }
-
-    h2,
-    caption {
-        font-size: 1em;
-    }
-
-    footer img {
-        width: 10vw;
-    }
-
-    .font-lg {
-        font-size: 1em;
-    }
-
-    .font-med {
-        font-size: 1.5em;
-    }
-}
-
 /* ------ MID-SCREEN ------ */
 @media (max-width: 957px) {
     iframe {
@@ -725,7 +661,11 @@ a {
         height: 4vh;
         font-size: 1.25em;
     }
-
+    nav ul{
+        justify-content: space-evenly;
+        width: 100%;
+        margin-left: 10vw;
+    }
     .default-flex {
         flex-direction: column;
     }
@@ -772,8 +712,6 @@ a {
     }
 
     .info-kort img {
-        /*         width: 40%; */
-        /*         padding-right: 10%; */
         padding-top: 0%;
         padding-bottom: 0%;
     }
@@ -798,6 +736,60 @@ a {
         width: 80vw;
     }
 }
+
+/* BABY-SCREEN */
+@media (max-width: 440px) {
+
+    /* Skriftstørrelser.  for små skjermer*/
+    table td,th,p {
+        font-size: 1.2em;
+    }
+
+    header {
+        height: 15vh;
+    }
+
+    nav {
+        width: 100vw;
+        height: 5vh;
+    }
+
+    nav a {
+        font-size: 0.9em;
+    }
+
+    nav ul, ul li {
+        margin: 0;
+        padding: 0;
+    }
+    nav ul {
+        margin-left: 0vw;
+        width: 100vw;
+        justify-content: space-evenly;
+    }
+
+    h1 {
+        font-size: 1.2em;
+    }
+
+    h2,
+    caption {
+        font-size: 1em;
+    }
+
+    footer img {
+        width: 10vw;
+    }
+
+    .font-lg {
+        font-size: 1em;
+    }
+
+    .font-med {
+        font-size: 1.5em;
+    }
+}
+
 
 /* ------- WIDE-SCREEN ------ */
 @media (min-width: 1350px) {
