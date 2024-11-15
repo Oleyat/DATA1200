@@ -324,6 +324,10 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
     font-family: var(--oslometPrimaryFont);
 }
 
+.aside-box ul{
+    padding: 0;
+}
+
 .aside-box li {
     margin: 1vw;
     list-style: none;
