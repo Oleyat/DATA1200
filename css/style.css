@@ -335,8 +335,8 @@ body, nav ul, .aside-box ul, .emnegruppeTittel, .test-images h3{
     width: 1px;
 }
 
-/* -- Mellomrom klasser  og seksjon endringer-- */
-/* gap-top, gap-bottom, gap-top-bigger, fargedrop, innrykk*/
+/* -- Mellomrom klasser  og seksjon endringerm, border bottom klasse-- */
+/* gap-top, gap-bottom, gap-top-bigger, fargedrop, innrykk, brd-bottom*/
 .gap-top {
     margin-top: 5vw;
 }
@@ -353,6 +353,10 @@ body, nav ul, .aside-box ul, .emnegruppeTittel, .test-images h3{
     /* Side innrykk */
     padding-left: 3.5vw;
     padding-right: 3.5vw;
+}
+
+.brd-bottom {
+    border-bottom: 1px solid black;
 }
 
 /* -- grid -- */
