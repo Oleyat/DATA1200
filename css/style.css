@@ -249,7 +249,7 @@ html, body, a, details, details p, iframe, .main-box img, .big-img, .studie-info
 }
 /* margin:0 */
 
-body, a, details a, nav ul li, .info-kort p, .info-kort h2, .info-kort h3, .emnegruppeTittel, .studenthistorier p{
+body, a, details a, .info-kort p, .info-kort h2, .info-kort h3, .emnegruppeTittel, .studenthistorier p{
     margin: 0;
 }
 
