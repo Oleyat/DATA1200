@@ -41,7 +41,7 @@
                     </div>
                 </article><!-- Sidebar kort for Capoeira forening -->
                 <aside class="aside-box center-items" aria-label="Oslomet Capoeira Forening Quick-Cards">
-                    <img src="../images/accessibilityimg.png" alt="Accesibility ikon">
+                    <img src="../images/accessibilityimg.png" alt="Logoen som kjennetegner tiljengelighet. Strekfigur med sirkel rundt.">
                 </aside>
         </section>
         <section class="gap-top innrykk brd-bottom">
@@ -87,11 +87,16 @@
                     Dette testet vi også manuelt, ved å legge navigasjonsbaren nederst i HTML koden og deretter flytte
                     den øverst på siden ved hjelp av CSS-koden.
                     Til tross for at navigasjonsbaren var øverst på nettsiden, ble den lest opp sist av skjermleseren,
-                    noe som ville svekke navigasjonsmulighetene til nettsiden.
-                </p>
+                    noe som ville svekke navigasjonsmulighetene til nettsiden.</p>
+                <h3>Tillegsinformasjon der det hjelper</h3>
+                <p>Det finnes elementer på siden som kan være vanskelig å skjønne om man ikke klarer se de, derfor har vi lagt til 
+                    usynlig tekst som kun leses av skjermlesere som gir ekstra informasjon til de som trenger det. Dette sikrer at
+                    siden er like tiljengelig og brukbar av alle sammen og at de som har synsnedsettelser får med seg all informasjon 
+                    de skal ha.</p>
+                <p>Dette er i tilleg til å ha gode og forklarende ALT tagger på bilder, samt bruk av aria-labeller.</p>
             </article>
         </section>
-        <section class="test-images gap-top">
+        <section class="gap-top">
             <article class="innrykk main-box">
                 <h3>Generelle synssvakheter</h3>
                 <p>Synssvakhet kan forekomme på mange måter, så det er flere ting å ta hensyn til.
@@ -103,7 +108,7 @@
             <article class="fargedrop gap-top">
                 <div class="grid-container innrykk">
                     <article class="main-box">
-                        <img src="../images/test2.png" alt="bleble">
+                        <img src="../images/test2.png" alt="Screenshot fra index.siden med et sollys filter. Viser Blåfargen på siden blir lysere, mens teksten forblir lesbar.">
                     </article>
                     <aside class="aside-box info-kort" aria-label="Spørsmål og studiested">
                         <h2 class="font-lg">Screen Glare</h2>
@@ -118,7 +123,7 @@
             <article class="fargedrop gap-top">
                 <div class="grid-container innrykk">
                     <article class="main-box">
-                        <img src="../images/test3.png" alt="blublu">
+                        <img src="../images/test3.png" alt="Screenshot fra index siden med et gulfarge filter. Fargen tinter blåfargen og den svarte teksten. Men påvirker lite hvordan siden brukes.">
                     </article>
                     <aside class="aside-box info-kort" aria-label="Spørsmål og studiested">
                         <h2 class="font-lg">Guling</h2>
@@ -152,71 +157,78 @@
                     I tillegg har vi brukt bl.a skjermlesere og diverse reader-modes
                     for å forsikre oss om at nettsiden fungerer godt med slike redskaper.
                 </p>
-                <h2 class="font-lg">Automatiserte tester | Resultater</h2>
             </article>
-            <article class="grid-container fargedrop">
-                <div class="main-box">
-                    <img src="../images/index.png" alt="Testresultater- index">
-                </div>
+        </section>
+        <section class="test-results gap-top">
+            <!-- seksjon for å vise test resultater -->
+            <h2 class="font-lg innrykk">Automatiserte tester | Resultater</h2>
+            <div class="grid-container fargedrop">
+                <article class="main-box">
+                    <img src="../images/index.png" alt="Lighthouse Testresultater fra index siden. Viser 100 performance, 100 accessibility og 96 best practices.">
+                </article>
                 <aside class="aside-box info-kort">
                     <h2 class="font-lg">Index</h4>
                         <p>Her kan du se noe</p>
                 </aside>
-            </article>
-            <article class="grid-container fargedrop gap-top">
-                <div class="main-box">
-                    <img src="../images/activity.png" alt="Testresultater- activity">
-                </div>
+            </div>
+            <div class="grid-container fargedrop gap-top">
+                <article class="main-box">
+                    <img src="../images/activity.png" alt="Lighthouse Testresultater fra activity siden. Viser 100 performance, 100 accessibility og 96 best practices.">
+                </article>
                 <aside class="aside-box info-kort">
                     <h2 class="font-lg">Activity</h4>
                         <p>Her kan du se noe</p>
                 </aside>
-            </article>
-            <article class="grid-container fargedrop gap-top">
-                <div class="main-box">
-                    <img src="../images/githubtest.png" alt="Testresultater- github">
-                </div>
+            </div>
+            <div class="grid-container fargedrop gap-top">
+                <article class="main-box">
+                    <img src="../images/githubtest.png" alt="Lighthouse Testresultater fra github siden. Viser 100 performance, 100 accessibility og 100 best practices.">
+                </article>
                 <aside class="aside-box info-kort">
                     <h2 class="font-lg">GitHub</h4>
                         <p>Her kan du se noe</p>
                 </aside>
-            </article>
-            <article class="grid-container fargedrop gap-top">
-                <div class="main-box">
-                    <img src="../images/github1.png" alt="blublublu">
-                </div>
+            </div>
+            <div class="grid-container fargedrop gap-top">
+                <article class="main-box">
+                    <img src="../images/github1.png" alt="Lighthouse Testresultater fra accessibility siden. Viser __________________________">
+                </article>
                 <aside class="aside-box info-kort">
                     <h2 class="font-lg">Accessibility</h4>
                         <p>Her kan du se noe</p>
                 </aside>
-            </article>
-            <article class="grid-container fargedrop gap-top">
-                <div class="main-box">
-                    <img src="../images/kode1.png" class="mini-img" alt="blublublu">
-                </div>
+            </div>
+        </section>
+        <section>
+            <!-- seksjon for kode-eksempler -->
+            <h2 class="font-lg innrykk">Men hvordan ser koden ut?</h2>
+            <div class="grid-container fargedrop gap-top">
+                <article class="main-box">
+                    <img src="../images/kode1.png" alt="Bilde av en del av koden. Man ser semantiske elementene som brukes, (body, header, nav, main, section) samt god bruk av andre html elementer (ul, li, a)">
+                </article>
                 <aside class="aside-box info-kort">
                     <h2 class="font-lg">Accessibility</h4>
                         <p>Her kan du se noe</p>
                 </aside>
-            </article>
-            <article class="grid-container fargedrop gap-top">
-                <div class="main-box">
-                    <img src="../images/kode2.png" alt="blublublu">
-                </div>
+            </div>
+            <div class="grid-container fargedrop gap-top">
+                <article class="main-box">
+                    <img src="../images/kode2.png" alt="Bilde av en del av koden. Man ser semantiske elementer (main, footer, section) og bruk av god header hiarki (h2 -> h3 -> h4). ">
+                </article>
                 <aside class="aside-box info-kort">
                     <h2 class="font-lg">Accessibility</h4>
                         <p>Her kan du se noe</p>
                 </aside>
-            </article>
-            <article class="grid-container fargedrop gap-top">
-                <div class="main-box">
-                    <img src="../images/kode3.png" alt="blublublu">
-                </div>
+            </div>
+            <div class="grid-container fargedrop gap-top">
+                <article class="main-box">
+                    <img src="../images/kode3.png" alt="Bilde av en del av koden. Man ser semantiske elementer (article, aside) og bruk av god header hiarki (h2 -> h3 -> h3 -> p). Samt god bruk av andre html elementer (img, div, a)">
+                </article>
                 <aside class="aside-box info-kort">
                     <h2 class="font-lg">Accessibility</h4>
                         <p>Her kan du se noe</p>
                 </aside>
-            </article>
+            </div>
         </section>
     </main>
     <footer class="gap-top-bigger fargedrop">
