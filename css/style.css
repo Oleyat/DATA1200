@@ -324,6 +324,20 @@ iframe{ /* IFRAME brukes kun for video-en. Er ikke vits å lage klasse for det. 
     font-family: var(--oslometPrimaryFont);
 }
 
+.aside-box li {
+    margin: 1vw;
+    list-style: none;
+}
+
+.aside-box a {
+    text-decoration: none;
+}
+
+.aside-box a:hover{
+    transition: 0.10ms;
+    text-decoration: underline;
+}
+
 /* -- header -- */
 .header-left {
     /* Logoen er her */
