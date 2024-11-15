@@ -641,61 +641,6 @@ a {
     margin-bottom: 1vw;
 }
 
-/* BABY-SCREEN */
-@media (max-width: 412px) {
-
-    /* Skriftstørrelser.  for små skjermer*/
-    table td,
-    th,
-    p {
-        font-size: 1.2em;
-    }
-
-    header {
-        height: 15vh;
-    }
-
-    nav {
-        width: 100vw;
-        height: 5vh;
-    }
-
-    nav a {
-        font-size: 0.9em;
-    }
-
-    nav ul, ul li {
-        margin: 0;
-        padding: 0;
-    }
-
-    nav ul {
-        width: 100vw;
-        justify-content: space-evenly;
-    }
-
-    h1 {
-        font-size: 1.2em;
-    }
-
-    h2,
-    caption {
-        font-size: 1em;
-    }
-
-    footer img {
-        width: 10vw;
-    }
-
-    .font-lg {
-        font-size: 1em;
-    }
-
-    .font-med {
-        font-size: 1.5em;
-    }
-}
-
 /* ------ MID-SCREEN ------ */
 @media (max-width: 957px) {
     iframe {
@@ -716,7 +661,11 @@ a {
         height: 4vh;
         font-size: 1.25em;
     }
-
+    nav ul{
+        justify-content: space-evenly;
+        width: 100%;
+        margin-left: 10vw;
+    }
     .default-flex {
         flex-direction: column;
     }
@@ -788,6 +737,60 @@ a {
         width: 80vw;
     }
 }
+
+/* BABY-SCREEN */
+@media (max-width: 440px) {
+
+    /* Skriftstørrelser.  for små skjermer*/
+    table td,th,p {
+        font-size: 1.2em;
+    }
+
+    header {
+        height: 15vh;
+    }
+
+    nav {
+        width: 100vw;
+        height: 5vh;
+    }
+
+    nav a {
+        font-size: 0.9em;
+    }
+
+    nav ul, ul li {
+        margin: 0;
+        padding: 0;
+    }
+    nav ul {
+        margin-left: 0vw;
+        width: 100vw;
+        justify-content: space-evenly;
+    }
+
+    h1 {
+        font-size: 1.2em;
+    }
+
+    h2,
+    caption {
+        font-size: 1em;
+    }
+
+    footer img {
+        width: 10vw;
+    }
+
+    .font-lg {
+        font-size: 1em;
+    }
+
+    .font-med {
+        font-size: 1.5em;
+    }
+}
+
 
 /* ------- WIDE-SCREEN ------ */
 @media (min-width: 1350px) {
