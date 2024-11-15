@@ -18,6 +18,7 @@
     --oslometPrimaryFont: 'Tahoma', sans-serif;
 }
 
+
 /* ------ Globale klasser ------ */
 /* -- HTML, body, header, footer -- */
 
@@ -37,9 +38,6 @@ body {
 }
 
 header {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     background-color: var(--oslometPrimary);
     height: 6em;
 }
@@ -48,14 +46,6 @@ header {
 /* .nav-bar */
 nav {
     width: 80%;
-    display: flex;
-    flex-direction: row;
-}
-
-nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
 }
 
 nav li {
@@ -164,7 +154,6 @@ summary {
     height: 2vw;
     background-color: var(--oslometPrimary);
     list-style: none;
-    display: flex;
     justify-content: space-between;
     /* flytter "pilen" til høyre siden */
     align-items: center;
@@ -244,16 +233,22 @@ iframe {
     border: none;
 }
 
+/* Store sammensetninger av klasser */
+/* FLEXBOX */
+header, nav, nav ul, summary, .default-flex, .studie-informasjon-table tbody, .studie-oppbyging tr, .studie-oppbyging td, .footer-section a{
+    display: flex;
+}
+header, nav, nav ul, .default-flex, .studie-informasjon-table tbody, .studie-oppbyging tr, .studie-oppbyging td{
+    flex-direction: row;
+}
+header, nav ul, .default-flex, .studie-informasjon-table tbody, .studie-oppbyging tr, .studie-oppbyging td{
+    flex-wrap: wrap;
+}
+
 
 /* ------ Generelle klasser. ------ */
 /* default-flex, default-table, default-btn */
 
-.default-flex {
-    /* generell Flex box-er */
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
 
 .big-img {
     width: 100%;
@@ -290,7 +285,8 @@ iframe {
     transition: 0.2s;
 }
 
-.default-btn:hover .btn-pil { /* roterer pilen slik at det gir effekt når noen hovrere over en knapp */
+.default-btn:hover .btn-pil {
+    /* roterer pilen slik at det gir effekt når noen hovrere over en knapp */
     transform: rotate(15deg);
     -webkit-transform: rotate(15deg);
 }
@@ -428,12 +424,6 @@ h1 {
     /* lille outlinen */
 }
 
-.studie-informasjon-table tbody {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
 .studie-informasjon-table tr {
     height: 6.5vw;
     width: 100%;
@@ -504,11 +494,6 @@ h3 {
 
 /* -- STUDIE OPPBYGGING TABLE.  -- */
 /* studie-oppbygging, emnegruppetittel, valgfag*/
-.studie-oppbyging tr {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
 
 .studie-oppbyging th,
 td {
@@ -527,12 +512,9 @@ td {
 
 .studie-oppbyging td {
     border-bottom: 3px solid var(--oslometPrimary);
-    display: flex;
-    flex-direction: row;
     font-size: 0.8em;
     height: 100%;
     width: 100%;
-    flex-wrap: wrap;
 }
 
 .studie-oppbyging td a {
@@ -610,7 +592,7 @@ td {
     height: 50%;
 }
 
-.fit-img{
+.fit-img {
     width: 100%;
 }
 
@@ -668,45 +650,52 @@ td {
     margin: 1vw;
 }
 
-.footer-section li, a {
+.footer-section li,
+a {
     margin: 0.5vw;
     font-weight: bold;
 }
 
 .footer-section a {
     /* Må være flex slik at bilde logoene til footeren stiller seg opp ordentlig. */
-    display: flex;
     align-items: center;
     margin-bottom: 1vw;
 }
 
 /* BABY-SCREEN */
 @media (max-width: 412px) {
-    
+
     /* Skriftstørrelser.  for små skjermer*/
     table td,
     th,
     p {
         font-size: 1.2em;
     }
-    header{
+
+    header {
         height: 15vh;
     }
-    nav{
+
+    nav {
         width: 100vw;
         height: 5vh;
     }
-    nav a{
+
+    nav a {
         font-size: 0.9em;
     }
-    nav ul, ul li{
+
+    nav ul,
+    ul li {
         padding: 0;
         margin: 0;
     }
-    nav ul{
+
+    nav ul {
         width: 100vw;
         justify-content: space-evenly;
     }
+
     h1 {
         font-size: 1.2em;
     }
@@ -719,6 +708,7 @@ td {
     footer img {
         width: 10vw;
     }
+
     .font-lg {
         font-size: 1em;
     }
@@ -834,11 +824,13 @@ td {
 
 /* Vi leste hos dev.moz at noen folk kan ha nedsettelser eller sykdommer som blir påvirket av animasjoner. Så dette er en media for å minimere slikt. */
 @media (prefers-reduced-motion) {
-    .default-btn:hover .btn-pil { /* roterer pilen slik at det gir effekt når noen hovrere over en knapp */
+    .default-btn:hover .btn-pil {
+        /* roterer pilen slik at det gir effekt når noen hovrere over en knapp */
         transform: rotate(-45deg);
         -webkit-transform: rotate(-45deg);
-        border-color: #ff2929;   /* Rød så lettere å se */
-        
+        border-color: #ff2929;
+        /* Rød så lettere å se */
+
     }
-    
+
 }
