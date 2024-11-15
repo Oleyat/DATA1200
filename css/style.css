@@ -56,11 +56,12 @@ nav ul {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    background-color: white;
+    border-radius: 4vw;
 }
 
 nav li {
-    margin-top: 3vw;
-    margin-left: 3vw;
+    margin: 1vw;
 }
 
 nav ul li {
