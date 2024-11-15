@@ -688,9 +688,8 @@ a {
     .aside-box {
         grid-column: 1/2;
         grid-row: 2;
-
     }
-
+    
     .secondary-box {
         grid-column: 1/2;
         grid-row: 2;
