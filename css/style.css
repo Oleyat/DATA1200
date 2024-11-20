@@ -59,26 +59,26 @@ nav ul li {
     list-style: none;
 }
 
-nav a {
-    /* Selve navbar teksten. */
+nav a:visited {
+    /* må overstyre default a:visited så det ikke blir blå farge i navbaren. */
+    color: black;
+}
+
+/* Kombinerer footer a og nav a siden de er prikk like. Endrer link teksten i footer og nav-baren. */
+nav a, footer a{
+    /*  */
     font-size: 1.1em;
     text-decoration: none;
     color: #000;
     transition: 0.2s;
 }
 
-nav a:visited {
-    /* må overstyre default a:visited så det ikke blir blå farge i navbaren. */
-    color: black;
-}
-
-nav a:hover {
-    /* Efekten som kommer når du legger musa over teksten.*/
-    /*   background-color: var(--oslometSecondary); */
-    transition: 0.2s;
+nav a:hover, footer a:hover{
     text-decoration: underline;
+    transition: 0.2s;
 }
 
+/* ** FOOTER ** */
 footer {
     height: fit-content;
 }
@@ -95,23 +95,26 @@ footer li {
     list-style: none;
 }
 
-footer a {
-    transition: 0.25s;
-    color: #000;
-    font-size: 1.1em;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-
 footer img {
     margin: 1vw;
     width: 3.75vw;
 }
 
+footer section {
+    grid-column: 1fr;
+    margin: 1vw;
+}
+
+footer section li,a {
+    margin: 0.5vw;
+    font-weight: bold;
+}
+
+footer section a {
+    /* Må være flex slik at bilde logoene til footeren stiller seg opp ordentlig. */
+    align-items: center;
+    margin-bottom: 1vw;
+}
 /* -- Font endringer -- */
 /* h1, p, a, */
 
@@ -230,7 +233,7 @@ iframe {
 
 /* Store sammensetninger av klasser */
 /* FLEXBOX */
-header, nav, nav ul, summary, .studie-informasjon-table tbody, .studie-oppbyging tr, .studie-oppbyging td, .footer-section a{
+header, nav, nav ul, summary, .studie-informasjon-table tbody, .studie-oppbyging tr, .studie-oppbyging td, footer section a{
     display: flex;
 }
 header, nav, nav ul, .studie-informasjon-table tbody, .studie-oppbyging tr, .studie-oppbyging td{
@@ -263,6 +266,9 @@ body, nav ul, .aside-box ul, .emnegruppeTittel {
     display: grid;
 } 
 
+.header-left img {
+    width: 6em;
+}
 
 /* ------ Generelle klasser. ------ */
 /*  default-table, default-btn */
@@ -321,7 +327,7 @@ body, nav ul, .aside-box ul, .emnegruppeTittel {
     font-size: 1.3em;
 }
 
-/* Skjemrleser klasse */
+/* skjermleser klasse */
 /* Denne klassen gjemmer objekter slik at de ikke kan ses av bruker men kun av skjermlesere. */
 /* Denne CSS klasse-koden er hentet fra:  */
 /* https://medium.com/web-dev-survey-from-kyoto/the-visually-hidden-technique-303f8e2bd409 */
@@ -423,10 +429,6 @@ body, nav ul, .aside-box ul, .emnegruppeTittel {
     width: 10%;
     margin-top: 1.25vw;
     margin-left: 5vw;
-}
-
-.header-left img {
-    width: 6em;
 }
 
 /* -- Studie info table. -- */
@@ -531,7 +533,7 @@ body, nav ul, .aside-box ul, .emnegruppeTittel {
 .studie-oppbyging td p:nth-child(odd) {
     text-align: right;
 }
-
+/* Table row tittelen for emnegrupper */
 .emnegruppeTittel {
     height: 5vw;
 }
@@ -572,10 +574,13 @@ body, nav ul, .aside-box ul, .emnegruppeTittel {
     background-color: var(--CapoeiraPrimary);
 }
 .capo-bg-s{
-    background-color: var(--CapoeiraPrimary);
+    background-color: var(--CapoeiraSecondary);
 }
 .capo-bg-t{
-    background-color: var(--CapoeiraPrimary);
+    background-color: var(--CapoeiraTetriary);
+}
+.capo-bg-img{
+    background-image: url(../images/riodejaneiro.jpg);
 }
 
 .activity-box {
@@ -590,10 +595,6 @@ body, nav ul, .aside-box ul, .emnegruppeTittel {
 }
 
 /* ------ CSS for accessibility-side ------ */
-.main-box-image img {
-    width: 50%;
-    height: 50%;
-}
 
 .test-results h2,.test-results h3, .test-results p {
     margin: 2vw;
@@ -602,7 +603,6 @@ body, nav ul, .aside-box ul, .emnegruppeTittel {
 .test-results h3 {
     border-bottom: 2px solid #73d0ff;
 }
-
 
 .test-results h4 {
     margin: 1vw;
@@ -622,24 +622,6 @@ body, nav ul, .aside-box ul, .emnegruppeTittel {
     grid-template-columns: 1fr 1fr 1fr;
     grid-auto-rows: auto;
     gap: 5vw;
-}
-
-
-.footer-section {
-    grid-column: 1fr;
-    margin: 1vw;
-}
-
-.footer-section li,
-a {
-    margin: 0.5vw;
-    font-weight: bold;
-}
-
-.footer-section a {
-    /* Må være flex slik at bilde logoene til footeren stiller seg opp ordentlig. */
-    align-items: center;
-    margin-bottom: 1vw;
 }
 
 /* ------ MID-SCREEN ------ */
@@ -750,7 +732,7 @@ a {
     header {
         height: 15vh;
     }
-
+    /* Flytter navbaren under slik at det blir lettere å bruke på telefon. */
     nav {
         width: 100vw;
         height: 5vh;
