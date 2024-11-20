@@ -243,7 +243,7 @@ header, nav ul, .studie-informasjon-table tbody, .studie-oppbyging tr, .studie-o
 }
 
 /* BAKGRUNNSFARGE */
-header, summary, .default-btn:hover, .default-table tr:nth-of-type(even), .capo-bg-p, .studie-oppbyging th{
+header, summary, .default-btn:hover, .default-table tr:nth-of-type(even), .fargedrop, .studie-oppbyging th{
     background-color: var(--oslometPrimary);
 }
 
