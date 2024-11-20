@@ -230,7 +230,7 @@ iframe {
 
 /* Store sammensetninger av klasser */
 /* FLEXBOX */
-header, nav, nav ul, summary, .studie-informasjon-table tbody, .studie-oppbyging tr, .studie-oppbyging td, .footer-section a{
+header, nav, nav ul, summary, .studie-informasjon-table tbody, .studie-oppbyging tr, .studie-oppbyging td, footer section a{
     display: flex;
 }
 header, nav, nav ul, .studie-informasjon-table tbody, .studie-oppbyging tr, .studie-oppbyging td{
@@ -321,7 +321,7 @@ body, nav ul, .aside-box ul, .emnegruppeTittel {
     font-size: 1.3em;
 }
 
-/* Skjemrleser klasse */
+/* skjermleser klasse */
 /* Denne klassen gjemmer objekter slik at de ikke kan ses av bruker men kun av skjermlesere. */
 /* Denne CSS klasse-koden er hentet fra:  */
 /* https://medium.com/web-dev-survey-from-kyoto/the-visually-hidden-technique-303f8e2bd409 */
@@ -590,10 +590,6 @@ body, nav ul, .aside-box ul, .emnegruppeTittel {
 }
 
 /* ------ CSS for accessibility-side ------ */
-.main-box-image img {
-    width: 50%;
-    height: 50%;
-}
 
 .test-grid {
     grid-template-columns: 33vw 33vw auto;
@@ -607,7 +603,6 @@ body, nav ul, .aside-box ul, .emnegruppeTittel {
 .test-results h3 {
     border-bottom: 2px solid #73d0ff;
 }
-
 
 .test-results h4 {
     margin: 1vw;
@@ -630,18 +625,17 @@ body, nav ul, .aside-box ul, .emnegruppeTittel {
 }
 
 
-.footer-section {
+footer section {
     grid-column: 1fr;
     margin: 1vw;
 }
 
-.footer-section li,
-a {
+footer section li,a {
     margin: 0.5vw;
     font-weight: bold;
 }
 
-.footer-section a {
+footer section a {
     /* Må være flex slik at bilde logoene til footeren stiller seg opp ordentlig. */
     align-items: center;
     margin-bottom: 1vw;
