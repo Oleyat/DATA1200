@@ -79,9 +79,6 @@ nav a:hover, footer a:hover{
 }
 
 /* ** FOOTER ** */
-footer {
-    height: fit-content;
-}
 
 footer p {
     margin: 0.2vw;
@@ -140,9 +137,6 @@ a:visited {
     /* Endrer fargen på linker som er blitt trukket på. */
     text-decoration-color: #283b9b;
     color: #283b9b;
-}
-small{
-    height: 100px;
 }
 
 /* -- details, summary -- */
