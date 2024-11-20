@@ -582,6 +582,7 @@ body, nav ul, .aside-box ul, .emnegruppeTittel {
     background-color: var(--CapoeiraTetriary);
 }
 .capo-bg-img{
+    background-attachment: fixed;
     background-image: url(../images/riodejaneiro.jpg);
     background-size: cover;
 }
