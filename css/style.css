@@ -79,9 +79,6 @@ nav a:hover, footer a:hover{
 }
 
 /* ** FOOTER ** */
-footer {
-    height: fit-content;
-}
 
 footer p {
     margin: 0.2vw;
@@ -140,9 +137,6 @@ a:visited {
     /* Endrer fargen på linker som er blitt trukket på. */
     text-decoration-color: #283b9b;
     color: #283b9b;
-}
-small{
-    height: 100px;
 }
 
 /* -- details, summary -- */
@@ -572,15 +566,22 @@ body, nav ul, .aside-box ul, .emnegruppeTittel {
 
 .capo-bg-p{
     background-color: var(--CapoeiraPrimary);
+    
 }
 .capo-bg-s{
     background-color: var(--CapoeiraSecondary);
+    border-radius: 1vw;
+    padding: 1vw;
+    opacity: 80%;
 }
+
 .capo-bg-t{
     background-color: var(--CapoeiraTetriary);
 }
 .capo-bg-img{
+    background-attachment: fixed;
     background-image: url(../images/riodejaneiro.jpg);
+    background-size: cover;
 }
 
 .activity-box {
