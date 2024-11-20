@@ -571,6 +571,7 @@ body, nav ul, .aside-box ul, .emnegruppeTittel {
 .capo-bg-s{
     background-color: var(--CapoeiraSecondary);
     border-radius: 1vw;
+    padding: 1vw;
 }
 
 .capo-bg-t{
