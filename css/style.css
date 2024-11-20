@@ -548,7 +548,6 @@ body, nav ul, .aside-box ul, .emnegruppeTittel {
 /* -- Studenthistorier/ Generell artikkel boks -- */
 /* studenthistorier */
 .studenthistorier div {
-    /* MAKE ROUNDED BORDERS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
     padding-bottom: 2vw;
 }
 
@@ -568,6 +567,10 @@ body, nav ul, .aside-box ul, .emnegruppeTittel {
 
 /* ------ CSS for activity-side ------ */
 /* activity-box */
+
+.capo-bg{
+    background-color: var(--CapoeiraPrimary);
+}
 
 .activity-box {
     grid-column: 1fr;
