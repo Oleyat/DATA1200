@@ -570,7 +570,13 @@ body, nav ul, .aside-box ul, .emnegruppeTittel {
 /* ------ CSS for activity-side ------ */
 /* activity-box */
 
-.capo-bg{
+.capo-bg-p{
+    background-color: var(--CapoeiraPrimary);
+}
+.capo-bg-s{
+    background-color: var(--CapoeiraPrimary);
+}
+.capo-bg-t{
     background-color: var(--CapoeiraPrimary);
 }
 
@@ -653,8 +659,7 @@ a {
         width: 10vw;
     }
 
-    details,
-    summary {
+    details {
         font-size: 0.9em;
     }
 
