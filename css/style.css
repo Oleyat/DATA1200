@@ -577,6 +577,9 @@ body, nav ul, .aside-box ul, .emnegruppeTittel {
 .capo-bg-t{
     background-color: var(--CapoeiraTetriary);
 }
+.capo-bg-img{
+    background-image: url(../images/riodejaneiro.jpg);
+}
 
 .activity-box {
     grid-column: 1fr;
