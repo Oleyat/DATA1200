@@ -116,7 +116,7 @@ footer img {
 p {
     font-size: 1em;
     line-height: 1.5rem;
-    /* letter-spacing: .09rem; */
+    letter-spacing: .05rem;
 }
 
 a {
@@ -254,7 +254,7 @@ body, a, details a, .info-kort p, .info-kort h2, .info-kort h3, .emnegruppeTitte
     margin: 0;
 }
 /* padding:0 */
-body, nav ul, .aside-box ul, .emnegruppeTittel, .test-images h3{
+body, nav ul, .aside-box ul, .emnegruppeTittel {
     padding: 0;
 }
 /* display grid */
@@ -585,18 +585,12 @@ body, nav ul, .aside-box ul, .emnegruppeTittel, .test-images h3{
     height: 50%;
 }
 
-.main-box p {
-    letter-spacing: .1rem;
-}
-
 .test-grid {
     grid-template-columns: 33vw 33vw auto;
     grid-auto-rows: auto;
 }
 
-.test-results h2,
-.test-results h3,
-.test-results p {
+.test-results h2,.test-results h3, .test-results p {
     margin: 2vw;
 }
 
@@ -613,7 +607,6 @@ body, nav ul, .aside-box ul, .emnegruppeTittel, .test-images h3{
 
 .test-results img {
     width: 90%;
-    height: auto;
     margin: 1vw;
 }
 
