@@ -8,7 +8,6 @@
     Det vil også stå hvilke elementer som kommer nedenfor.
 */
 
-
 /* ------ CSS VARIABLER ------ */
 :root {
     /* Legger inn variabler for farge stilen (!)*/
@@ -16,6 +15,9 @@
     /* Primary colour*/
     --oslometSecondary: #73d0ff;
     --oslometPrimaryFont: 'Tahoma', sans-serif;
+    --CapoeiraPrimary: #009739;
+    --CapoeiraSecondary: #FEDD00;
+    --CapoeiraTetriary: #012169;
 }
 
 
@@ -196,7 +198,6 @@ details p {
     text-align: left;
 }
 
-
 details[open] .table-fixed-view {
     /* Fjerner tomrommet som hadde kommet under om den ikke var her. */
     height: 400px;
@@ -229,13 +230,13 @@ iframe {
 
 /* Store sammensetninger av klasser */
 /* FLEXBOX */
-header, nav, nav ul, summary, .default-flex, .studie-informasjon-table tbody, .studie-oppbyging tr, .studie-oppbyging td, .footer-section a{
+header, nav, nav ul, summary, .studie-informasjon-table tbody, .studie-oppbyging tr, .studie-oppbyging td, .footer-section a{
     display: flex;
 }
-header, nav, nav ul, .default-flex, .studie-informasjon-table tbody, .studie-oppbyging tr, .studie-oppbyging td{
+header, nav, nav ul, .studie-informasjon-table tbody, .studie-oppbyging tr, .studie-oppbyging td{
     flex-direction: row;
 }
-header, nav ul, .default-flex, .studie-informasjon-table tbody, .studie-oppbyging tr, .studie-oppbyging td{
+header, nav ul, .studie-informasjon-table tbody, .studie-oppbyging tr, .studie-oppbyging td{
     flex-wrap: wrap;
 }
 
@@ -264,7 +265,7 @@ body, nav ul, .aside-box ul, .emnegruppeTittel {
 
 
 /* ------ Generelle klasser. ------ */
-/* default-flex, default-table, default-btn */
+/*  default-table, default-btn */
 
 .default-btn {
     /* Default knappen. */
@@ -547,7 +548,6 @@ body, nav ul, .aside-box ul, .emnegruppeTittel {
 /* -- Studenthistorier/ Generell artikkel boks -- */
 /* studenthistorier */
 .studenthistorier div {
-    /* MAKE ROUNDED BORDERS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
     padding-bottom: 2vw;
 }
 
@@ -567,6 +567,16 @@ body, nav ul, .aside-box ul, .emnegruppeTittel {
 
 /* ------ CSS for activity-side ------ */
 /* activity-box */
+
+.capo-bg-p{
+    background-color: var(--CapoeiraPrimary);
+}
+.capo-bg-s{
+    background-color: var(--CapoeiraPrimary);
+}
+.capo-bg-t{
+    background-color: var(--CapoeiraPrimary);
+}
 
 .activity-box {
     grid-column: 1fr;
@@ -635,6 +645,7 @@ a {
 /* ------ MID-SCREEN ------ */
 @media (max-width: 957px) {
     iframe {
+        /* forsøk på å fjerne de svarte borderene på videoen. */
         padding-bottom: 18%;
     }
 
@@ -642,8 +653,7 @@ a {
         width: 10vw;
     }
 
-    details,
-    summary {
+    details {
         font-size: 0.9em;
     }
 
@@ -656,9 +666,6 @@ a {
         justify-content: space-evenly;
         width: 100%;
         margin-left: 10vw;
-    }
-    .default-flex {
-        flex-direction: column;
     }
 
     .grid-container {
@@ -767,8 +774,7 @@ a {
         font-size: 1.2em;
     }
 
-    h2,
-    caption {
+    h2,caption {
         font-size: 1em;
     }
 
