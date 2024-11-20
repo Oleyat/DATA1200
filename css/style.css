@@ -230,13 +230,13 @@ iframe {
 
 /* Store sammensetninger av klasser */
 /* FLEXBOX */
-header, nav, nav ul, summary, .default-flex, .studie-informasjon-table tbody, .studie-oppbyging tr, .studie-oppbyging td, .footer-section a{
+header, nav, nav ul, summary, .studie-informasjon-table tbody, .studie-oppbyging tr, .studie-oppbyging td, .footer-section a{
     display: flex;
 }
-header, nav, nav ul, .default-flex, .studie-informasjon-table tbody, .studie-oppbyging tr, .studie-oppbyging td{
+header, nav, nav ul, .studie-informasjon-table tbody, .studie-oppbyging tr, .studie-oppbyging td{
     flex-direction: row;
 }
-header, nav ul, .default-flex, .studie-informasjon-table tbody, .studie-oppbyging tr, .studie-oppbyging td{
+header, nav ul, .studie-informasjon-table tbody, .studie-oppbyging tr, .studie-oppbyging td{
     flex-wrap: wrap;
 }
 
@@ -265,7 +265,7 @@ body, nav ul, .aside-box ul, .emnegruppeTittel {
 
 
 /* ------ Generelle klasser. ------ */
-/* default-flex, default-table, default-btn */
+/*  default-table, default-btn */
 
 .default-btn {
     /* Default knappen. */
@@ -662,9 +662,6 @@ a {
         justify-content: space-evenly;
         width: 100%;
         margin-left: 10vw;
-    }
-    .default-flex {
-        flex-direction: column;
     }
 
     .grid-container {
