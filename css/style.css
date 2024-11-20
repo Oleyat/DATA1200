@@ -564,24 +564,24 @@ body, nav ul, .aside-box ul, .emnegruppeTittel {
 /* ------ CSS for activity-side ------ */
 /* activity-box */
 
+/* skifter farge-palett for activity siden. */
 .capo-bg-p{
     background-color: var(--CapoeiraPrimary);
     
 }
 .capo-bg-s{
     background-color: var(--CapoeiraSecondary);
-    border-radius: 1vw;
-    padding: 1vw;
-    opacity: 80%;
 }
 
 .capo-bg-t{
     background-color: var(--CapoeiraTetriary);
 }
 .capo-bg-img{
+    /* bakgrunnsbilde på capo-siden. Sitter fast så du "scroller" forbi den. */
     background-attachment: fixed;
-    background-image: url(../images/riodejaneiro.jpg);
+    background-image: url(../images/riodejaneiro2.jpg);
     background-size: cover;
+    background-position: center;
 }
 
 .activity-box {
@@ -697,6 +697,7 @@ body, nav ul, .aside-box ul, .emnegruppeTittel {
     }
 
     .info-kort img {
+        margin-left: 30%;
         padding-top: 0%;
         padding-bottom: 0%;
     }
@@ -717,9 +718,6 @@ body, nav ul, .aside-box ul, .emnegruppeTittel {
         height: 15vw;
     }
 
-    .activity-box {
-        width: 80vw;
-    }
 }
 
 /* BABY-SCREEN */
@@ -727,7 +725,7 @@ body, nav ul, .aside-box ul, .emnegruppeTittel {
 
     /* Skriftstørrelser.  for små skjermer*/
     table td,th,p {
-        font-size: 1.2em;
+        font-size: .9em;
     }
 
     header {
@@ -757,7 +755,7 @@ body, nav ul, .aside-box ul, .emnegruppeTittel {
         font-size: 1.2em;
     }
 
-    h2,caption {
+    h2,caption, summary, .font-lg{
         font-size: 1em;
     }
 
@@ -765,12 +763,8 @@ body, nav ul, .aside-box ul, .emnegruppeTittel {
         width: 10vw;
     }
 
-    .font-lg {
-        font-size: 1em;
-    }
-
-    .font-med {
-        font-size: 1.5em;
+    .font-med, h3 {
+        font-size: 0.9em;
     }
 }
 
