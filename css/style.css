@@ -573,10 +573,6 @@ body, nav ul, .aside-box ul, .emnegruppeTittel {
     border-radius: 1vw;
 }
 
-.capo-bg-s p{
-    padding: 1vw;
-}
-
 .capo-bg-t{
     background-color: var(--CapoeiraTetriary);
 }
