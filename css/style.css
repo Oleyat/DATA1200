@@ -258,7 +258,7 @@ body, nav ul, .aside-box ul, .emnegruppeTittel {
     padding: 0;
 }
 /* display grid */
-.grid-container, .grid-article, .grid-middle, .grid-footer, .test-grid, .center-items{
+.grid-container, .grid-article, .grid-middle, .grid-footer,  .center-items{
     display: grid;
 } 
 
@@ -583,11 +583,6 @@ body, nav ul, .aside-box ul, .emnegruppeTittel {
 .main-box-image img {
     width: 50%;
     height: 50%;
-}
-
-.test-grid {
-    grid-template-columns: 33vw 33vw auto;
-    grid-auto-rows: auto;
 }
 
 .test-results h2,.test-results h3, .test-results p {
