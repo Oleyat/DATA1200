@@ -572,10 +572,10 @@ body, nav ul, .aside-box ul, .emnegruppeTittel {
     background-color: var(--CapoeiraPrimary);
 }
 .capo-bg-s{
-    background-color: var(--CapoeiraPrimary);
+    background-color: var(--CapoeiraSecondary);
 }
 .capo-bg-t{
-    background-color: var(--CapoeiraPrimary);
+    background-color: var(--CapoeiraTetriary);
 }
 
 .activity-box {
