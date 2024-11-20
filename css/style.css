@@ -259,7 +259,7 @@ body, nav ul, .aside-box ul, .emnegruppeTittel {
     padding: 0;
 }
 /* display grid */
-.grid-container, .grid-article, .grid-middle, .grid-footer, .test-grid, .center-items{
+.grid-container, .grid-article, .grid-middle, .grid-footer,  .center-items{
     display: grid;
 } 
 
@@ -590,11 +590,6 @@ body, nav ul, .aside-box ul, .emnegruppeTittel {
 }
 
 /* ------ CSS for accessibility-side ------ */
-
-.test-grid {
-    grid-template-columns: 33vw 33vw auto;
-    grid-auto-rows: auto;
-}
 
 .test-results h2,.test-results h3, .test-results p {
     margin: 2vw;
