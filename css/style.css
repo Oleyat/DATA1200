@@ -8,7 +8,6 @@
     Det vil også stå hvilke elementer som kommer nedenfor.
 */
 
-
 /* ------ CSS VARIABLER ------ */
 :root {
     /* Legger inn variabler for farge stilen (!)*/
@@ -198,7 +197,6 @@ details[open]>summary::after {
 details p {
     text-align: left;
 }
-
 
 details[open] .table-fixed-view {
     /* Fjerner tomrommet som hadde kommet under om den ikke var her. */
@@ -652,6 +650,7 @@ a {
 /* ------ MID-SCREEN ------ */
 @media (max-width: 957px) {
     iframe {
+        /* forsøk på å fjerne de svarte borderene på videoen. */
         padding-bottom: 18%;
     }
 
@@ -780,8 +779,7 @@ a {
         font-size: 1.2em;
     }
 
-    h2,
-    caption {
+    h2,caption {
         font-size: 1em;
     }
 
