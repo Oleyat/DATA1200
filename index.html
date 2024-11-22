@@ -282,16 +282,16 @@
                         <h3>Hvordan ser studiet ut?</h3>
                         <p>I studiets oppbyging nedenfor kan du se hvordan studiet ser ut per semester.</p>
                         <p>Vær klar over at dette studiet har forskjellige retninger du kan velge.</p>
-                        <p class="valgfag" aria-hidden="true">Fagene med stjernen er valgfag.</p> <!-- Hidden fordi skjermlesere kan ikke se stjernen. -->
-                        <p class="screen-reader-only">VIKTIG! Det vil bli opplest Fag navn først. Følgt etter Fag-kode, antall studiepoeng, og om det er et valgfag..</p>
-                        <!-- Neden for vil det være mye usynlig paragrafer for å lese opp om det er valgfag for skjermlesere. Det er siden de ikke kan se stjernen. -->
+                        <p class="opt-subject font-med" aria-hidden="true">Fagene med gul bakgrunn er valgfag.</p> <!-- Hidden fordi skjermlesere kan ikke se fargen. -->
+                        <p class="screen-reader-only">VIKTIG! Det vil bli opplest Fag navn først. Følgt etter Fag-kode, antall studiepoeng, og om det er et opt-subject..</p>
+                        <!-- Neden for vil det være mye usynlig paragrafer for å lese opp om det er opt-subject-ene for skjermlesere. Det er siden de ikke kan se fargen. -->
                         <details class>
                             <!--  Stort table med alle fagene i studiet. -->
                             <summary class="fixed">Studiets Oppbygging</summary>
                             <!-- fixed class så toppen ikke går vekk -->
                             <div class="table-fixed-view">
                                 <!-- Div for å gjøre det slik at objektet ikke har tomrom under seg. See css height 0. -->
-                                <table class="studie-oppbyging"> <!-- Studie oppbyggings visning i table.-->
+                                <table class="subjects-table"> <!-- Studie oppbyggings visning i table.-->
                                     <caption>Studietsoppbygging vises nedenfor. Sortert for hvert semester og de ulike
                                         retningene.</caption>
                                     <tbody>
@@ -364,7 +364,7 @@
                                         <tr>
                                             <th scope="row">5. semester</th>
                                             <td>
-                                                <a href="">Matematikk 3000</a>
+                                                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DAVE3700/2024/H%C3%98ST">Matematikk 3000</a>
                                                 <p>DAVE3700</p>
                                                 <p>10stp.</p>
                                             </td>
@@ -372,7 +372,7 @@
                                         <tr>
                                             <th scope="row">6. semester</th>
                                             <td>
-                                                <a href="">Bacheloroppgave</a>
+                                                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATA3900/2024/H%C3%98ST">Bacheloroppgave</a>
                                                 <p>DATA3900</p>
                                             </td>
                                         </tr>
@@ -381,7 +381,7 @@
                                             </th>
                                             <th scope="row">3. semester</th>
                                             <td>
-                                                <a href="">Lineær Algebra og introduksjon til gruppeteori</a>
+                                                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO2300/2024/H%C3%98ST">Lineær Algebra og introduksjon til gruppeteori</a>
                                                 <p>MAMO2300</p>
                                                 <p>10stp.</p>
                                             </td>
@@ -389,12 +389,12 @@
                                         <tr>
                                             <th scope="row">4. semester</th>
                                             <td>
-                                                <a href="">Termodynamikk og statistisk fysikk</a>
+                                                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO2400/2024/H%C3%98ST">Termodynamikk og statistisk fysikk</a>
                                                 <p>MAMO2400</p>
                                                 <p>10stp.</p>
                                             </td>
                                             <td>
-                                                <a href="">Symmetrier og algebraiske strukturer</a>
+                                                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO2500/2024/H%C3%98ST">Symmetrier og algebraiske strukturer</a>
                                                 <p>MAMO2500</p>
                                                 <p>10stp.</p>
                                             </td>
@@ -402,153 +402,150 @@
                                         <tr>
                                             <th scope="row">5. semester</th>
                                             <td>
-                                                <a href="">Reell analyse</a>
+                                                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO3300/2024/H%C3%98ST">Reell analyse</a>
                                                 <p>MAMO3300</p>
                                                 <p>10stp.</p>
                                             </td>
-                                            <td class="valgfag">
-                                                <a href="">Introduksjon til IT-forskning</a>
+                                            <td class="opt-subject">
+                                                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATA3730/2024/H%C3%98ST">Introduksjon til IT-forskning</a>
                                                 <p>DATA3730</p>
                                                 <p>10stp.</p>
-                                                <p class="screen-reader-only">DATA3730 er et valgfag.</p>
+                                                <p class="screen-reader-only">DATA3730 er et opt-subject.</p>
                                             </td>
-                                            <td class="valgfag">
-                                                <a href="">Introduction to Data Science with Scripting</a>
+                                            <td class="opt-subject">
+                                                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATA3800/2024/H%C3%98ST">Introduction to Data Science with Scripting</a>
                                                 <p>DATA3800</p>
                                                 <p>10stp.</p>
-                                                <p class="screen-reader-only">DATA3800 er et valgfag.</p>
+                                                <p class="screen-reader-only">DATA3800 er et opt-subject.</p>
                                             </td>
-                                            <td class="valgfag">
-                                                <a href="">Simulering og visualisering</a>
+                                            <td class="opt-subject">
+                                                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO3200/2024/H%C3%98ST">Simulering og visualisering</a>
                                                 <p>MAMO2500</p>
                                                 <p>10stp.</p>
-                                                <p class="screen-reader-only">MAMO2500 er et valgfag.</p>
+                                                <p class="screen-reader-only">MAMO2500 er et opt-subject.</p>
                                             </td>
-                                            <td class="valgfag">
-                                                <a href="">Datasikkerhet</a>
+                                            <td class="opt-subject">
+                                                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/ITPE3100/2024/H%C3%98ST">Datasikkerhet</a>
                                                 <p>ITPE3100</p>
                                                 <p>10stp.</p>
-                                                <p class="screen-reader-only">ITPE3100 er et valgfag.</p>
+                                                <p class="screen-reader-only">ITPE3100 er et opt-subject.</p>
                                             </td>
                                         </tr>
                                         <tr>
                                             <th scope="row">6. semester</th>
-                                            <td class="valgfag">
-                                                <a href="">Testing av programvare</a>
+                                            <td class="opt-subject">
+                                                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/ADTS2310/2024/H%C3%98ST">Testing av programvare</a>
                                                 <p>ADTS2310</p>
                                                 <p>10stp.</p>
-                                                <p class="screen-reader-only">ADTS2310 er et valgfag.</p>
+                                                <p class="screen-reader-only">ADTS2310 er et opt-subject.</p>
                                             </td>
-                                            <td class="valgfag">
-                                                <a href="">Datanettverk og skytjenester</a>
+                                            <td class="opt-subject">
+                                                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATA2410/2024/H%C3%98ST">Datanettverk og skytjenester</a>
                                                 <p>DATA2410</p>
                                                 <p>10stp.</p>
-                                                <p class="screen-reader-only">DATA2410 er et valgfag.</p>
+                                                <p class="screen-reader-only">DATA2410 er et opt-subject.</p>
                                             </td>
-                                            <td class="valgfag">
-                                                <a href="">Ressurseffektive programmer</a>
+                                            <td class="opt-subject">
+                                                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DAVE3606/2024/H%C3%98ST">Ressurseffektive programmer</a>
                                                 <p>DAVE3606</p>
                                                 <p>10stp.</p>
-                                                <p class="screen-reader-only">DAVE3606 er et valgfag.</p>
+                                                <p class="screen-reader-only">DAVE3606 er et opt-subject.</p>
                                             </td>
-                                            <td class="valgfag">
-                                                <a href="">Avansert modellering og beregninger</a>
+                                            <td class="opt-subject">
+                                                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO2300/2024/H%C3%98ST">Avansert modellering og beregninger</a>
                                                 <p>MAMO2300</p>
                                                 <p>10stp.</p>
-                                                <p class="screen-reader-only">MAMO2300 er et valgfag.</p>
+                                                <p class="screen-reader-only">MAMO2300 er et opt-subject.</p>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <th scope="row" class="emnegruppeTittel">Emnegruppe: Statistikk og
-                                                datadrevne
-                                                metoder
-                                            </th>
+                                            <th scope="row" class="emnegruppeTittel">Emnegruppe: Statistikk og datadrevne metoder</th>
                                             <th scope="row">3. semester</th>
-                                            <td class="valgfag">
-                                                <a href="">Algoritmer og datastrukturer</a>
+                                            <td class="opt-subject">
+                                                <a href="https://student.oslomet.no/studier/-/studieinfo/DATS2300/ADTS2310/2024/H%C3%98ST">Algoritmer og datastrukturer</a>
                                                 <p>DATS2300</p>
                                                 <p>10stp.</p>
-                                                <p class="screen-reader-only">DATS2300 er et valgfag.</p>
+                                                <p class="screen-reader-only">DATS2300 er et opt-subject.</p>
                                             </td>
                                         </tr>
                                         <tr>
                                             <th scope="row">4. semester</th>
                                             <td>
-                                                <a href="">Statistisk analyse</a>
+                                                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO3100/2024/H%C3%98ST">Statistisk analyse</a>
                                                 <p>MAMO3100</p>
                                                 <p>10stp.</p>
-                                                <p class="screen-reader-only">MAMO3100 er et valgfag.</p>
+                                                <p class="screen-reader-only">MAMO3100 er et opt-subject.</p>
                                             </td>
-                                            <td class="valgfag">
-                                                <a href="">Visualisering</a>
+                                            <td class="opt-subject">
+                                                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO2300/2024/H%C3%98ST">Visualisering</a>
                                                 <p>MAMO2300</p>
                                                 <p>10stp.</p>
-                                                <p class="screen-reader-only">MAMO2300 er et valgfag.</p>
+                                                <p class="screen-reader-only">MAMO2300 er et opt-subject.</p>
                                             </td>
-                                            <td class="valgfag">
-                                                <a href="">Avansert modellering og beregninger</a>
+                                            <td class="opt-subject">
+                                                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO2300/2024/H%C3%98ST">Avansert modellering og beregninger</a>
                                                 <p>MAMO2300</p>
                                                 <p>10stp.</p>
-                                                <p class="screen-reader-only">MAMO2300 er et valgfag.</p>
+                                                <p class="screen-reader-only">MAMO2300 er et opt-subject.</p>
                                             </td>
                                         <tr>
                                             <th scope="row">5. semester</th>
                                             <td>
-                                                <a href="">Introduksjon til Kunstig Intelligens</a>
+                                                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DAVE3625/2024/H%C3%98ST">Introduksjon til Kunstig Intelligens</a>
                                                 <p>DAVE3625</p>
                                                 <p>10stp.</p>
                                             </td>
-                                            <td class="valgfag">
-                                                <a href="">Introduksjon til IT-forskning</a>
+                                            <td class="opt-subject">
+                                                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATA3730/2024/H%C3%98ST">Introduksjon til IT-forskning</a>
                                                 <p>DATA3730</p>
                                                 <p>10stp.</p>
-                                                <p class="screen-reader-only">DATA3730 er et valgfag.</p>
+                                                <p class="screen-reader-only">DATA3730 er et opt-subject.</p>
                                             </td>
-                                            <td class="valgfag">
-                                                <a href="">Anvendt kunstig intelligens og datascience prosjekt</a>
+                                            <td class="opt-subject">
+                                                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATA3750/2024/H%C3%98ST">Anvendt kunstig intelligens og datascience prosjekt</a>
                                                 <p>DATA3750</p>
                                                 <p>10stp.</p>
-                                                <p class="screen-reader-only">DATA3750 er et valgfag.</p>
+                                                <p class="screen-reader-only">DATA3750 er et opt-subject.</p>
                                             </td>
-                                            <td class="valgfag">
-                                                <a href="">Datasikkerhet</a>
+                                            <td class="opt-subject">
+                                                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/ITPE3100/2024/H%C3%98ST">Datasikkerhet</a>
                                                 <p>ITPE3100</p>
                                                 <p>10stp.</p>
-                                                <p class="screen-reader-only">ITPE3100 er et valgfag.</p>
+                                                <p class="screen-reader-only">ITPE3100 er et opt-subject.</p>
                                             </td>
-                                            <td class="valgfag">
-                                                <a href="">Simulering og visualisering</a>
+                                            <td class="opt-subject">
+                                                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO3200/2024/H%C3%98ST">Simulering og visualisering</a>
                                                 <p>MAMO3200</p>
                                                 <p>10stp.</p>
-                                                <p class="screen-reader-only">MAMO3200 er et valgfag.</p>
+                                                <p class="screen-reader-only">MAMO3200 er et opt-subject.</p>
                                             </td>
                                         </tr>
                                         <tr>
                                             <th scope="row">6. semester</th>
-                                            <td class="valgfag">
-                                                <a href="">Testing av programvare</a>
+                                            <td class="opt-subject">
+                                                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/ADTS2310/2024/H%C3%98ST">Testing av programvare</a>
                                                 <p>ADTS2310</p>
                                                 <p>10stp.</p>
-                                                <p class="screen-reader-only">ADTS2310 er et valgfag.</p>
+                                                <p class="screen-reader-only">ADTS2310 er et opt-subject.</p>
                                             </td>
-                                            <td class="valgfag">
-                                                <a href="">Datanettverk og skytjenester</a>
+                                            <td class="opt-subject">
+                                                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATA2410/2024/H%C3%98ST">Datanettverk og skytjenester</a>
                                                 <p>DATA2410</p>
                                                 <p>10stp.</p>
-                                                <p class="screen-reader-only">DATA2410 er et valgfag.</p>
+                                                <p class="screen-reader-only">DATA2410 er et opt-subject.</p>
                                             </td>
-                                            <td class="valgfag">
-                                                <a href="">Ressurseffektive programmer</a>
+                                            <td class="opt-subject">
+                                                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DAVE3606/2024/H%C3%98ST">Ressurseffektive programmer</a>
                                                 <p>DAVE3606</p>
                                                 <p>10stp.</p>
-                                                <p class="screen-reader-only">DAVE3606 er et valgfag.</p>
+                                                <p class="screen-reader-only">DAVE3606 er et opt-subject.</p>
                                             </td>
                                         </tr>
                                         <th scope="row" class="emnegruppeTittel">Emnegruppe: Vitenskapelige beregninger
                                         </th>
                                         <th scope="row">3. semester</th>
                                         <td>
-                                            <a href="">Algoritmer og datastrukturer</a>
+                                            <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATS2300/2024/H%C3%98ST">Algoritmer og datastrukturer</a>
                                             <p>DATS2300</p>
                                             <p>10stp.</p>
                                         </td>
@@ -556,72 +553,72 @@
                                         <tr>
                                             <th scope="row">4. semester</th>
                                             <td>
-                                                <a href="">Ressurseffektive programmer</a>
+                                                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DAVE3606/2024/H%C3%98ST">Ressurseffektive programmer</a>
                                                 <p>DAVE3606</p>
                                                 <p>10stp.</p>
                                             </td>
                                             <td>
-                                                <a href="">Avansert modellering og beregninger</a>
+                                                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO2200/2024/H%C3%98ST">Avansert modellering og beregninger</a>
                                                 <p>MAMO2200</p>
                                                 <p>10stp.</p>
                                             </td>
                                         <tr>
                                             <th scope="row">5. semester</th>
                                             <td>
-                                                <a href="">Simulering og visualisering</a>
+                                                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO3200/2024/H%C3%98ST">Simulering og visualisering</a>
                                                 <p>MAMO3200</p>
                                                 <p>10stp.</p>
                                             </td>
-                                            <td class="valgfag">
-                                                <a href="">Introduksjon til IT-forskning</a>
+                                            <td class="opt-subject">
+                                                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATA3730/2024/H%C3%98ST">Introduksjon til IT-forskning</a>
                                                 <p>DATA3730</p>
                                                 <p>10stp.</p>
-                                                <p class="screen-reader-only">DATA3730 er et valgfag.</p>
+                                                <p class="screen-reader-only">DATA3730 er et opt-subject.</p>
                                             </td>
-                                            <td class="valgfag">
-                                                <a href="">Datasikkerhet</a>
+                                            <td class="opt-subject">
+                                                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/ITPE3100/2024/H%C3%98ST">Datasikkerhet</a>
                                                 <p>ITPE3100</p>
                                                 <p>10stp.</p>
-                                                <p class="screen-reader-only">ITPE3100 er et valgfag.</p>
+                                                <p class="screen-reader-only">ITPE3100 er et opt-subject.</p>
                                             </td>
-                                            <td class="valgfag">
-                                                <a href="">Lineær algebra og introduksjon til gruppeteori</a>
+                                            <td class="opt-subject">
+                                                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO2300/2024/H%C3%98ST">Lineær algebra og introduksjon til gruppeteori</a>
                                                 <p>MAMO2300</p>
                                                 <p>10stp.</p>
-                                                <p class="screen-reader-only">MAMO2300 er et valgfag.</p>
+                                                <p class="screen-reader-only">MAMO2300 er et opt-subject.</p>
                                             </td>
-                                            <td class="valgfag">
-                                                <a href="">Reell analyse</a>
+                                            <td class="opt-subject">
+                                                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO3300/2024/H%C3%98ST">Reell analyse</a>
                                                 <p>MAMO3300</p>
                                                 <p>10stp.</p>
-                                                <p class="screen-reader-only">MAMO3300 er et valgfag.</p>
+                                                <p class="screen-reader-only">MAMO3300 er et opt-subject.</p>
                                             </td>
                                         </tr>
                                         <tr>
                                             <th scope="row">6. semester</th>
-                                            <td class="valgfag">
-                                                <a href="">Visualisering</a>
+                                            <td class="opt-subject">
+                                                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/ADSE3200/2024/H%C3%98ST">Visualisering</a>
                                                 <p>ADSE3200</p>
                                                 <p>10stp.</p>
-                                                <p class="screen-reader-only">ADSE3200 er et valgfag.</p>
+                                                <p class="screen-reader-only">ADSE3200 er et opt-subject.</p>
                                             </td>
-                                            <td class="valgfag">
-                                                <a href="">Testing av programvare</a>
+                                            <td class="opt-subject">
+                                                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/ADTS2310/2024/H%C3%98ST">Testing av programvare</a>
                                                 <p>ADTS2310</p>
                                                 <p>10stp.</p>
-                                                <p class="screen-reader-only">ADTS2310 er et valgfag.</p>
+                                                <p class="screen-reader-only">ADTS2310 er et opt-subject.</p>
                                             </td>
-                                            <td class="valgfag">
-                                                <a href="">Datanettverk og skytjenester</a>
+                                            <td class="opt-subject">
+                                                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATA2410/2024/H%C3%98ST">Datanettverk og skytjenester</a>
                                                 <p>DATA2410</p>
                                                 <p>10stp.</p>
-                                                <p class="screen-reader-only">DATA2410 er et valgfag.</p>
+                                                <p class="screen-reader-only">DATA2410 er et opt-subject.</p>
                                             </td>
-                                            <td class="valgfag">
-                                                <a href="">Symmetrier og algebraiske strukturer</a>
+                                            <td class="opt-subject">
+                                                <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO2500/2024/H%C3%98ST">Symmetrier og algebraiske strukturer</a>
                                                 <p>MAMO2500</p>
                                                 <p>10stp.</p>
-                                                <p class="screen-reader-only">MAMO2500 er et valgfag.</p>
+                                                <p class="screen-reader-only">MAMO2500 er et opt-subject.</p>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -910,11 +907,6 @@
         https://en.wikipedia.org/wiki/List_of_capoeira_techniques#/media/File:Capoeira_handstand_kick.jpg
             - Av: Eduardo Otubo
             Lisens: https://creativecommons.org/licenses/by/2.0/
-    join-today.png
-        - Brukt ved siden av knappene på capoeira siden.
-        https://thumb.ac-illust.com/55/551c5df1612c9dd2b19b69fca04e8080_w.jpeg
-            Av: nicki
-            Lisensen gir oss rett til å bruke bildet i personlig og komersiell* sammenheng. (*Kan ikke være hoved objektet i komersiell sammenheng men det gjelder ikke nå da dette er et personlig bruk og vi selger ingenting.)
     gym.jpg
         - Brukt nederst på activity siden.
         https://commons.wikimedia.org/wiki/File:Kongespeilet_i_Slottsparken.JPG?uselang=nb#Lisensiering

@@ -227,32 +227,32 @@ iframe {
 
 /* Store sammensetninger av klasser */
 /* FLEXBOX */
-header, nav, nav ul, summary, .vertical-table tbody, .studie-oppbyging tr, .studie-oppbyging td, footer section a{
+header, nav, nav ul, summary,  footer section a{
     display: flex;
 }
-header, nav, nav ul, .vertical-table tbody, .studie-oppbyging tr, .studie-oppbyging td{
+header, nav, nav ul{
     flex-direction: row;
 }
-header, nav ul, .vertical-table tbody, .studie-oppbyging tr, .studie-oppbyging td{
+header, nav ul{
     flex-wrap: wrap;
 }
 
 /* BAKGRUNNSFARGE */
-header, summary, .default-btn:hover, .default-table tr:nth-of-type(even), .fargedrop, .studie-oppbyging th{
+header, summary, .default-btn:hover, .default-table tr:nth-of-type(even), .fargedrop, .subjects-table th{
     background-color: var(--oslometPrimary);
 }
 
 /* width felles endringer */
-html, body, a, details, details p, iframe, .main-box img, .big-img, .vertical-table, .vertical-table tr, .vertical-table td, .content-box, .studie-oppbyging th, .studie-oppbyging td, .activity-box img, .fit-img{
+html, body, a, details, details p, iframe, .main-box img, .big-img .content-box, .activity-box img, .fit-img{
     width: 100%;
 }
 /* margin:0 */
 
-body, a, details a, .emnegruppeTittel{
+body, a, details a{
     margin: 0;
 }
 /* padding:0 */
-body, nav ul, .aside-box ul, .emnegruppeTittel {
+body, nav ul, .aside-box ul{
     padding: 0;
 }
 /* display grid */
@@ -430,28 +430,6 @@ body, nav ul, .aside-box ul, .emnegruppeTittel {
     margin-left: 5vw;
 }
 
-/* -- Studie info table. -- */
-/* vertical-table */
-
-.vertical-table tr {
-    height: 6.5vw;
-    margin: auto;
-    border-top: 1px solid black;
-}
-
-.vertical-table th {
-    height: 10px;
-    width: 60px;
-    padding-left: 1vw;
-    text-align: left;
-}
-
-.vertical-table td {
-    text-align: right;
-    height: 10px;
-    padding-right: 1vw;
-}
-
 /* -- content-box -- */
 /* content-box */
 .content-box {
@@ -495,18 +473,59 @@ body, nav ul, .aside-box ul, .emnegruppeTittel {
     position: sticky;
     top: 0;
 }
+/* ALLE TABLE: */
+/* felles: */
+.vertical-table tbody, .subjects-table tr, .subjects-table td{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.vertical-table, .vertical-table tr, .vertical-table td, .subjects-table th{
+    width: 100%;
+}
+
+/* -- Studie info table. -- */
+/* vertical-table */
+
+
+.vertical-table tr {
+    height: 6.5vw;
+    margin: auto;
+    border-top: 1px solid black;
+}
+
+.vertical-table th {
+    height: 10px;
+    width: 60px;
+    padding-left: 1vw;
+    text-align: left;
+}
+
+.vertical-table td {
+    text-align: right;
+    height: 10px;
+    padding-right: 1vw;
+}
+
 
 /* -- STUDIE OPPBYGGING TABLE.  -- */
-/* studie-oppbygging, emnegruppetittel, valgfag*/
+/* studie-oppbygging, emnegruppetittel, opt-subject*/
 /* Tablen blir manipulert på en måte der den oppstår mer oversiktlig, og har table-egenskaper
 på den vis vil den bli lettere brukt av skjermlesere, samt om css-essen plutselig sluttet så er det like brukbart. */
 
-.studie-oppbyging th,td {
+.subjects-table th, .subjects-table td {
     padding: 0.1vw;
-    margin: 0.25vw
+    margin: 0.25vw;
+}
+.emnegruppeTittel {
+    /* Gjør emnegruppe-headeren større slik at det er lettere å se. */
+    height: 5vw;
+    margin: 0px;
+    padding: 0;
 }
 
-.studie-oppbyging th {
+.subjects-table th {
     /* emne skrift */
     font-size: 1em;
     flex-grow: 1;
@@ -514,44 +533,39 @@ på den vis vil den bli lettere brukt av skjermlesere, samt om css-essen plutsel
     margin-top: 2vw;
 }
 
-.studie-oppbyging td {
+.subjects-table td {
+    /* enkeltemner i studie oppbyggingen.  */
     border-bottom: 3px solid var(--oslometPrimary);
     font-size: 0.8em;
-    height: 100%;
+    height: 100%; /* Tar så mye høyde som mulig slik at det visuelt ser finere ut. */
+    width: 45%; /* 45% Slik at flere går ved siden av hverandre.  */
+    margin-left: 1vw;
 }
 
-.studie-oppbyging td a {
+.subjects-table td a {
+    /* Linkene må skille seg ut */
     font-size: 1.2em;
     height: 50%;
     margin-bottom: 2vw;
 }
 
-.studie-oppbyging p {
+.subjects-table p {
     height: 50%;
     width: 50%;
     margin-top: 0;
     margin-bottom: 0;
 }
 
-.studie-oppbyging td p:nth-child(odd) {
+.subjects-table td p:nth-child(odd) {
+    /* Passer på at p-en ikke sitter inntil hverandre. */
     text-align: right;
 }
 /* Table row tittelen for emnegrupper */
-.emnegruppeTittel {
-    /* Gjør emnegruppe-headeren større slik at det er lettere å se. */
-    height: 5vw;
-}
-
-.valgfag {
-    /* Bildet er hentet fra https://www.oslomet.no/studier/tkd/matematisk-modellering-datavitenskap */
-    /* Legger inn bilde av stjerne for å markere valgfag i studieoppbyggningen. */
-    /* Skjermlesere kan ikke se dette bildet ! */
+.opt-subject {
+    /* Skjermlesere kan ikke se  ! */
     /* Løser ved bruk av usynlig hjelpetekst som opplyser om faget er valgfag. 
-    Kunne også løst ved å lage ny emnegruppetittel kun for valgfagene så de har egen del av table-n */
-    background-image: url(../images/optional-icon.svg);
-    background-position-y: top;
-    background-position-x: right;
-    background-repeat: no-repeat;
+    Kunne også løst ved å lage ny emnegruppetittel kun for opt-subjectene så de har egen del av table-n */
+    background-color: var(--CapoeiraSecondary);
 }
 
 
@@ -708,8 +722,9 @@ på den vis vil den bli lettere brukt av skjermlesere, samt om css-essen plutsel
         grid-template-columns: 1fr;
     }
 
-    .studie-oppbyging td {
-        height: 15vw;
+    .subjects-table td {
+        height: 11vw;
+        width: 100%;
     }
 
 }
@@ -760,6 +775,9 @@ på den vis vil den bli lettere brukt av skjermlesere, samt om css-essen plutsel
     .font-med, h3 {
         font-size: 0.9em;
     }
+    .subjects-table td {
+        /* gjør de større for mindre skjermer. Ser bedre ut. */
+        height: 15vw;}
 }
 
 
