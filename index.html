@@ -305,6 +305,7 @@
                                                 <p>DAPE1300</p> <!-- fag kode -->
                                                 <p>10stp.</p> <!-- studiepoeng -->
                                                 <!-- Kortene vil automatisk sortere hvor infoen står via css -->
+                                                <!-- Om faget er valgfag vil det være en ekstra p her med screenreader klassen. Det kan finnes eksempel nedenfor. -->
                                             </td>
                                             <td>
                                                 <a href=https://student.oslomet.no/studier/-/studieinfo/emne/DAPE1400/2024/H%C3%98ST"">Programmering</a>
@@ -641,16 +642,19 @@
             </div>
         </section>
         <!-- Video -->
-        <section class="fargedrop grid-middle gap-top">
-            <iframe src="https://film.oslomet.no/v.ihtml/player.html?source=embed&photo%5fid=95216483" allowfullscreen
+        <section class="gap-top">
+            <h2 class="indent font-lg">Se hva våre studenter syntes.</h2>
+            <div class="fargedrop grid-middle">
+                <iframe src="https://film.oslomet.no/v.ihtml/player.html?source=embed&photo%5fid=95216483" allowfullscreen
                 title="Tre studenter fra studiet forteller hvorfor de liker å studere dette. De snakker om at det er fint å være nerd."
                 loading="lazy">
-            </iframe> <!-- Her bruker vi iframe- siden vi ikke har tilgang til videofilen. -->
+                </iframe> <!-- Her bruker vi iframe- siden vi ikke har tilgang til videofilen. -->
+            </div>
         </section>
         <section class="indent gap-top">
             <!-- seksjon for studenthistorier og spørsmål lenker. -->
             <h2 class="font-lg" aria-label="Studenthistorier Tittel">Studenthistorier</h2>
-            <div class="grid-container">
+            <div class="grid-container total-border">
                 <article class="main-box">
                     <div>
                         <img src="./images/studenthistorier.jpg" alt="Bilde av to studenter">
@@ -686,7 +690,8 @@
                         <summary>Anvendt Datateknologi</summary>
                         <p>Leter du etter en karriere i datateknolgi, men du vil ikke ha matematikk? Da er dette det perfekte studiet for deg.</p>
                         <div class="content-box">
-                            <h2>Anvendt Datateknologi (USIKKER OM VI SKAL HA MED DISSE TITTLEENE)</h2>
+                            <h3 class="font-med">Anvendt Datateknologi</h3>
+                            <img src="./images/extra-studier/anvendt-data.jpg" class="big-img" alt="3 personer som snakker i øvingstime.">
                             <p>Lær hvordan du utvikler nye løsninger for samspill mellom mennesker og datateknologi. 
                                 Fra andre studieår kan du spesialisere deg i enda mer programmering eller brukerforståelse.</p>
                             <p>Du kan velge mellom fire spesialiseringer i denne bacheloren:</p>
@@ -703,8 +708,9 @@
                     </details>
                     <details>
                         <summary>Bioteknologi- og kjemiingeniør</summary>
+                        <p>Leter du etter en bachelor i bioteknologi og kjemi? Da kan denne være perfekt for deg!</p>
                         <div class="content-box">
-                            <h2>Bioteknologi- og kjemiingeniør</h2>
+                            <h3 class="font-med">Bioteknologi- og kjemiingeniør</h3>
                             <p>Som bioteknologi- og kjemiingeniør kan du blant annet jobbe med medisinsk forskning, bioanalytiske og rettsmedisinske analyser, legemidler, matvarer, vannrensing og biodrivstoff.</p>
                             <br>
                             <p>Nysgjerrig? <a
@@ -714,9 +720,9 @@
                     </details>
                     <details>
                         <summary>Byggingeniør</summary>
-                        <p>tekst.</p>
+                        <p>Byggingeniører er alltid noe som det trengs mer av, hos oss vil du bli en dyktig og ettertraktet byggingeniør.</p>
                         <div class="content-box">
-                            <h2>Byggingeniør</h2>
+                            <h3 class="font-med">Byggingeniør</h3>
                             <p>Som byggingeniør er du ettertraktet i arbeidsmarkedet og jobber med moderne teknologi innen konstruksjonsteknikk, vann og miljø, infrastruktur og byutvikling.</p>
                             <br>
                             <p>Nysgjerrig? <a
@@ -726,8 +732,9 @@
                     </details>
                     <details>
                         <summary>Dataingeniør</summary>
+                        <p>Interessert i MAMO, men ønsker du mindre matte? Da er dataingeniør studiet perfekt for deg.</p>
                         <div class="content-box">
-                            <h2>Dataingeniør</h2>
+                            <h3 class="font-med">Dataingeniør</h3>
                             <p>Ønsker du å utvikle dataprogrammer for web, mobil, eller datasentre? Er du glad i naturfag og matematikk? Dataingeniørstudiet kan være veien til målet.</p>
                             <br>
                             <p>Nysgjerrig? <a
@@ -737,8 +744,9 @@
                     </details>
                     <details>
                         <summary>Elektronikkingeniør</summary>
+                        <p>Interessert i MAMO, men ønsker du å fokusere mer på praktiske løsninger og teknologi? Da er elektronikkingeniørstudiet perfekt for deg.</p>
                         <div class="content-box">
-                            <h2>Elektronikkingeniør</h2>
+                            <h3 class="font-med">Elektronikkingeniør</h3>
                             <p>Som elektronikkingeniør vil du forbedre eksisterende teknologi og utvikle nye teknologiske løsninger. I vårt høyteknologiske samfunn er ingeniøren viktigere enn noensinne. Vi bruker mer og mer elektronikk. Snart er 200 milliarder enheter koblet til internett.</p>
                             <br>
                             <p>Nysgjerrig? <a
@@ -748,8 +756,9 @@
                     </details>
                     <details>
                         <summary>Informasjonsteknologi</summary>
+                        <p>Drømmer du om en utdanning innen data, men vil jobbe mer med teknologi og løsninger? Da er informasjonsteknologistudiet perfekt for deg.</p>
                         <div class="content-box">
-                            <h2>Informasjonsteknologi</h2>
+                            <h3 class="font-med">Informasjonsteknologi</h3>
                             <p>Ta OsloMets mest omfattende utdanning innen programmering og app-utvikling. Du får mulighet til å studere bredt og dypt innen design, utvikling, administrasjon og vedlikehold av datasystem.</p>
                             <br>
                             <p>Nysgjerrig? <a
@@ -759,8 +768,9 @@
                     </details>
                     <details>
                         <summary>Maskiningeniør</summary>
+                        <p>Vil du jobbe med design og utvikling av mekaniske systemer? Da er maskiningeniørstudiet perfekt for deg.</p>
                         <div class="content-box">
-                            <h2>Maskiningeniør</h2>
+                            <h3 class="font-med">Maskiningeniør</h3>
                             <p>En maskiningeniør blir ofte omtalt som den klassiske ingeniøren. Studiet er for deg som vil bruke kunnskaper innen matematikk, fysikk og materialvitenskap til å designe og utvikle teknisk utstyr og anlegg som kan brukes på alle samfunnsområder.</p>
                             <br>
                             <p>Nysgjerrig? <a
@@ -770,8 +780,9 @@
                     </details>
                     <details>
                         <summary>Tre-terminsordning til ingeniørutdanning</summary>
+                        <p>Har du lyst til å bli ingeniør, men mangler realfagene som kreves? Med tre-terminsordningen kan du starte ingeniørutdanningen din allerede nå og ta opp matematikk og fysikk som en del av studieløpet. Dette er en effektiv vei til drømmestudiet for deg som vil kombinere teori og praksis fra start!</p>
                         <div class="content-box">
-                            <h2>Tre-terminsordning til ingeniørutdanning</h2>
+                            <h3 class="font-med">Tre-terminsordning til ingeniørutdanning</h3>
                             <p>Tre-terminsordningen er et tilbud til deg som har generell studiekompetanse, men som mangler nødvendig matematikk og/eller fysikk for opptak til ingeniørutdanning.</p>
                             <br>
                             <p>Nysgjerrig? <a
