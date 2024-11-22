@@ -393,7 +393,7 @@ body, nav ul, .aside-box ul, .emnegruppeTittel {
     grid-row: 1;
 }
 
-.main-box img {
+.main-box img{
     /* forside bilde til grid-container. *må ikke ha* */
     border-bottom: 5px solid var(--oslometSecondary);
 }
@@ -498,6 +498,8 @@ body, nav ul, .aside-box ul, .emnegruppeTittel {
 
 /* -- STUDIE OPPBYGGING TABLE.  -- */
 /* studie-oppbygging, emnegruppetittel, valgfag*/
+/* Tablen blir manipulert på en måte der den oppstår mer oversiktlig, og har table-egenskaper
+på den vis vil den bli lettere brukt av skjermlesere, samt om css-essen plutselig sluttet så er det like brukbart. */
 
 .studie-oppbyging th,td {
     padding: 0.1vw;
@@ -505,6 +507,7 @@ body, nav ul, .aside-box ul, .emnegruppeTittel {
 }
 
 .studie-oppbyging th {
+    /* emne skrift */
     font-size: 1em;
     flex-grow: 1;
     margin-bottom: 2vw;
@@ -535,12 +538,16 @@ body, nav ul, .aside-box ul, .emnegruppeTittel {
 }
 /* Table row tittelen for emnegrupper */
 .emnegruppeTittel {
+    /* Gjør emnegruppe-headeren større slik at det er lettere å se. */
     height: 5vw;
 }
 
 .valgfag {
     /* Bildet er hentet fra https://www.oslomet.no/studier/tkd/matematisk-modellering-datavitenskap */
     /* Legger inn bilde av stjerne for å markere valgfag i studieoppbyggningen. */
+    /* Skjermlesere kan ikke se dette bildet ! */
+    /* Løser ved bruk av usynlig hjelpetekst som opplyser om faget er valgfag. 
+    Kunne også løst ved å lage ny emnegruppetittel kun for valgfagene så de har egen del av table-n */
     background-image: url(../images/optional-icon.svg);
     background-position-y: top;
     background-position-x: right;
@@ -549,7 +556,6 @@ body, nav ul, .aside-box ul, .emnegruppeTittel {
 
 
 /* ------ CSS for activity-side ------ */
-/* activity-box */
 
 /* skifter farge-palett for activity siden. */
 .capo-bg-p{
@@ -570,6 +576,7 @@ body, nav ul, .aside-box ul, .emnegruppeTittel {
     background-size: cover;
     background-position: center;
 }
+/* activity-box */
 
 .activity-box {
     grid-column: 1fr;
