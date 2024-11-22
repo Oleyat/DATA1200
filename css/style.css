@@ -243,7 +243,7 @@ header, summary, .default-btn:hover, .default-table tr:nth-of-type(even), .farge
 }
 
 /* width felles endringer */
-html, body, a, details, details p, iframe, .main-box img, .big-img, .studie-informasjon-table, .studie-informasjon-table tr, .studie-informasjon-table td, .info-kort, .studie-oppbyging th, .studie-oppbyging td, .activity-box img, .fit-img{
+html, body, a, details, details p, iframe, .main-box img, .big-img, .studie-informasjon-table, .studie-informasjon-table tr, .studie-informasjon-table td, .content-box, .studie-oppbyging th, .studie-oppbyging td, .activity-box img, .fit-img{
     width: 100%;
 }
 /* margin:0 */
@@ -272,6 +272,7 @@ body, nav ul, .aside-box ul, .emnegruppeTittel {
     background-color: var(--oslometSecondary);
     border-width: 10px;
     padding: 30px;
+    margin-top: 1vw;
     text-align: center;
     font-weight: bolder;
     transition: 0.2s;
@@ -387,26 +388,30 @@ body, nav ul, .aside-box ul, .emnegruppeTittel {
 }
 
 .main-box {
+    /* hoved boksen i grid-container */
     grid-column: 1/3;
     grid-row: 1;
 }
 
 .main-box img {
-    max-height: auto;
+    /* forside bilde til grid-container. *må ikke ha* */
     border-bottom: 5px solid var(--oslometSecondary);
 }
 
 .secondary-box {
+    /* underboksen til main-box */
     grid-column: 1/3;
     grid-row: 2;
 }
 
 .aside-box {
+    /* side-boksen til grid-container */
     grid-column: 3/4;
     grid-row: 1;
 }
 
 .aside-box img {
+    /* bildet til aside-box, *må ikke ma* */
     padding: 0;
     width: 60%;
     height: auto;
@@ -447,30 +452,31 @@ body, nav ul, .aside-box ul, .emnegruppeTittel {
     padding-right: 1vw;
 }
 
-/* -- Info-kort -- */
-/* info-kort */
-.info-kort {
+/* -- content-box -- */
+/* content-box */
+.content-box {
     margin-bottom: 0;
     padding-bottom: 0;
 }
 
-.info-kort h2 {
+.content-box h2 {
     border-bottom: 1px solid black;
     padding-bottom: 0.2vw;
 }
 
-.info-kort h3 {
+.content-box h3 {
     padding-top: 1vw;
 }
 
-.info-kort img {
+.content-box img {
     width: 80%;
     padding-right: 10%;
     padding-top: 0%;
     padding-bottom: 0%;
 }
 
-.info-kort p, .info-kort h2, .info-kort h3 {
+/* grupperer felles endringer for teksten i content-box */
+.content-box p, .content-box h2, .content-box h3 {
     padding-left: 0.5vw;
     margin: 0;
 }
@@ -677,7 +683,7 @@ body, nav ul, .aside-box ul, .emnegruppeTittel {
         width: 100vw;
     }
 
-    .info-kort img {
+    .content-box img {
         margin-left: 30%;
         padding-top: 0%;
         padding-bottom: 0%;
