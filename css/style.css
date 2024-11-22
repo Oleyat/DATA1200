@@ -250,7 +250,7 @@ html, body, a, details, details p, iframe, .main-box img, .big-img, .studie-info
 }
 /* margin:0 */
 
-body, a, details a, .info-kort p, .info-kort h2, .info-kort h3, .emnegruppeTittel, .studenthistorier p{
+body, a, details a, .emnegruppeTittel{
     margin: 0;
 }
 /* padding:0 */
@@ -463,7 +463,6 @@ body, nav ul, .aside-box ul, .emnegruppeTittel {
 }
 
 .info-kort h3 {
-    padding-left: 0.5vw;
     padding-top: 1vw;
 }
 
@@ -474,8 +473,9 @@ body, nav ul, .aside-box ul, .emnegruppeTittel {
     padding-bottom: 0%;
 }
 
-.info-kort p,h2,h3 {
+.info-kort p, .info-kort h2, .info-kort h3 {
     padding-left: 0.5vw;
+    margin: 0;
 }
 
 /* table-fixed */
@@ -544,27 +544,6 @@ body, nav ul, .aside-box ul, .emnegruppeTittel {
     background-repeat: no-repeat;
 }
 
-/* -- Studenthistorier/ Generell artikkel boks -- */
-/* studenthistorier */
-.studenthistorier div {
-    /* MAKE ROUNDED BORDERS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-    padding-bottom: 2vw;
-}
-
-.studenthistorier p {
-    padding-left: 0.5vw;
-    padding-right: 0.5vw;
-}
-
-.studenthistorier h3 {
-    margin-bottom: 1vw;
-    margin-top: 1vw;
-}
-
-.studenthistorier img {
-    max-width: 100%;
-}
-
 /* ------ CSS for activity-side ------ */
 /* activity-box */
 
@@ -625,8 +604,7 @@ body, nav ul, .aside-box ul, .emnegruppeTittel {
     margin: 1vw;
 }
 
-.footer-section li,
-a {
+.footer-section li,a {
     margin: 0.5vw;
     font-weight: bold;
 }
