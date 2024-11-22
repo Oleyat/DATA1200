@@ -26,7 +26,7 @@
     </header>
     <main aria-label="Main content">
         <section class="fargedrop"><!-- Fargedrop = Bakgrunnsfarge -->
-            <div class="grid-container innrykk"> <!-- Topp del av siden. Første man ser -->
+            <div class="grid-container indent"> <!-- Topp del av siden. Første man ser -->
                 <article class="main-box" aria-label="header text">
                     <div>
                         <h1>Matematisk modellering og datavitenskap – ingeniør</h1>
@@ -42,10 +42,10 @@
                     <p>I tabellen finner du viktig informasjon om bachelorprogrammet Matematisk Modellering og
                         Datavitenskap.</p>
                     <!-- Denne tablen dukker ikke opp på skjermleser for en eller annen grunn. -->
-                    <table class="studie-informasjon-table" aria-labelledby="studie-informasjon-caption">
+                    <table class="vertical-table" aria-labelledby="studie-info">
                         <!-- Table kunne vært gjort på andre måter (f.ex liste, men tenker table er bedre for å gi info på denne måten mtp. si css ikke funker) -->
                         <!-- Table for å gi generell info. Lenker til captionen nedenfor for ARIA markering. -->
-                        <caption id="studie-informasjon-caption">Bachelorprogram</caption>
+                        <caption id="studie-info">Bachelorprogram</caption>
                         <tbody>
                             <tr> <!-- Table for å vise studieinformasjon ved-siden av main bildet. -->
                                 <th scope="row">Studiested</th>
@@ -80,7 +80,7 @@
                 </aside>
             </div>
         </section>
-        <section class="innrykk gap-top">
+        <section class="indent gap-top">
             <h2>Informasjon</h2> <!-- Heading for hoved-informason seksjonen -->
             <div class="grid-container">
                 <article class="main-box"> <!-- Informasjon seksjonen. venstre side med alle details boksene. -->
@@ -650,7 +650,7 @@
                 loading="lazy">
             </iframe> <!-- Her bruker vi iframe- siden vi ikke har tilgang til videofilen. -->
         </section>
-        <section class="innrykk gap-top">
+        <section class="indent gap-top">
             <!-- seksjon for studenthistorier og spørsmål lenker. -->
             <h2 class="font-lg" aria-label="Studenthistorier Tittel">Studenthistorier</h2>
             <div class="grid-container">
@@ -679,7 +679,7 @@
                 </aside>
             </div>
         </section>
-        <section class="innrykk gap-top">
+        <section class="indent gap-top">
             <!-- seksjon for flere studier, andre lenker, nyhetsbrev -->
             <h2 class="font-lg">Du er kanskje også interessert i disse?</h2>
             <div class="grid-container">
@@ -799,7 +799,7 @@
     <!-- Main ferdig. Footer -->
     <footer class="gap-top-bigger fargedrop"> <!-- legger til spacing, bakgrunnsfarge. -->
         <!-- grid: footer delt i tre seksjoner med lik størrelser.  -->
-        <div class="grid-footer innrykk gap-top-bigger">
+        <div class="grid-footer indent gap-top-bigger">
             <section>
                 <h2 class="font-lg">OSLO METROPOLITIAN UNIVERSITY</h2>
                 <h3 class="font-lg">STORBYUNIVERSITETET</h3>

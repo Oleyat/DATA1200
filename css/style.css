@@ -227,13 +227,13 @@ iframe {
 
 /* Store sammensetninger av klasser */
 /* FLEXBOX */
-header, nav, nav ul, summary, .studie-informasjon-table tbody, .studie-oppbyging tr, .studie-oppbyging td, footer section a{
+header, nav, nav ul, summary, .vertical-table tbody, .studie-oppbyging tr, .studie-oppbyging td, footer section a{
     display: flex;
 }
-header, nav, nav ul, .studie-informasjon-table tbody, .studie-oppbyging tr, .studie-oppbyging td{
+header, nav, nav ul, .vertical-table tbody, .studie-oppbyging tr, .studie-oppbyging td{
     flex-direction: row;
 }
-header, nav ul, .studie-informasjon-table tbody, .studie-oppbyging tr, .studie-oppbyging td{
+header, nav ul, .vertical-table tbody, .studie-oppbyging tr, .studie-oppbyging td{
     flex-wrap: wrap;
 }
 
@@ -243,7 +243,7 @@ header, summary, .default-btn:hover, .default-table tr:nth-of-type(even), .farge
 }
 
 /* width felles endringer */
-html, body, a, details, details p, iframe, .main-box img, .big-img, .studie-informasjon-table, .studie-informasjon-table tr, .studie-informasjon-table td, .content-box, .studie-oppbyging th, .studie-oppbyging td, .activity-box img, .fit-img{
+html, body, a, details, details p, iframe, .main-box img, .big-img, .vertical-table, .vertical-table tr, .vertical-table td, .content-box, .studie-oppbyging th, .studie-oppbyging td, .activity-box img, .fit-img{
     width: 100%;
 }
 /* margin:0 */
@@ -338,7 +338,7 @@ body, nav ul, .aside-box ul, .emnegruppeTittel {
 }
 
 /* -- Mellomrom klasser  og seksjon endringerm, border bottom klasse-- */
-/* gap-top, gap-bottom, gap-top-bigger, fargedrop, innrykk, brd-bottom*/
+/* gap-top, gap-bottom, gap-top-bigger, fargedrop, indent, brd-bottom*/
 .gap-top {
     margin-top: 5vw;
 }
@@ -351,8 +351,8 @@ body, nav ul, .aside-box ul, .emnegruppeTittel {
     margin-top: 15vw;
 }
 
-.innrykk {
-    /* Side innrykk */
+.indent {
+    /* Side indent */
     padding-left: 3.5vw;
     padding-right: 3.5vw;
 }
@@ -431,22 +431,22 @@ body, nav ul, .aside-box ul, .emnegruppeTittel {
 }
 
 /* -- Studie info table. -- */
-/* studie-informasjon-table */
+/* vertical-table */
 
-.studie-informasjon-table tr {
+.vertical-table tr {
     height: 6.5vw;
     margin: auto;
     border-top: 1px solid black;
 }
 
-.studie-informasjon-table th {
+.vertical-table th {
     height: 10px;
     width: 60px;
     padding-left: 1vw;
     text-align: left;
 }
 
-.studie-informasjon-table td {
+.vertical-table td {
     text-align: right;
     height: 10px;
     padding-right: 1vw;
@@ -679,14 +679,14 @@ på den vis vil den bli lettere brukt av skjermlesere, samt om css-essen plutsel
         grid-row: 1;
     }
 
-    .studie-informasjon-table tr {
+    .vertical-table tr {
         height: 6.5vh;
         /* Gjør større for små skjermer. */
         margin: auto;
         border-top: 1px solid black;
     }
 
-    .studie-informasjon-table td {
+    .vertical-table td {
         width: 100vw;
     }
 
@@ -765,7 +765,7 @@ på den vis vil den bli lettere brukt av skjermlesere, samt om css-essen plutsel
 
 /* ------- WIDE-SCREEN ------ */
 @media (min-width: 1350px) {
-    .innrykk {
+    .indent {
         margin-left: 10vw;
         margin-right: 10vw;
     }
