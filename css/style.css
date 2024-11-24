@@ -757,7 +757,7 @@ på den vis vil den bli lettere brukt av skjermlesere, samt om css-essen plutsel
         font-size: .9em;
     }
 
-    header {
+    header {/* gjør header større slik at den delen under er brukbar. */
         height: 25vh;
     }
     /* Flytter navbaren under slik at det blir lettere å bruke på telefon. */
