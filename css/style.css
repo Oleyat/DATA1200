@@ -758,7 +758,7 @@ på den vis vil den bli lettere brukt av skjermlesere, samt om css-essen plutsel
     }
 
     header {
-        height: 15vh;
+        height: 25vh;
     }
     /* Flytter navbaren under slik at det blir lettere å bruke på telefon. */
     nav {
