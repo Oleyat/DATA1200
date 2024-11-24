@@ -11,12 +11,12 @@
 /* ------ CSS VARIABLER ------ */
 :root {
     /* Legger inn variabler for farge stilen (!)*/
-    --oslometPrimary: #a8e2ff;
+    --oslomet-primary: #a8e2ff;
     /* Primary colour*/
-    --oslometSecondary: #73d0ff;
+    --oslomet-secondary: #73d0ff;
     --oslometPrimaryFont: 'Tahoma', sans-serif;
-    --CapoeiraPrimary: #009739;
-    --CapoeiraSecondary: #FEDD00;
+    --capo-primary: #009739;
+    --capo-secondary: #FEDD00;
     --CapoeiraTetriary: #012169;
 }
 
@@ -217,11 +217,11 @@ table {
 }
 
 thead{
-    border-bottom: 5px solid var(--oslometPrimary);
+    border-bottom: 5px solid var(--oslomet-primary);
 }
 thead th{
-    border-left: 5px solid var(--oslometPrimary);
-    border-right: 5px solid var(--oslometPrimary);
+    border-left: 5px solid var(--oslomet-primary);
+    border-right: 5px solid var(--oslomet-primary);
 }
 
 /* -- IFRAME -- */
@@ -253,11 +253,11 @@ header, nav ul{
 
 /* BAKGRUNNSFARGE */
 header, summary, .default-btn:hover, .default-table tr:nth-of-type(even), .fargedrop, .subjects-table th{
-    background-color: var(--oslometPrimary);
+    background-color: var(--oslomet-primary);
 }
 
 /* width felles endringer */
-html, body, a, details, details p, .main-box img, .big-img .content-box, .activity-box img, .fit-img, .ben-table{
+html, body, a, details, details p, .main-box img, .big-img .content-box, .activity-box img{
     width: 100%;
 }
 /* margin:0 */
@@ -276,6 +276,7 @@ body, nav ul, .aside-box ul{
 
 .header-left img {
     width: 6em;
+    /* em slik at den holder form med teksten. */
 }
 
 /* ------ Generelle klasser. ------ */
@@ -283,7 +284,7 @@ body, nav ul, .aside-box ul{
 
 .default-btn {
     /* Default knappen. */
-    background-color: var(--oslometSecondary);
+    background-color: var(--oslomet-secondary);
     border-width: 10px;
     padding: 30px;
     margin-top: 1vw;
@@ -315,6 +316,7 @@ body, nav ul, .aside-box ul{
 }
 
 .default-btn a {
+    /* fjerner a: dekorasjonen for knappen */
     text-decoration: none;
     color: black;
 }
@@ -362,6 +364,7 @@ body, nav ul, .aside-box ul{
 }
 
 .gap-top-bigger {
+    /* mellomrom */
     margin-top: 15vw;
 }
 
@@ -373,7 +376,7 @@ body, nav ul, .aside-box ul{
 
 /* Legger en blå border rundt et element. */
 .total-border{
-    border: 10px solid var(--oslometPrimary);
+    border: 10px solid var(--oslomet-primary);
     padding: 1vw;
 }
 
@@ -416,7 +419,7 @@ body, nav ul, .aside-box ul{
 
 .main-box img{
     /* forside bilde til grid-container. *må ikke ha* */
-    border-bottom: 5px solid var(--oslometSecondary);
+    border-bottom: 5px solid var(--oslomet-secondary);
 }
 
 .secondary-box {
@@ -469,7 +472,6 @@ body, nav ul, .aside-box ul{
 
 .content-box img {
     width: 80%;
- /*    padding-right: 10%; */
     padding-top: 0%;
     padding-bottom: 0%;
 }
@@ -491,6 +493,7 @@ body, nav ul, .aside-box ul{
 }
 
 .fixed {
+    /* Gjør at summary til subjects-table ikke forsvinner når du skroller. */
     position: sticky;
     top: 0;
 }
@@ -502,7 +505,7 @@ body, nav ul, .aside-box ul{
     flex-wrap: wrap;
 }
 
-.vertical-table, .vertical-table tr, .vertical-table td, .subjects-table th{
+.vertical-table, .vertical-table tr, .vertical-table td, .subjects-table th, .ben-table{
     width: 100%;
 }
 
@@ -517,6 +520,7 @@ body, nav ul, .aside-box ul{
 }
 
 .vertical-table th {
+    /* Flytter slikk at th er på venstre. */
     height: 10px;
     width: 60px;
     padding-left: 1vw;
@@ -524,6 +528,7 @@ body, nav ul, .aside-box ul{
 }
 
 .vertical-table td {
+    /* flytter slik at td er på høyre */
     text-align: right;
     height: 10px;
     padding-right: 1vw;
@@ -531,7 +536,7 @@ body, nav ul, .aside-box ul{
 
 
 /* -- STUDIE OPPBYGGING TABLE.  -- */
-/* studie-oppbygging, emnegruppetittel, opt-subject*/
+/* subjects-table, subgroup-header, opt-subject*/
 /* Tablen blir manipulert på en måte der den oppstår mer oversiktlig, og har table-egenskaper
 på den vis vil den bli lettere brukt av skjermlesere, samt om css-essen plutselig sluttet så er det like brukbart. */
 
@@ -539,7 +544,7 @@ på den vis vil den bli lettere brukt av skjermlesere, samt om css-essen plutsel
     padding: 0.1vw;
     margin: 0.25vw;
 }
-.emnegruppeTittel {
+.subgroup-header {
     /* Gjør emnegruppe-headeren større slik at det er lettere å se. */
     height: 5vw;
     margin: 0px;
@@ -556,7 +561,7 @@ på den vis vil den bli lettere brukt av skjermlesere, samt om css-essen plutsel
 
 .subjects-table td {
     /* enkeltemner i studie oppbyggingen.  */
-    border-bottom: 3px solid var(--oslometPrimary);
+    border-bottom: 3px solid var(--oslomet-primary);
     font-size: 0.8em;
     height: 100%; /* Tar så mye høyde som mulig slik at det visuelt ser finere ut. */
     width: 45%; /* 45% Slik at flere går ved siden av hverandre.  */
@@ -585,35 +590,35 @@ på den vis vil den bli lettere brukt av skjermlesere, samt om css-essen plutsel
 .opt-subject {
     /* Skjermlesere kan ikke se  ! */
     /* Løser ved bruk av usynlig hjelpetekst som opplyser om faget er valgfag. 
-    Kunne også løst ved å lage ny emnegruppetittel kun for opt-subjectene så de har egen del av table-n */
-    background-color: var(--CapoeiraSecondary);
+    Kunne også løst ved å lage ny subgroup-header kun for opt-subjectene så de har egen del av table-n */
+    background-color: var(--capo-secondary);
 }
 
-
-/* ------ CSS for activity-side ------ */
-
-/* BENEFITS-TABLE */
-
+/* benefits table */
 .ben-table td, .ben-table tr .ben-table th{
     margin: 1vw;
     padding: 1vw;
 }
 
 .ben-table tr:nth-of-type(even){
-    background-color: var(--oslometPrimary);
+    background-color: var(--oslomet-primary);
 }
 
 .ben-table td{
     height: 5vh;
 }
 
+
+/* ------ CSS for activity-side ------ */
+
+
 /* skifter farge-palett for activity siden. */
 .capo-bg-p{
-    background-color: var(--CapoeiraPrimary);
+    background-color: var(--capo-primary);
     
 }
 .capo-bg-s{
-    background-color: var(--CapoeiraSecondary);
+    background-color: var(--capo-secondary);
 }
 
 .capo-bg-t{
@@ -626,8 +631,8 @@ på den vis vil den bli lettere brukt av skjermlesere, samt om css-essen plutsel
     background-size: cover;
     background-position: center;
 }
-/* activity-box */
 
+/* activity-box */
 .activity-box {
     grid-column: 1fr;
     padding: 1vw;
@@ -636,7 +641,7 @@ på den vis vil den bli lettere brukt av skjermlesere, samt om css-essen plutsel
 
 .activity-box img {
     height: 100%;
-    border-bottom: 5px solid var(--oslometPrimary);
+    border-bottom: 5px solid var(--oslomet-primary);
 }
 
 
@@ -670,13 +675,8 @@ på den vis vil den bli lettere brukt av skjermlesere, samt om css-essen plutsel
         margin-left: 10vw;
     }
 
-    .grid-container {
-        /* Container for grid- som vises på index */
-        grid-template-columns: 1fr;
-        grid-auto-rows: minmax(100px, auto);
-        gap: 10px;
-    }
 
+    /* gjør at gap-ene er større for mindre skjermer. */
     .gap-top {
         margin-top: 10vh;
     }
@@ -691,17 +691,8 @@ på den vis vil den bli lettere brukt av skjermlesere, samt om css-essen plutsel
     }
 
     .aside-box img{
+        /* trenger ikke like stor plass nå. */
         width: 30%;
-    }
-    
-    .secondary-box {
-        grid-column: 1/2;
-        grid-row: 2;
-    }
-
-    .main-box {
-        grid-column: 1/2;
-        grid-row: 1;
     }
 
     .vertical-table tr {
@@ -718,6 +709,21 @@ på den vis vil den bli lettere brukt av skjermlesere, samt om css-essen plutsel
     .content-box img {
         padding-top: 0%;
         padding-bottom: 0%;
+    }
+    /* grid-endringer for å restrukturere for nye skjerm størrelser */
+    .grid-container {
+        /* Container for grid- som vises på index */
+        grid-template-columns: 1fr;
+        grid-auto-rows: minmax(100px, auto);
+        gap: 10px;
+    }
+    .secondary-box {
+        grid-column: 1/2;
+        grid-row: 2;
+    }
+    .main-box {
+        grid-column: 1/2;
+        grid-row: 1;
     }
 
     .grid-middle {
@@ -755,11 +761,13 @@ på den vis vil den bli lettere brukt av skjermlesere, samt om css-essen plutsel
     }
     /* Flytter navbaren under slik at det blir lettere å bruke på telefon. */
     nav {
+        /* tar full bredde */
         width: 100vw;
         height: 5vh;
     }
 
     nav a {
+        /* mindre tekst */
         font-size: 0.9em;
     }
 
@@ -768,11 +776,13 @@ på den vis vil den bli lettere brukt av skjermlesere, samt om css-essen plutsel
         padding: 0;
     }
     nav ul {
+        /* full bredde for listen. trenger ikke ta hensyn til logoen heller siden den nå er under */
         margin-left: 0vw;
         width: 100vw;
         justify-content: space-evenly;
     }
 
+    /* gjør teksten ny størrelse for skjermen */
     h1 {
         font-size: 1.2em;
     }
