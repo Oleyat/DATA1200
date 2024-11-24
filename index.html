@@ -287,6 +287,9 @@
                         <!-- Neden for vil det være mye usynlig paragrafer for å lese opp om det er opt-subject-ene for skjermlesere. Det er siden de ikke kan se fargen. -->
                         <details class>
                             <!--  Stort table med alle fagene i studiet. -->
+                            <!-- Strukturen er på et slik vis at det er først: tr med header der det er studie år eller med en emnegruppe. -->
+                            <!-- Deretter alle emnene i det studieåret &/ emnegruppa. Emnene er strukturert med: <a> element for tittel. og 2 <p> elementer der den første er fagkode
+                                den andre er stp. Også kan man legge til ett siste <p> for usynlig tekst for skjermlesere. --> 
                             <summary class="fixed">Studiets Oppbygging</summary>
                             <!-- fixed class så toppen ikke går vekk -->
                             <div class="table-fixed-view">
@@ -631,7 +634,7 @@
                 <!-- Faglig leder del -->
                 <aside class="aside-box content-box" aria-label="Faglig leder">
                     <h2 class="font-lg">Faglig leder</h2>
-                    <h3 class="font-med">Kristoffer Herland Hellton</h3>
+                    <h3 class="font-med">Kristoffer Herland Hellton</h3> <!-- faglig leder -->
                     <img src="./images/faglig-leder.png" alt="Bilde av faglig leder, Kristoffer Herland Hellton">
                     <div>
                         <p>førsteamanuensis</p>
@@ -641,10 +644,10 @@
                 </aside>
             </div>
         </section>
-        <!-- Video -->
+        <!-- MAMO sin hovedside video -->
         <section class="gap-top">
-            <h2 class="indent font-lg">Se hva våre studenter syntes.</h2>
-            <div class="fargedrop grid-middle">
+            <h2 class="indent font-lg">Se hva våre studenter syntes.</h2> <!-- overskrift for video -->
+            <div class="fargedrop grid-middle"> 
                 <iframe src="https://film.oslomet.no/v.ihtml/player.html?source=embed&photo%5fid=95216483" allowfullscreen
                 title="Tre studenter fra studiet forteller hvorfor de liker å studere dette. De snakker om at det er fint å være nerd."
                 loading="lazy">
@@ -665,16 +668,16 @@
                     </div>
                 </article>
                 <aside class="aside-box content-box" aria-label="Spørsmål og studiested">
-                    <h2 class="font-lg">Spørsmål & Studiested</h2>
-                    <h3 class="font-med">Studiested i Pilestredet</h3>
+                    <h2 class="font-lg">Spørsmål & Studiested</h2> <!-- spørsmål overskrift -->
+                    <h3 class="font-med">Studiested i Pilestredet</h3> <!-- studiestedet -->
                     <p><a href="https://www.oslomet.no/om/studiested-pilestredet">Les mer om studiestedet i Pilestredet
                             Oslo her (oslomet.no)</a></p>
                     <a href="https://www.oslomet.no/studier/studenthistorier">
-                        <div class="default-btn gap-top-bigger">
+                        <div class="default-btn gap-top-bigger"> <!-- studenthistoreir -->
                             <p><i class="btn-pil"></i> Flere Studenthistorier</p>
                         </div>
                     </a>
-                    <h3 class="font-med">Spørsmål om utdanningen?</h3>
+                    <h3 class="font-med">Spørsmål om utdanningen?</h3> <!-- utdanningen -->
                     <p><a href="https://www.oslomet.no/kontaktskjema#Jeg%20vil%20bli%20student">Har du spørsmål om
                             utdanningen, kontakt oss gjennom vårt kontaktskjema. (oslomet.no)</a></p>
                 </aside>
@@ -682,7 +685,7 @@
         </section>
         <section class="indent gap-top">
             <!-- seksjon for flere studier, andre lenker, nyhetsbrev -->
-            <h2 class="font-lg">Du er kanskje også interessert i disse?</h2>
+            <h2 class="font-lg">Du er kanskje også interessert i disse?</h2> <!-- her ligger andre programmer brukeren kan være interessert i -->
             <div class="grid-container">
                 <article class="main-box">
                     <p>Her finner du flere bachelorprogram ved OsloMet Pilestredet.</p>

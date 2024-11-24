@@ -239,7 +239,8 @@ iframe {
 }
 
 
-/* Store sammensetninger av klasser */
+/* Vi har sammensatt ulike klasser som deler noen grunnleggende property endringer slik at det er lettere å holde styr over. */
+/* Men i noen tilfeller så vil det være gruppert der det gjelder nærmere isteden for her. Disse er hovedsaklig reservert for default html klasser, og de store seksjonselemenete og content boksene. */
 /* FLEXBOX */
 header, nav, nav ul, summary,  footer section a{
     display: flex;
