@@ -216,6 +216,14 @@ table {
     border-collapse: collapse;
 }
 
+thead{
+    border-bottom: 5px solid var(--oslometPrimary);
+}
+thead th{
+    border-left: 5px solid var(--oslometPrimary);
+    border-right: 5px solid var(--oslometPrimary);
+}
+
 /* -- IFRAME -- */
 
 iframe {
@@ -227,7 +235,7 @@ iframe {
     height: 100%;
     border: none;
     aspect-ratio: 16 / 9;
-    /* Forsøk på å fjerne svarte-boksene. */
+    /* klassen fjerner de svarte boksene rundt videoen.. */
 }
 
 
@@ -249,7 +257,7 @@ header, summary, .default-btn:hover, .default-table tr:nth-of-type(even), .farge
 }
 
 /* width felles endringer */
-html, body, a, details, details p, .main-box img, .big-img .content-box, .activity-box img, .fit-img{
+html, body, a, details, details p, .main-box img, .big-img .content-box, .activity-box img, .fit-img, .ben-table{
     width: 100%;
 }
 /* margin:0 */
@@ -584,6 +592,21 @@ på den vis vil den bli lettere brukt av skjermlesere, samt om css-essen plutsel
 
 /* ------ CSS for activity-side ------ */
 
+/* BENEFITS-TABLE */
+
+.ben-table td, .ben-table tr .ben-table th{
+    margin: 1vw;
+    padding: 1vw;
+}
+
+.ben-table tr:nth-of-type(even){
+    background-color: var(--oslometPrimary);
+}
+
+.ben-table td{
+    height: 5vh;
+}
+
 /* skifter farge-palett for activity siden. */
 .capo-bg-p{
     background-color: var(--CapoeiraPrimary);
@@ -616,26 +639,6 @@ på den vis vil den bli lettere brukt av skjermlesere, samt om css-essen plutsel
     border-bottom: 5px solid var(--oslometPrimary);
 }
 
-/* ------ CSS for accessibility-side ------ */
-
-.test-results h2,.test-results h3, .test-results p {
-    margin: 2vw;
-}
-
-.test-results h3 {
-    border-bottom: 2px solid #73d0ff;
-}
-
-.test-results h4 {
-    margin: 1vw;
-    margin-left: 3vw;
-    margin-top: 2vw;
-}
-
-.test-results img {
-    width: 90%;
-    margin: 1vw;
-}
 
 /* ------ FOOTER ------ */
 /* grid-footer, footer-section */
@@ -733,6 +736,9 @@ på den vis vil den bli lettere brukt av skjermlesere, samt om css-essen plutsel
         height: 11vw;
         width: 100%;
     }
+    .ben-table td{
+        height: 20vh;
+    }
 
 }
 
@@ -785,6 +791,7 @@ på den vis vil den bli lettere brukt av skjermlesere, samt om css-essen plutsel
     .subjects-table td {
         /* gjør de større for mindre skjermer. Ser bedre ut. */
         height: 15vw;}
+
 }
 
 

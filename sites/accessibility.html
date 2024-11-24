@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="no">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +7,6 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../images/favicon-32x32.png">
 </head>
-
 <body>
     <header class>
         <div class="header-left">
@@ -99,7 +97,7 @@
                 <p>Dette er i tilleg til å ha gode og forklarende ALT tagger på bilder, samt bruk av aria-labeller.</p>
             </article>
         </section>
-        <section class="gap-top">
+        <section class="gap-top fargedrop">
             <!-- seksjon for eksempler på forskjellige synssvakheter. -->
             <article class="indent main-box">
                 <h2>Generelle synssvakheter</h2>
@@ -109,7 +107,7 @@
                     Flere tilstander som kan vanskeliggjøre navigasjon på nettsiden følger under.
                 </p>
             </article>
-            <article class="fargedrop gap-top">
+            <article class="gap-top">
                 <div class="grid-container indent">
                     <article class="main-box">
                         <img src="../images/test2.png" alt="Screenshot fra index.siden med et sollys filter. Viser Blåfargen på siden blir lysere, mens teksten forblir lesbar.">
@@ -124,10 +122,10 @@
                     </aside>
                 </div>
             </article>
-            <article class="fargedrop gap-top">
+            <article class="gap-top">
                 <div class="grid-container indent">
                     <article class="main-box">
-                        <img src="../images/test3.png" alt="Screenshot fra index siden med et gulfarge filter. Fargen tinter blåfargen og den svarte teksten. Men påvirker lite hvordan siden brukes.">
+                        <img src="../images/test3.png" alt="index siden med et gulfarge filter. Fargen tinter blåfargen og den svarte teksten. Men påvirker lite hvordan siden brukes.">
                     </article>
                     <aside class="aside-box content-box" aria-label="Spørsmål og studiested">
                         <h2 class="font-lg">Guling</h2>
@@ -142,7 +140,7 @@
                 </div>
             </article>
         </section>
-        <section class="test-results gap-top">
+        <section class="gap-top">
             <!-- forklaring av hvilke verktøy vi har brukt for å teste nettsiden-->
             <article class="indent">
                 <h2 class="font-lg">Automatiserte tester- LightHouse</h2>
@@ -153,7 +151,7 @@
                     Det er derimot viktig å forstå viktigheten av å teste nettsiden manuelt og gjøre endringer
                     utenom tilbakemeldingen til disse testene.
                 </p>
-                <h3>Andre verktøy:</h3>
+                <h3 class="brd-bottom">Andre verktøy:</h3>
                 <p>Vi har også brukt andre verktøy for å teste alle sider av tilgjengelighet på nettsiden.
                     <i>“Silktide Accessibilty Checker”, “Wave Evaluation Tool”, “Just Read” og “Reader View”</i>
                     er verktøy som har bidratt til å gjøre nettsiden tilgjengelig og sikker for alle personer.
@@ -164,15 +162,15 @@
                 </p>
             </article>
         </section>
-        <section class="test-results gap-top">
+        <section class="gap-top fargedrop">
             <!-- seksjon for å vise test resultater -->
             <h2 class="font-lg indent">Automatiserte tester | Resultater</h2>
-            <div class="grid-container fargedrop">
-                <article class="main-box">
+            <div class="grid-container indent">
+                <article class="main-box"> <!-- index siden sine tests -->
                     <img src="../images/index.png" alt="Lighthouse Testresultater fra index siden. Viser 100 performance, 100 accessibility og 96 best practices.">
                 </article>
                 <aside class="aside-box content-box" aria-label="Index tests">
-                    <h2 class="font-lg">Index</h4>
+                    <h3 class="font-lg">Index</h3>
                         <p>Her kan du se testresultatene vi fikk fra LightHouse på index- siden. 
                             Toppscore på både performance og accessibility, 
                             som stemmer overens med andre automatiserte tester vi brukte.
@@ -181,12 +179,12 @@
                         </p>
                 </aside>
             </div>
-            <div class="grid-container fargedrop gap-top">
-                <article class="main-box">
+            <div class="grid-container indent gap-top">
+                <article class="main-box"> <!-- activity siden sine tests -->
                     <img src="../images/activity.png" alt="Lighthouse Testresultater fra activity siden. Viser 100 performance, 100 accessibility og 96 best practices.">
                 </article>
                 <aside class="aside-box content-box" aria-label="Activity tests">
-                    <h2 class="font-lg">Activity</h4>
+                    <h3 class="font-lg">Activity</h3>
                         <p>Her kan du se testresultatene vi fikk fra LightHouse på activity- siden. 
                             Toppscore på både performance og accessibility, 
                             som stemmer overens med andre automatiserte tester vi brukte.
@@ -194,12 +192,12 @@
                         </p>
                 </aside>
             </div>
-            <div class="grid-container fargedrop gap-top    ">
-                <article class="main-box">
+            <div class="grid-container indent gap-top    ">
+                <article class="main-box"> <!-- github siden siden sine tests -->
                     <img src="../images/githubtest.png" alt="Lighthouse Testresultater fra github siden. Viser 100 performance, 100 accessibility og 100 best practices.">
                 </article>
                 <aside class="aside-box content-box" aria-label="Github tests">
-                    <h2 class="font-lg">GitHub</h4>
+                    <h3 class="font-lg">GitHub</h3>
                         <p>Her kan du se testresultatene vi fikk fra LightHouse på GitHub- siden. 
                             Toppscore i alle kategorier denne gangen,
                             mest trolig fordi det ikke er videoer eller lenker til videoer.
@@ -211,16 +209,18 @@
             <!-- seksjon for kode-eksempler -->
             <h2 class="font-lg indent gap-top brd-bottom">Men hvordan ser koden ut?</h2>
             <div class="grid-container">
+                <!-- utsnitt fra navigasjons baren -->
                 <article class="main-box">
                     <img src="../images/kode1.png" alt="Kodesnitt: semantiske elementene som brukes, (ex: body, header...) samt god bruk av andre html elementer (ul, li, a)">
                 </article>
                 <aside class="aside-box content-box" aria-label="kode eksempel">
                     <h2 class="font-lg">Accessibility</h4>
                         <p>Bilde av en del av HTML- koden. Du kan se god struktur i nav-baren, samt god bruk av andre 
-                            semantiske elementer, som "main", "header", og "body".
+                            semantiske elementer, som "main", "header","nav", og "body".
                         </p>
                 </aside>
             </div>
+            <!-- utsnitt av footeren -->
             <div class="grid-container gap-top">
                 <article class="main-box">
                     <img src="../images/kode2.png" alt="Kodesnitt: semantiske elementer brukes god header hiarki">
@@ -232,9 +232,11 @@
                         </p>
                 </aside>
             </div>
+            <!-- utsnitt av en article fra activity siden -->
             <div class="grid-container gap-top">
                 <article class="main-box">
                     <img src="../images/kode3.png" alt="Utsnitt kode: ser semantiske elementer (article, aside) og bruk av god header hiarki. Samt god bruk av andre html elementer">
+                    <small></small>
                 </article>
                 <aside class="aside-box content-box" aria-label="kode eksempel">
                     <h2 class="font-lg">Accessibility</h4>
@@ -244,6 +246,7 @@
         </section>
     </main>
     <footer class="gap-top-bigger fargedrop">
+        <!-- FOOTER -->
         <!-- legger til spacing. -->
         <div class="grid-footer indent">
             <section>
