@@ -98,6 +98,7 @@ footer img {
 }
 
 footer section {
+    /* grid seksjon med 1fr i width. vil være 3 stk */
     grid-column: 1fr;
     margin: 1vw;
 }
@@ -153,7 +154,6 @@ details {
 }
 
 summary {
-    text-align: center;
     height: 2vw;
     list-style: none;
     justify-content: space-between;
@@ -165,7 +165,7 @@ summary {
 }
 
 summary::after {
-    /* DETAIL CSS - Brukt eksempel https://www.sitepoint.com/style-html-details-element/ som bunnmur til å style. Etter det så har vi endret på selv og lagt til egne deler i designet vi valgte.*/
+    /* DETAIL CSS - Brukt eksempel fra https://www.sitepoint.com/style-html-details-element/ som bunnmur til å style. Etter det så har vi endret på selv og lagt til egne deler i designet vi valgte.*/
     content: '';
     /* Brukt mest spesifikt for å modifisere details marker elementet slik at det roterer på seg selv. */
     width: 0;
@@ -176,6 +176,7 @@ summary::after {
 }
 
 summary:hover {
+    /* hover effekt */
     text-decoration: underline;
     transition: 0.1s;
 }
@@ -213,10 +214,12 @@ caption {
 }
 
 table {
+    /* fjerner alle borders. vil ha egene */
     border-collapse: collapse;
 }
 
 thead{
+    /* thead påvirker kun tablen på activity siden. */
     border-bottom: 5px solid var(--oslomet-primary);
 }
 thead th{
@@ -390,6 +393,7 @@ body, nav ul, .aside-box ul{
 /* grid-container, grid-middle, grid-article, grid-item-mid, main-box, secondary-box, aside-box */
 .grid-container {
     /* Container for grid- som vises på index */
+    /* har main-box og secondary-box. main er over secondary. vil også ha mulighet for en aside box på høyre side */
     grid-template-columns: 30vw auto minmax(300px, 30vw);
     /* Siden 1 er 30vw så dytter den litt på bildet. */
     gap: 2vw;
@@ -405,11 +409,6 @@ body, nav ul, .aside-box ul{
     /* Klasse for grid med to ruter som auto-sorter nedover. */
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: auto;
-}
-
-.grid-item-mid {
-    /* Brukes for å plassere item i .grid-middle */
-    grid-column: 2/3;
 }
 
 .main-box {
@@ -577,6 +576,7 @@ på den vis vil den bli lettere brukt av skjermlesere, samt om css-essen plutsel
 }
 
 .subjects-table p {
+    /* 50% slik at det er plass til to av de. */
     height: 50%;
     width: 50%;
     margin-top: 0;
@@ -584,7 +584,7 @@ på den vis vil den bli lettere brukt av skjermlesere, samt om css-essen plutsel
 }
 
 .subjects-table td p:nth-child(odd) {
-    /* Passer på at p-en ikke sitter inntil hverandre. */
+    /* text-align right så den ene p-en går til høyre side.*/
     text-align: right;
 }
 /* Table row tittelen for emnegrupper */
@@ -649,13 +649,13 @@ på den vis vil den bli lettere brukt av skjermlesere, samt om css-essen plutsel
 /* ------ FOOTER ------ */
 /* grid-footer, footer-section */
 .grid-footer {
-    /*  grid-template-columns: 35vw 35vw minmax(100px, auto); */
+    /* grid til footer-seksjonen. vi bruker en <footer><div> struktur slik at bakgrunnsfargen beholdes selv om det er innrykk på footer delen. */
     grid-template-columns: 1fr 1fr 1fr;
     grid-auto-rows: auto;
     gap: 5vw;
 }
 
-/* ------ MID-SCREEN ------ */
+/* ------ MID-SCREEN. tablets. ------ */
 @media (max-width: 957px) {
     footer img {
         width: 10vw;
@@ -749,7 +749,7 @@ på den vis vil den bli lettere brukt av skjermlesere, samt om css-essen plutsel
 
 }
 
-/* BABY-SCREEN */
+/* telefon screens. denne er under ^^ fordi den arver noen av egenskapene. */
 @media (max-width: 440px) {
 
     /* Skriftstørrelser.  for små skjermer*/
